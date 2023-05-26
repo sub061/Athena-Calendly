@@ -1,0 +1,1317 @@
+﻿@model Medical_Athena_Calendly.ViewModel.Athena.PatientModel
+
+@{
+    ViewData["Title"] = "PatientRegistration";
+    Layout = "~/Views/Shared/_LayoutTopNav.cshtml";
+}
+<link href="~/css/form.css" rel="stylesheet" />
+
+<hr />
+<div class="d-flex flex-row flex-wrap">
+
+    @*Identification start here*@
+    <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
+        <h4 class="w-100">Identification</h4>
+        @* last name*@
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="lastname">Legal last name<span class="asterisk-mark">*</span></label>
+            <input asp-for="lastname" type="text" required>
+            <span asp-validation-for="lastname" class="text-danger"></span>
+        </span>
+        @* first name*@
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="firstname">Legal last tname<span class="asterisk-mark">*</span></label>
+            <input asp-for="firstname" type="text" required>
+            <span asp-validation-for="firstname" class="text-danger"></span>
+        </span>
+
+        @*first name used *@
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="altfirstname">Altfirstname</label>
+            <input asp-for="altfirstname" type="text">
+            <span asp-validation-for="altfirstname" class="text-danger"></span>
+        </span>
+
+       @* middle name and suffix*@
+               <span class="label-wrapper d-flex flex-column">
+            <label asp-for="middlename">Middlename</label>
+            <input asp-for="middlename" type="text">
+            <span asp-validation-for="middlename" class="text-danger"></span>
+        </span>
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="suffix">Suffix</label>
+            <input asp-for="suffix" type="text">
+            <span asp-validation-for="suffix" class="text-danger"></span>
+        </span>
+
+  @*      sex*@
+                <span class="label-wrapper d-flex flex-column">
+            <label asp-for="sex">Sex</label>
+            <input asp-for="sex" type="text">
+            <span asp-validation-for="sex" class="text-danger"></span>
+        </span> 
+
+@*dob*@
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="dob ">DOB <span class="asterisk-mark">*</span></label>
+            <input asp-for="dob" type="text" required>
+            <span asp-validation-for="dob" class="text-danger"></span>
+        </span>
+
+        @*ssn*@
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="ssn">SSN</label>
+            <input asp-for="ssn" type="text">
+            <span asp-validation-for="ssn" class="text-danger"></span>
+        </span>
+        @*Preferred name*@
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="preferredname">Preferred name</label>
+            <input asp-for="preferredname" type="text">
+            <span asp-validation-for="preferredname" class="text-danger"></span>
+        </span>
+    </section>
+
+    @*Contact start here*@
+        <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
+        <h4 class="w-100">Contact</h4>
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="address1">Address</label>
+            <input asp-for="address1" type="text">
+            <span asp-validation-for="address1" class="text-danger"></span>
+        </span>
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="address2">Address (ctd)</label>
+            <input asp-for="address2" type="text">
+            <span asp-validation-for="address2" class="text-danger"></span>
+        </span>
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="zip">ZIP code</label>
+            <input asp-for="zip" type="text">
+            <span asp-validation-for="zip" class="text-danger"></span>
+        </span>
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="city">City</label>
+            <input asp-for="city" type="text">
+            <span asp-validation-for="city" class="text-danger"></span>
+        </span>
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="state">State</label>
+            <input asp-for="state" type="text">
+            <span asp-validation-for="state" class="text-danger"></span>
+        </span>
+
+                <span class="label-wrapper d-flex flex-column">
+            <label asp-for="homephone">Home phone</label>
+            <input asp-for="homephone" type="text">
+            <span asp-validation-for="homephone" class="text-danger"></span>
+        </span>
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="mobilephone">Mobile phone</label>
+            <input asp-for="mobilephone" type="text">
+            <span asp-validation-for="mobilephone" class="text-danger"></span>
+        </span>
+
+        
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="consenttotext">Consent to text</label>
+            <input asp-for="consenttotext" type="text">
+            <span asp-validation-for="consenttotext" class="text-danger"></span>
+        </span>
+
+                <span class="label-wrapper d-flex flex-column">
+            <label asp-for="workphone">Work phone</label>
+            <input asp-for="workphone" type="text">
+            <span asp-validation-for="workphone" class="text-danger"></span>
+        </span>
+
+                <span class="label-wrapper d-flex flex-column">
+            <label asp-for="email">Patient email</label>
+            <input asp-for="email" type="text">
+            <span asp-validation-for="email" class="text-danger"></span>
+        </span>
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="contactpreference">Contact preference</label>
+            <input asp-for="contactpreference" type="text">
+            <span asp-validation-for="contactpreference" class="text-danger"></span>
+        </span>
+    </section>
+
+   @* Demographics*@
+            <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
+        <h4 class="w-100">Demographics</h4>
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="language6392code">Language</label>
+            <select  asp-for="language6392code">
+                <option>English</option>
+                <option>French</option>
+            </select>
+            <span asp-validation-for="language6392code" class="text-danger"></span>
+        </span>
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="language6392code">Language</label>
+            <select asp-for="language6392code">
+                <option>English</option>
+                <option>French</option>
+            </select>
+            <span asp-validation-for="language6392code" class="text-danger"></span>
+        </span>
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="ethnicitycode">Ethnicity </label>
+            <input asp-for="ethnicitycode" type="text">
+            <span asp-validation-for="ethnicitycode" class="text-danger"></span>
+        </span>
+
+                <span class="label-wrapper d-flex flex-column">
+            <label asp-for="maritalstatus">Marital status</label>
+            <input asp-for="maritalstatus" type="text">
+            <span asp-validation-for="maritalstatus" class="text-danger"></span>
+        </span>
+
+                <span class="label-wrapper d-flex flex-column">
+            <label asp-for="sexualorientation">Sexual orientation</label>
+            <input asp-for="sexualorientation" type="text">
+            <span asp-validation-for="sexualorientation" class="text-danger"></span>
+        </span>
+                 <span class="label-wrapper d-flex flex-column">
+            <label asp-for="genderidentity">Gender identity</label>
+            <input asp-for="genderidentity" type="text">
+            <span asp-validation-for="genderidentity" class="text-danger"></span>
+        </span>
+
+
+
+             <span class="label-wrapper d-flex flex-column">
+            <label asp-for="assignedsexatbirth">Assigned sex at birth</label>
+            <input asp-for="assignedsexatbirth" type="text">
+            <span asp-validation-for="assignedsexatbirth" class="text-danger"></span>
+        </span>
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="preferredpronouns">Preferred pronouns</label>
+            <input asp-for="preferredpronouns" type="text">
+            <span asp-validation-for="preferredpronouns" class="text-danger"></span>
+        </span>
+
+                <span class="label-wrapper d-flex flex-column">
+            <label asp-for="homeboundyn">Homebound</label>
+            <input asp-for="homeboundyn" type="text">
+            <span asp-validation-for="homeboundyn" class="text-danger"></span>
+        </span> 
+
+        </section>
+
+
+    @* Aditional Information*@
+            <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
+        <h4 class="w-100">Aditional Information</h4>
+
+        </section>
+
+
+    @*Billing*@
+    <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
+        <h4 class="w-100">Billing</h4>
+
+    </section>
+
+        @*Provider*@
+    <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
+        <h4 class="w-100">Provider/ Registration Date</h4>
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="primaryproviderid">Usual provider</label>
+            <input asp-for="primaryproviderid" type="text">
+            <span asp-validation-for="primaryproviderid" class="text-danger"></span>
+        </span>
+         <span class="label-wrapper d-flex flex-column">
+            <label asp-for="primarydepartmentid">Primary department </label>
+            <input asp-for="primarydepartmentid" type="text">
+            <span asp-validation-for="primarydepartmentid" class="text-danger"></span>
+        </span> 
+
+    </section>
+
+
+  @*Emergency Contact*@
+  <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
+        <h4 class="w-100">Emergency Contact</h4>
+              <span class="label-wrapper d-flex flex-column">
+            <label asp-for="contactname">Name</label>
+            <input asp-for="contactname" type="text">
+            <span asp-validation-for="contactname" class="text-danger"></span>
+        </span> 
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="contacthomephone">Home phone</label>
+            <input asp-for="contacthomephone" type="text">
+            <span asp-validation-for="contacthomephone" class="text-danger"></span>
+        </span> 
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="contactmobilephone">Mobile phone</label>
+            <input asp-for="contactmobilephone" type="text">
+            <span asp-validation-for="contactmobilephone" class="text-danger"></span>
+        </span> 
+
+      </section>
+
+    @*Guardian*@
+    <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
+        <h4 class="w-100">Guardian</h4>
+                <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guardianlastname">Last name</label>
+            <input asp-for="guardianlastname" type="text">
+            <span asp-validation-for="guardianlastname" class="text-danger"></span>
+        </span> 
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guardianfirstname">First name</label>
+            <input asp-for="guardianfirstname" type="text">
+            <span asp-validation-for="guardianfirstname" class="text-danger"></span>
+        </span> 
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guardianmiddlename">Middle name</label>
+            <input asp-for="guardianmiddlename" type="text">
+            <span asp-validation-for="guardianmiddlename" class="text-danger"></span>
+        </span>
+        
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guardiansuffix">suffix</label>
+            <input asp-for="guardiansuffix" type="text">
+            <span asp-validation-for="guardiansuffix" class="text-danger"></span>
+        </span>
+
+    </section>
+
+        
+    @*Guarantor*@
+    <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
+        <h4 class="w-100">Guarantor</h4>
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guarantorrelationshiptopatient">Patient relationship to guarantor </label>
+            <input asp-for="guarantorrelationshiptopatient" type="text">
+            <span asp-validation-for="guarantorrelationshiptopatient" class="text-danger"></span>
+        </span>
+
+         <h4 class="w-100">Guarantor (Name to whom statement are sent)</h4>
+                 <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guarantorlastname">Last name</label>
+            <input asp-for="guarantorlastname" type="text">
+            <span asp-validation-for="guarantorlastname" class="text-danger"></span>
+        </span>
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guarantorfirstname">First name</label>
+            <input asp-for="guarantorfirstname" type="text">
+            <span asp-validation-for="guarantorfirstname" class="text-danger"></span>
+        </span>
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guarantormiddlename"> Middle name</label>
+            <input asp-for="guarantormiddlename" type="text">
+            <span asp-validation-for="guarantormiddlename" class="text-danger"></span>
+        </span>
+
+
+        <h4 class="w-100">Mailling Address (Guarantor address same as above)</h4>
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guarantoraddress1">Address</label>
+            <input asp-for="guarantoraddress1" type="text">
+            <span asp-validation-for="guarantoraddress1" class="text-danger"></span>
+        </span>
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guarantoraddress2">Address (ctd)</label>
+            <input asp-for="guarantoraddress2" type="text">
+            <span asp-validation-for="guarantoraddress2" class="text-danger"></span>
+        </span>
+
+                        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guarantorzip">ZIP</label>
+            <input asp-for="guarantorzip" type="text">
+            <span asp-validation-for="guarantorzip" class="text-danger"></span>
+        </span> 
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guarantorcity">City</label>
+            <input asp-for="guarantorcity" type="text">
+            <span asp-validation-for="guarantorcity" class="text-danger"></span>
+        </span>
+                        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guarantorstate">State</label>
+            <input asp-for="guarantorstate" type="text">
+            <span asp-validation-for="guarantorstate" class="text-danger"></span>
+        </span> 
+
+         <h4 class="w-100">Optional Information</h4>
+
+
+            <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guarantorssn">SSN</label>
+            <input asp-for="guarantorssn" type="text">
+            <span asp-validation-for="guarantorssn" class="text-danger"></span>
+        </span> 
+
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guarantorphone">Phone</label>
+            <input asp-for="guarantorphone" type="text">
+            <span asp-validation-for="guarantorphone" class="text-danger"></span>
+        </span>
+
+               <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guarantoremail">Email</label>
+            <input asp-for="guarantoremail" type="text">
+            <span asp-validation-for="guarantoremail" class="text-danger"></span>
+        </span> 
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guarantoremployerid">Employerid</label>
+            <input asp-for="guarantoremployerid" type="text">
+            <span asp-validation-for="guarantoremployerid" class="text-danger"></span>
+        </span>
+       
+
+
+    </section>
+
+
+
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="agriculturalworker">Agriculturalworker</label>
+            <input asp-for="agriculturalworker" type="text">
+            <span asp-validation-for="agriculturalworker" class="text-danger"></span>
+        </span>
+
+    <!--section 1 end here-->
+
+    <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
+
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="agriculturalworkertype">Agriculturalworkertype</label>
+            <input asp-for="agriculturalworkertype" type="text">
+            <span asp-validation-for="agriculturalworkertype" class="text-danger"></span>
+        </span>
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="altfirstname">Altfirstname</label>
+            <input asp-for="altfirstname" type="text">
+            <span asp-validation-for="altfirstname" class="text-danger"></span>
+        </span>
+
+   
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="caresummarydeliverypreference">Caresummarydeliverypreference</label>
+            <input asp-for="caresummarydeliverypreference" type="text">
+            <span asp-validation-for="caresummarydeliverypreference" class="text-danger"></span>
+        </span>
+
+
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="clinicalordertypegroupid">Clinicalordertypegroupid</label>
+            <input asp-for="clinicalordertypegroupid" type="text">
+            <span asp-validation-for="clinicalordertypegroupid" class="text-danger"></span>
+        </span>
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="consenttocall">Consenttocall</label>
+            <input asp-for="consenttocall" type="text">
+            <span asp-validation-for="consenttocall" class="text-danger"></span>
+        </span>
+
+
+    </section>
+    <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
+        <span class="label-wrapper d-flex flex-row align-center">
+            <label asp-for="contactpreference_announcement_email" class="mb-0">Contactpreference_announcement_email</label>
+            <input asp-for="contactpreference_announcement_email" type="checkbox">
+            <span asp-validation-for="contactpreference_announcement_email" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-row align-center">
+            <label asp-for="contactpreference_announcement_phone" class="mb-0">Contactpreference_announcement_phone</label>
+            <input asp-for="contactpreference_announcement_phone" type="checkbox">
+            <span asp-validation-for="contactpreference_announcement_phone" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-row align-center">
+            <label asp-for="contactpreference_announcement_sms" class="mb-0">Contactpreference_announcement_sms</label>
+            <input asp-for="contactpreference_announcement_sms" type="checkbox">
+            <span asp-validation-for="contactpreference_announcement_sms" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-row align-center">
+            <label asp-for="contactpreference_appointment_email" class="mb-0">Contactpreference_appointment_email</label>
+            <input asp-for="contactpreference_appointment_email" type="checkbox">
+            <span asp-validation-for="contactpreference_appointment_email" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-row align-center">
+            <label asp-for="contactpreference_appointment_phone" class="mb-0">Contactpreference_appointment_phone</label>
+            <input asp-for="contactpreference_appointment_phone" type="checkbox">
+            <span asp-validation-for="contactpreference_appointment_phone" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-row align-center">
+            <label asp-for="contactpreference_appointment_sms" class="mb-0">Contactpreference_appointment_sms</label>
+            <input asp-for="contactpreference_appointment_sms" type="checkbox">
+            <span asp-validation-for="contactpreference_appointment_sms" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-row align-center">
+            <label asp-for="contactpreference_billing_email" class="mb-0">Contactpreference_billing_email</label>
+            <input asp-for="contactpreference_billing_email" type="checkbox">
+            <span asp-validation-for="contactpreference_billing_email" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-row align-center">
+            <label asp-for="contactpreference_billing_phone" class="mb-0">Contactpreference_billing_phone</label>
+            <input asp-for="contactpreference_billing_phone" type="checkbox">
+            <span asp-validation-for="contactpreference_billing_phone" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-row align-center">
+            <label asp-for="contactpreference_billing_sms" class="mb-0">Contactpreference_billing_sms</label>
+            <input asp-for="contactpreference_billing_sms" type="checkbox">
+            <span asp-validation-for="contactpreference_billing_sms" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-row align-center">
+            <label asp-for="contactpreference_lab_email" class="mb-0">Contactpreference_lab_email</label>
+            <input asp-for="contactpreference_lab_email" type="checkbox">
+            <span asp-validation-for="contactpreference_lab_email" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-row align-center">
+            <label asp-for="contactpreference_lab_phone" class="mb-0">Contactpreference_lab_phone</label>
+            <input asp-for="contactpreference_lab_phone" type="checkbox">
+            <span asp-validation-for="contactpreference_lab_phone" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-row align-center">
+            <label asp-for="contactpreference_lab_sms" class="mb-0">Contactpreference_lab_sms</label>
+            <input asp-for="contactpreference_lab_sms" type="checkbox">
+            <span asp-validation-for="contactpreference_lab_sms" class="text-danger"></span>
+        </span>
+    </section>
+    <section class="d-flex flex-row flex-wrap w-100 gap-24">
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="contactrelationship">Contactrelationship</label>
+            <input asp-for="contactrelationship" type="text">
+            <span asp-validation-for="contactrelationship" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="countrycode3166">Countrycode3166</label>
+            <input asp-for="countrycode3166" type="text">
+            <span asp-validation-for="countrycode3166" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="deceaseddate">Deceaseddate</label>
+
+            <input asp-for="deceaseddate" type="text">
+            <span asp-validation-for="deceaseddate" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="defaultpharmacyncpdpid">Defaultpharmacyncpdpid</label>
+            <input asp-for="defaultpharmacyncpdpid" type="text">
+            <span asp-validation-for="defaultpharmacyncpdpid" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="departmentid">Departmentid <span class="asterisk-mark">*</span></label>
+            <input asp-for="departmentid" type="text" required>
+            <span asp-validation-for="departmentid" class="text-danger"></span>
+        </span>
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="donotcallyn">Donotcallyn</label>
+            <input asp-for="donotcallyn" type="text">
+            <span asp-validation-for="donotcallyn" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="driverslicenseexpirationdate">Driverslicenseexpirationdate</label>
+            <input asp-for="driverslicenseexpirationdate" type="text">
+            <span asp-validation-for="driverslicenseexpirationdate" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="driverslicensenumber">Driverslicensenumber</label>
+            <input asp-for="driverslicensenumber" type="text">
+            <span asp-validation-for="driverslicensenumber" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="driverslicensestateid">Driverslicensestateid</label>
+            <input asp-for="driverslicensestateid" type="text">
+            <span asp-validation-for="driverslicensestateid" class="text-danger"></span>
+        </span>
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="employerid">Employerid</label>
+            <input asp-for="employerid" type="text">
+            <span asp-validation-for="employerid" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="employerphone">Employerphone</label>
+            <input asp-for="employerphone" type="text">
+            <span asp-validation-for="employerphone" class="text-danger"></span>
+        </span> 
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="ethnicitycodes">Ethnicitycodes</label>
+            <input asp-for="ethnicitycodes" type="text">
+            <span asp-validation-for="ethnicitycodes" class="text-danger"></span>
+        </span>
+
+   
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="genderidentityother">Genderidentityother</label>
+            <input asp-for="genderidentityother" type="text">
+            <span asp-validation-for="genderidentityother" class="text-danger"></span>
+        </span> 
+
+
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guarantoraddresssameaspatient">Guarantoraddresssameaspatient</label>
+            <input asp-for="guarantoraddresssameaspatient" type="text">
+            <span asp-validation-for="guarantoraddresssameaspatient" class="text-danger"></span>
+        </span> 
+    
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guarantorcountrycode3166">Guarantorcountrycode3166</label>
+            <input asp-for="guarantorcountrycode3166" type="text">
+            <span asp-validation-for="guarantorcountrycode3166" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guarantordob">Guarantordob</label>
+            <input asp-for="guarantordob" type="text">
+            <span asp-validation-for="guarantordob" class="text-danger"></span>
+        </span> 
+        
+ 
+     
+        
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="guarantorsuffix">Guarantorsuffix</label>
+            <input asp-for="guarantorsuffix" type="text">
+            <span asp-validation-for="guarantorsuffix" class="text-danger"></span>
+        </span>
+        
+
+
+   
+        
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="hasmobileyn">Hasmobileyn</label>
+            <input asp-for="hasmobileyn" type="text">
+            <span asp-validation-for="hasmobileyn" class="text-danger"></span>
+        </span> 
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="homeless">Homeless</label>
+            <input asp-for="homeless" type="text">
+            <span asp-validation-for="homeless" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="homelesstype">Homelesstype</label>
+            <input asp-for="homelesstype" type="text">
+            <span asp-validation-for="homelesstype" class="text-danger"></span>
+        </span>
+
+        <span class="label-wrapper d-flex flex-row align-center">
+            <label asp-for="ignorerestrictions" class="mb-0">Ignorerestrictions</label>
+            <input asp-for="ignorerestrictions" type="checkbox">
+            <span asp-validation-for="ignorerestrictions" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="industrycode">Industrycode</label>
+            <input asp-for="industrycode" type="text">
+            <span asp-validation-for="industrycode" class="text-danger"></span>
+        </span> 
+
+
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="middlename">Middlename</label>
+            <input asp-for="middlename" type="text">
+            <span asp-validation-for="middlename" class="text-danger"></span>
+        </span>
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="mobilecarrierid">Mobilecarrierid</label>
+            <input asp-for="mobilecarrierid" type="text">
+            <span asp-validation-for="mobilecarrierid" class="text-danger"></span>
+        </span>
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="nextkinname">Nextkinname</label>
+            <input asp-for="nextkinname" type="text">
+            <span asp-validation-for="nextkinname" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="nextkinphone">Nextkinphone</label>
+            <input asp-for="nextkinphone" type="text">
+            <span asp-validation-for="nextkinphone" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="nextkinrelationship">Nextkinrelationship</label>
+            <input asp-for="nextkinrelationship" type="text">
+            <span asp-validation-for="nextkinrelationship" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="notes">Notes</label>
+            <input asp-for="notes" type="text">
+            <span asp-validation-for="notes" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="occupationcode">Occupationcode</label>
+            <input asp-for="occupationcode" type="text">
+            <span asp-validation-for="occupationcode" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-row align-center">
+            <label asp-for="onlinestatementonlyyn" class="mb-0">Onlinestatementonlyyn</label>
+            <input asp-for="onlinestatementonlyyn" type="checkbox">
+            <span asp-validation-for="onlinestatementonlyyn" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-row align-center">
+            <label asp-for="portalaccessgiven" class="mb-0">Portalaccessgiven</label>
+            <input asp-for="portalaccessgiven" type="checkbox">
+            <span asp-validation-for="portalaccessgiven" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="povertylevelcalculated">Povertylevelcalculated</label>
+            <input asp-for="povertylevelcalculated" type="text">
+            <span asp-validation-for="povertylevelcalculated" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="povertylevelfamilysize">Povertylevelfamilysize</label>
+            <input asp-for="povertylevelfamilysize" type="text">
+            <span asp-validation-for="povertylevelfamilysize" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-row align-center">
+            <label asp-for="povertylevelfamilysizedeclined" class="mb-0">Povertylevelfamilysizedeclined</label>
+            <input asp-for="povertylevelfamilysizedeclined" type="checkbox">
+            <span asp-validation-for="povertylevelfamilysizedeclined" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="povertylevelincomedeclined">Povertylevelincomedeclined</label>
+            <input asp-for="povertylevelincomedeclined" type="text">
+            <span asp-validation-for="povertylevelincomedeclined" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="povertylevelincomepayperiod">Povertylevelincomepayperiod</label>
+            <input asp-for="povertylevelincomepayperiod" type="text">
+            <span asp-validation-for="povertylevelincomepayperiod" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="povertylevelincomeperpayperiod">Povertylevelincomeperpayperiod</label>
+            <input asp-for="povertylevelincomeperpayperiod" type="text">
+            <span asp-validation-for="povertylevelincomeperpayperiod" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-row align-center">
+            <label asp-for="povertylevelincomerangedeclined" class="mb-0">Povertylevelincomerangedeclined</label>
+            <input asp-for="povertylevelincomerangedeclined" type="checkbox">
+            <span asp-validation-for="povertylevelincomerangedeclined" class="text-danger"></span>
+        </span> 
+
+
+        
+        
+        
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="publichousing">Publichousing</label>
+            <input asp-for="publichousing" type="text">
+            <span asp-validation-for="publichousing" class="text-danger"></span>
+        </span>
+        @*        <span class="label-wrapper d-flex flex-column">
+        <label  asp-for="race">Race</label>
+        <input  asp-for="race" type="text"  >
+        <span asp-validation-for="race" class="text-danger"></span>
+        </span> *@
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="referralsourceid">Referralsourceid</label>
+            <input asp-for="referralsourceid" type="text">
+            <span asp-validation-for="referralsourceid" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="referralsourceother">Referralsourceother</label>
+            <input asp-for="referralsourceother" type="text">
+            <span asp-validation-for="referralsourceother" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="schoolbasedhealthcenter">Schoolbasedhealthcenter</label>
+            <input asp-for="schoolbasedhealthcenter" type="text">
+            <span asp-validation-for="schoolbasedhealthcenter" class="text-danger"></span>
+        </span>
+
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="sexualorientationother">Sexualorientationother</label>
+            <input asp-for="sexualorientationother" type="text">
+            <span asp-validation-for="sexualorientationother" class="text-danger"></span>
+        </span> <span class="label-wrapper d-flex flex-column">
+            <label asp-for="showerrormessage">Showerrormessage</label>
+            <input asp-for="showerrormessage" type="text">
+            <span asp-validation-for="showerrormessage" class="text-danger"></span>
+        </span>
+
+
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="status">Status</label>
+            <input asp-for="status" type="text">
+            <span asp-validation-for="status" class="text-danger"></span>
+        </span> 
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="suffix">Suffix</label>
+            <input asp-for="suffix" type="text">
+            <span asp-validation-for="suffix" class="text-danger"></span>
+        </span> 
+        <span class="label-wrapper d-flex flex-column">
+            <label asp-for="veteran">Veteran</label>
+            <input asp-for="veteran" type="text">
+            <span asp-validation-for="veteran" class="text-danger"></span>
+        </span> 
+
+
+    </section>
+
+    @*    <div class="col-md-4">
+    <form asp-action="PatientRegistration">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+    <label  asp-for="patientid" class="control-label"></label>
+    <input  asp-for="patientid" class="form-control" />
+    <span asp-validation-for="patientid" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="address1" class="control-label"></label>
+    <input  asp-for="address1" class="form-control" />
+    <span asp-validation-for="address1" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="address2" class="control-label"></label>
+    <input  asp-for="address2" class="form-control" />
+    <span asp-validation-for="address2" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="agriculturalworker" class="control-label"></label>
+    <input  asp-for="agriculturalworker" class="form-control" />
+    <span asp-validation-for="agriculturalworker" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="agriculturalworkertype" class="control-label"></label>
+    <input  asp-for="agriculturalworkertype" class="form-control" />
+    <span asp-validation-for="agriculturalworkertype" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="altfirstname" class="control-label"></label>
+    <input  asp-for="altfirstname" class="form-control" />
+    <span asp-validation-for="altfirstname" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="assignedsexatbirth" class="control-label"></label>
+    <input  asp-for="assignedsexatbirth" class="form-control" />
+    <span asp-validation-for="assignedsexatbirth" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="caresummarydeliverypreference" class="control-label"></label>
+    <input  asp-for="caresummarydeliverypreference" class="form-control" />
+    <span asp-validation-for="caresummarydeliverypreference" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="city" class="control-label"></label>
+    <input  asp-for="city" class="form-control" />
+    <span asp-validation-for="city" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="clinicalordertypegroupid" class="control-label"></label>
+    <input  asp-for="clinicalordertypegroupid" class="form-control" />
+    <span asp-validation-for="clinicalordertypegroupid" class="text-danger"></span>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="consenttocall" /> @Html.DisplayNameFor(model => model.consenttocall)
+    </label>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="consenttotext" /> @Html.DisplayNameFor(model => model.consenttotext)
+    </label>
+    </div>
+    <div class="form-group">
+    <label  asp-for="contacthomephone" class="control-label"></label>
+    <input  asp-for="contacthomephone" class="form-control" />
+    <span asp-validation-for="contacthomephone" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="contactmobilephone" class="control-label"></label>
+    <input  asp-for="contactmobilephone" class="form-control" />
+    <span asp-validation-for="contactmobilephone" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="contactname" class="control-label"></label>
+    <input  asp-for="contactname" class="form-control" />
+    <span asp-validation-for="contactname" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="contactpreference" class="control-label"></label>
+    <select asp-for="contactpreference" class="form-control"></select>
+    <span asp-validation-for="contactpreference" class="text-danger"></span>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="contactpreference_announcement_email" /> @Html.DisplayNameFor(model => model.contactpreference_announcement_email)
+    </label>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="contactpreference_announcement_phone" /> @Html.DisplayNameFor(model => model.contactpreference_announcement_phone)
+    </label>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="contactpreference_announcement_sms" /> @Html.DisplayNameFor(model => model.contactpreference_announcement_sms)
+    </label>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="contactpreference_appointment_email" /> @Html.DisplayNameFor(model => model.contactpreference_appointment_email)
+    </label>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="contactpreference_appointment_phone" /> @Html.DisplayNameFor(model => model.contactpreference_appointment_phone)
+    </label>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="contactpreference_appointment_sms" /> @Html.DisplayNameFor(model => model.contactpreference_appointment_sms)
+    </label>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="contactpreference_billing_email" /> @Html.DisplayNameFor(model => model.contactpreference_billing_email)
+    </label>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="contactpreference_billing_phone" /> @Html.DisplayNameFor(model => model.contactpreference_billing_phone)
+    </label>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="contactpreference_billing_sms" /> @Html.DisplayNameFor(model => model.contactpreference_billing_sms)
+    </label>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="contactpreference_lab_email" /> @Html.DisplayNameFor(model => model.contactpreference_lab_email)
+    </label>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="contactpreference_lab_phone" /> @Html.DisplayNameFor(model => model.contactpreference_lab_phone)
+    </label>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="contactpreference_lab_sms" /> @Html.DisplayNameFor(model => model.contactpreference_lab_sms)
+    </label>
+    </div>
+    <div class="form-group">
+    <label  asp-for="contactrelationship" class="control-label"></label>
+    <select asp-for="contactrelationship" class="form-control"></select>
+    <span asp-validation-for="contactrelationship" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="countrycode3166" class="control-label"></label>
+    <input  asp-for="countrycode3166" class="form-control" />
+    <span asp-validation-for="countrycode3166" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="deceaseddate" class="control-label"></label>
+    <input  asp-for="deceaseddate" class="form-control" />
+    <span asp-validation-for="deceaseddate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="defaultpharmacyncpdpid" class="control-label"></label>
+    <input  asp-for="defaultpharmacyncpdpid" class="form-control" />
+    <span asp-validation-for="defaultpharmacyncpdpid" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="departmentid" class="control-label"></label>
+    <input  asp-for="departmentid" class="form-control" />
+    <span asp-validation-for="departmentid" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="dob" class="control-label"></label>
+    <input  asp-for="dob" class="form-control" />
+    <span asp-validation-for="dob" class="text-danger"></span>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="donotcallyn" /> @Html.DisplayNameFor(model => model.donotcallyn)
+    </label>
+    </div>
+    <div class="form-group">
+    <label  asp-for="driverslicenseexpirationdate" class="control-label"></label>
+    <input  asp-for="driverslicenseexpirationdate" class="form-control" />
+    <span asp-validation-for="driverslicenseexpirationdate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="driverslicensenumber" class="control-label"></label>
+    <input  asp-for="driverslicensenumber" class="form-control" />
+    <span asp-validation-for="driverslicensenumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="driverslicensestateid" class="control-label"></label>
+    <select asp-for="driverslicensestateid" class="form-control"></select>
+    <span asp-validation-for="driverslicensestateid" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="email" class="control-label"></label>
+    <input  asp-for="email" class="form-control" />
+    <span asp-validation-for="email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="employerid" class="control-label"></label>
+    <input  asp-for="employerid" class="form-control" />
+    <span asp-validation-for="employerid" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="employerphone" class="control-label"></label>
+    <input  asp-for="employerphone" class="form-control" />
+    <span asp-validation-for="employerphone" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="ethnicitycode" class="control-label"></label>
+    <input  asp-for="ethnicitycode" class="form-control" />
+    <span asp-validation-for="ethnicitycode" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="ethnicitycodes" class="control-label"></label>
+    <input  asp-for="ethnicitycodes" class="form-control" />
+    <span asp-validation-for="ethnicitycodes" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="firstname" class="control-label"></label>
+    <input  asp-for="firstname" class="form-control" />
+    <span asp-validation-for="firstname" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="genderidentity" class="control-label"></label>
+    <input  asp-for="genderidentity" class="form-control" />
+    <span asp-validation-for="genderidentity" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="genderidentityother" class="control-label"></label>
+    <input  asp-for="genderidentityother" class="form-control" />
+    <span asp-validation-for="genderidentityother" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guarantoraddress1" class="control-label"></label>
+    <input  asp-for="guarantoraddress1" class="form-control" />
+    <span asp-validation-for="guarantoraddress1" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guarantoraddress2" class="control-label"></label>
+    <input  asp-for="guarantoraddress2" class="form-control" />
+    <span asp-validation-for="guarantoraddress2" class="text-danger"></span>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="guarantoraddresssameaspatient" /> @Html.DisplayNameFor(model => model.guarantoraddresssameaspatient)
+    </label>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guarantorcity" class="control-label"></label>
+    <input  asp-for="guarantorcity" class="form-control" />
+    <span asp-validation-for="guarantorcity" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guarantorcountrycode3166" class="control-label"></label>
+    <input  asp-for="guarantorcountrycode3166" class="form-control" />
+    <span asp-validation-for="guarantorcountrycode3166" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guarantordob" class="control-label"></label>
+    <input  asp-for="guarantordob" class="form-control" />
+    <span asp-validation-for="guarantordob" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guarantoremail" class="control-label"></label>
+    <input  asp-for="guarantoremail" class="form-control" />
+    <span asp-validation-for="guarantoremail" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guarantoremployerid" class="control-label"></label>
+    <input  asp-for="guarantoremployerid" class="form-control" />
+    <span asp-validation-for="guarantoremployerid" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guarantorfirstname" class="control-label"></label>
+    <input  asp-for="guarantorfirstname" class="form-control" />
+    <span asp-validation-for="guarantorfirstname" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guarantorlastname" class="control-label"></label>
+    <input  asp-for="guarantorlastname" class="form-control" />
+    <span asp-validation-for="guarantorlastname" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guarantormiddlename" class="control-label"></label>
+    <input  asp-for="guarantormiddlename" class="form-control" />
+    <span asp-validation-for="guarantormiddlename" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guarantorphone" class="control-label"></label>
+    <input  asp-for="guarantorphone" class="form-control" />
+    <span asp-validation-for="guarantorphone" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guarantorrelationshiptopatient" class="control-label"></label>
+    <input  asp-for="guarantorrelationshiptopatient" class="form-control" />
+    <span asp-validation-for="guarantorrelationshiptopatient" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guarantorssn" class="control-label"></label>
+    <input  asp-for="guarantorssn" class="form-control" />
+    <span asp-validation-for="guarantorssn" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guarantorstate" class="control-label"></label>
+    <input  asp-for="guarantorstate" class="form-control" />
+    <span asp-validation-for="guarantorstate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guarantorsuffix" class="control-label"></label>
+    <input  asp-for="guarantorsuffix" class="form-control" />
+    <span asp-validation-for="guarantorsuffix" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guarantorzip" class="control-label"></label>
+    <input  asp-for="guarantorzip" class="form-control" />
+    <span asp-validation-for="guarantorzip" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guardianfirstname" class="control-label"></label>
+    <input  asp-for="guardianfirstname" class="form-control" />
+    <span asp-validation-for="guardianfirstname" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guardianlastname" class="control-label"></label>
+    <input  asp-for="guardianlastname" class="form-control" />
+    <span asp-validation-for="guardianlastname" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guardianmiddlename" class="control-label"></label>
+    <input  asp-for="guardianmiddlename" class="form-control" />
+    <span asp-validation-for="guardianmiddlename" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="guardiansuffix" class="control-label"></label>
+    <input  asp-for="guardiansuffix" class="form-control" />
+    <span asp-validation-for="guardiansuffix" class="text-danger"></span>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="hasmobileyn" /> @Html.DisplayNameFor(model => model.hasmobileyn)
+    </label>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="homeboundyn" /> @Html.DisplayNameFor(model => model.homeboundyn)
+    </label>
+    </div>
+    <div class="form-group">
+    <label  asp-for="homeless" class="control-label"></label>
+    <select asp-for="homeless" class="form-control"></select>
+    <span asp-validation-for="homeless" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="homelesstype" class="control-label"></label>
+    <select asp-for="homelesstype" class="form-control"></select>
+    <span asp-validation-for="homelesstype" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="homephone" class="control-label"></label>
+    <input  asp-for="homephone" class="form-control" />
+    <span asp-validation-for="homephone" class="text-danger"></span>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="ignorerestrictions" /> @Html.DisplayNameFor(model => model.ignorerestrictions)
+    </label>
+    </div>
+    <div class="form-group">
+    <label  asp-for="industrycode" class="control-label"></label>
+    <input  asp-for="industrycode" class="form-control" />
+    <span asp-validation-for="industrycode" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="language6392code" class="control-label"></label>
+    <input  asp-for="language6392code" class="form-control" />
+    <span asp-validation-for="language6392code" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="lastname" class="control-label"></label>
+    <input  asp-for="lastname" class="form-control" />
+    <span asp-validation-for="lastname" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="maritalstatus" class="control-label"></label>
+    <select asp-for="maritalstatus" class="form-control"></select>
+    <span asp-validation-for="maritalstatus" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="middlename" class="control-label"></label>
+    <input  asp-for="middlename" class="form-control" />
+    <span asp-validation-for="middlename" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="mobilecarrierid" class="control-label"></label>
+    <input  asp-for="mobilecarrierid" class="form-control" />
+    <span asp-validation-for="mobilecarrierid" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="mobilephone" class="control-label"></label>
+    <input  asp-for="mobilephone" class="form-control" />
+    <span asp-validation-for="mobilephone" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="nextkinname" class="control-label"></label>
+    <input  asp-for="nextkinname" class="form-control" />
+    <span asp-validation-for="nextkinname" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="nextkinphone" class="control-label"></label>
+    <input  asp-for="nextkinphone" class="form-control" />
+    <span asp-validation-for="nextkinphone" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="nextkinrelationship" class="control-label"></label>
+    <select asp-for="nextkinrelationship" class="form-control"></select>
+    <span asp-validation-for="nextkinrelationship" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="notes" class="control-label"></label>
+    <input  asp-for="notes" class="form-control" />
+    <span asp-validation-for="notes" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="occupationcode" class="control-label"></label>
+    <input  asp-for="occupationcode" class="form-control" />
+    <span asp-validation-for="occupationcode" class="text-danger"></span>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="onlinestatementonlyyn" /> @Html.DisplayNameFor(model => model.onlinestatementonlyyn)
+    </label>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="portalaccessgiven" /> @Html.DisplayNameFor(model => model.portalaccessgiven)
+    </label>
+    </div>
+    <div class="form-group">
+    <label  asp-for="povertylevelcalculated" class="control-label"></label>
+    <input  asp-for="povertylevelcalculated" class="form-control" />
+    <span asp-validation-for="povertylevelcalculated" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="povertylevelfamilysize" class="control-label"></label>
+    <input  asp-for="povertylevelfamilysize" class="form-control" />
+    <span asp-validation-for="povertylevelfamilysize" class="text-danger"></span>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="povertylevelfamilysizedeclined" /> @Html.DisplayNameFor(model => model.povertylevelfamilysizedeclined)
+    </label>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="povertylevelincomedeclined" /> @Html.DisplayNameFor(model => model.povertylevelincomedeclined)
+    </label>
+    </div>
+    <div class="form-group">
+    <label  asp-for="povertylevelincomepayperiod" class="control-label"></label>
+    <select asp-for="povertylevelincomepayperiod" class="form-control"></select>
+    <span asp-validation-for="povertylevelincomepayperiod" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="povertylevelincomeperpayperiod" class="control-label"></label>
+    <input  asp-for="povertylevelincomeperpayperiod" class="form-control" />
+    <span asp-validation-for="povertylevelincomeperpayperiod" class="text-danger"></span>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="povertylevelincomerangedeclined" /> @Html.DisplayNameFor(model => model.povertylevelincomerangedeclined)
+    </label>
+    </div>
+    <div class="form-group">
+    <label  asp-for="preferredname" class="control-label"></label>
+    <input  asp-for="preferredname" class="form-control" />
+    <span asp-validation-for="preferredname" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="preferredpronouns" class="control-label"></label>
+    <input  asp-for="preferredpronouns" class="form-control" />
+    <span asp-validation-for="preferredpronouns" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="primarydepartmentid" class="control-label"></label>
+    <input  asp-for="primarydepartmentid" class="form-control" />
+    <span asp-validation-for="primarydepartmentid" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="primaryproviderid" class="control-label"></label>
+    <input  asp-for="primaryproviderid" class="form-control" />
+    <span asp-validation-for="primaryproviderid" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="publichousing" class="control-label"></label>
+    <select asp-for="publichousing" class="form-control"></select>
+    <span asp-validation-for="publichousing" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="referralsourceid" class="control-label"></label>
+    <input  asp-for="referralsourceid" class="form-control" />
+    <span asp-validation-for="referralsourceid" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="referralsourceother" class="control-label"></label>
+    <input  asp-for="referralsourceother" class="form-control" />
+    <span asp-validation-for="referralsourceother" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="schoolbasedhealthcenter" class="control-label"></label>
+    <select asp-for="schoolbasedhealthcenter" class="form-control"></select>
+    <span asp-validation-for="schoolbasedhealthcenter" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="sex" class="control-label"></label>
+    <select asp-for="sex" class="form-control"></select>
+    <span asp-validation-for="sex" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="sexualorientation" class="control-label"></label>
+    <input  asp-for="sexualorientation" class="form-control" />
+    <span asp-validation-for="sexualorientation" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="sexualorientationother" class="control-label"></label>
+    <input  asp-for="sexualorientationother" class="form-control" />
+    <span asp-validation-for="sexualorientationother" class="text-danger"></span>
+    </div>
+    <div class="form-group form-check">
+    <label  asp-for=" "class="form-check-label">
+    <input  asp-for=" " class="form-check-input" asp-for="showerrormessage" /> @Html.DisplayNameFor(model => model.showerrormessage)
+    </label>
+    </div>
+    <div class="form-group">
+    <label  asp-for="ssn" class="control-label"></label>
+    <input  asp-for="ssn" class="form-control" />
+    <span asp-validation-for="ssn" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="state" class="control-label"></label>
+    <input  asp-for="state" class="form-control" />
+    <span asp-validation-for="state" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="status" class="control-label"></label>
+    <select asp-for="status" class="form-control"></select>
+    <span asp-validation-for="status" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="suffix" class="control-label"></label>
+    <input  asp-for="suffix" class="form-control" />
+    <span asp-validation-for="suffix" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="veteran" class="control-label"></label>
+    <input  asp-for="veteran" class="form-control" />
+    <span asp-validation-for="veteran" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="workphone" class="control-label"></label>
+    <input  asp-for="workphone" class="form-control" />
+    <span asp-validation-for="workphone" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <label  asp-for="zip" class="control-label"></label>
+    <input  asp-for="zip" class="form-control" />
+    <span asp-validation-for="zip" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+    <input  asp-for=" " type="submit" asp-action="Create" asp-controller="Patient" value="Create" class="btn btn-primary" />
+    </div>
+    </form>
+    </div>*@
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@*@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}*@

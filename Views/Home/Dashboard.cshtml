@@ -1,0 +1,10 @@
+﻿@{
+    Layout = "_LayoutTopNav";
+}
+<h2>Hello</h2>
+
+<a asp-controller="Calendly" asp-action="ScheduledEvents"> Show meeting </a>
+
+@{
+    Html.RenderPartial("_CalendlyUser");
+}

@@ -1,0 +1,77 @@
+﻿@model Medical_Athena_Calendly.Models.User
+
+@{
+    Layout = "_LayoutRegistration";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registration</title>
+</head>
+<body>
+    <p class="login-box-msg">Register a new membership</p>
+
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="input-group mb-3">
+               @* <label asp-for="Email" class="control-label"></label>*@
+                <input asp-for="Email" type="email" class="form-control" placeholder="Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+                <div class="input-group mb-3">
+               @* <label asp-for="Name" class="control-label"></label>*@
+                <input asp-for="Name" class="form-control" placeholder="Full Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+                <div class="input-group mb-3">
+              @*  <label asp-for="Password" class="control-label"></label>*@
+                <input asp-for="Password" type="password" class="form-control" placeholder="Password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+                <div class="input-group mb-3">
+            @*  <label asp-for="Password" class="control-label"></label>*@
+            <input asp-for="Password" type="password" class="form-control" placeholder="Confirm Password" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <div class="icheck-primary">
+                    <input type="checkbox" id="agreeTerms" name="terms" value="agree">
+                    <label for="agreeTerms">
+                        I agree to the <a href="#">terms</a>
+                    </label>
+                </div>
+            </div>
+            <!-- /.col -->
+            <div class="col-4">
+                <button type="submit" asp-action="Register" class="btn btn-primary btn-block">Register</button>
+            </div>
+            <!-- /.col -->
+        </div>
+
+                
+        </form>
+    <div class="social-auth-links text-center">
+        <a href="#" class="btn btn-block btn-primary">
+            <i class="fab fa-facebook mr-2"></i>
+            Sign up using Facebook
+        </a>
+        <a href="#" class="btn btn-block btn-danger">
+            <i class="fab fa-google-plus mr-2"></i>
+            Sign up using Google+
+        </a>
+    </div>
+
+    <a  asp-action="Index" asp-controller="Login" class="text-center">I already have a membership</a>
+
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+</body>
+</html>
