@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Medical-Athena-Calendly.props" />
+</Project>

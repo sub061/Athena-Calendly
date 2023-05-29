@@ -18462,6 +18462,11 @@
       "FilePath": "d:\\Git\\Medical-Athena-Calendly\\Views\\Athena\\Index.cshtml",
       "TargetPath": "Views\\Athena\\Index.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Git\\Medical-Athena-Calendly\\Views\\Calendly\\OrganizationMemberships.cshtml",
+      "TargetPath": "Views\\Calendly\\OrganizationMemberships.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.3"
