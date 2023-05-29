@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git\\Medical-Athena-Calendly\\Medical-Athena-Calendly.csproj": {}
+    "E:\\PROJECTS\\Athena On\\Athena-Calendly\\Medical-Athena-Calendly.csproj": {}
   },
   "projects": {
-    "D:\\Git\\Medical-Athena-Calendly\\Medical-Athena-Calendly.csproj": {
+    "E:\\PROJECTS\\Athena On\\Athena-Calendly\\Medical-Athena-Calendly.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\Medical-Athena-Calendly\\Medical-Athena-Calendly.csproj",
+        "projectUniqueName": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\Medical-Athena-Calendly.csproj",
         "projectName": "Medical-Athena-Calendly",
-        "projectPath": "D:\\Git\\Medical-Athena-Calendly\\Medical-Athena-Calendly.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\Medical-Athena-Calendly\\obj\\",
+        "projectPath": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\Medical-Athena-Calendly.csproj",
+        "packagesPath": "C:\\Users\\FTG\\.nuget\\packages\\",
+        "outputPath": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\FTG\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -87,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }
