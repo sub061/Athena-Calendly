@@ -118,5 +118,18 @@ namespace Medical_Athena_Calendly.Controllers
             var response = await _apiService.GetAsync<CalendlyInvitation>(apiUrl, token);
             return  response;
         }
+         
+        public async  Task<IActionResult> OrganizationMemberships()
+        {
+            ViewData["ActionName"] = "OrganizationMemberships";
+            ViewData["ControllerName"] = "Home";
+
+            var currentOrgination = HttpContext.Session.GetString("calendly_current_organization");
+            var url = "https://api.calendly.com/organization_memberships";
+            var apiUrl = url+ "/?organization=" + currentOrgination;
+            var token = HttpContext.Session.GetString("CalendlyAccessToken");
+            var response = await _apiService.GetAsync<CalendlyOrganizationMembership>(apiUrl, token);
+            return View(response);
+        }
     }
 }

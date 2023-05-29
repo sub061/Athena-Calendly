@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rS3ru0c3mz5JxBCsbpcXw/RVZRU/ZhtAaqM9dMSmJpLnfAXKeGrwmSVULCfGQskKyjIGSVPy9l9J1o022+Io9g==",
+  "dgSpecHash": "pQ5L784rc6puM8zSN3HG2TPTiMkrFTJrJ1AP2yEQXGt+cETL28IFMRklr0CiqZ8dW2K31egjPeIJDj7HVfBzNw==",
   "success": true,
   "projectFilePath": "D:\\Git\\Medical-Athena-Calendly\\Medical-Athena-Calendly.csproj",
   "expectedPackageFiles": [
@@ -187,7 +187,11 @@
     "C:\\Users\\Admin\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.16\\microsoft.netcore.app.host.win-x64.6.0.16.nupkg.sha512"
   ],
   "logs": []
 }

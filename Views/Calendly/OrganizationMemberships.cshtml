@@ -1,0 +1,29 @@
+﻿@model Medical_Athena_Calendly.ViewModel.Calendly.CalendlyOrganizationMembership
+
+<h4>Dr. List</h4>
+<table>
+    @foreach (var item in Model.collection)
+    {
+        <tr>
+            <td></td>
+            <td> <img src=@item.user.avatar_url alt=@item.user.email></td>
+        </tr>
+        <tr>
+         <td>Name</td>
+         <td>@item.user.name</td>
+     </tr>
+     <tr>
+         <td>
+            
+         </td>
+         <td>
+                <a href=@item.user.scheduling_url>Book Appointment </a>
+            </td>
+     </tr>
+     
+
+    }
+    <tr>
+
+    </tr>
+</table>
