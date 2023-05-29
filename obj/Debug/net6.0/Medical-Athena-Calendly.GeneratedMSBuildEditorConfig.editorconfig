@@ -5,89 +5,88 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Medical_Athena_Calendly
 build_property.RootNamespace = Medical_Athena_Calendly
-build_property.ProjectDir = D:\Git\Medical-Athena-Calendly\
+build_property.ProjectDir = E:\PROJECTS\Athena On\Athena-Calendly\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Git\Medical-Athena-Calendly
+build_property.MSBuildProjectDirectory = E:\PROJECTS\Athena On\Athena-Calendly
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Git/Medical-Athena-Calendly/Views/Athena/Index.cshtml]
+[E:/PROJECTS/Athena On/Athena-Calendly/Views/Athena/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRoZW5hXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/Medical-Athena-Calendly/Views/Calendly/ExternalCallback.cshtml]
+[E:/PROJECTS/Athena On/Athena-Calendly/Views/Calendly/ExternalCallback.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsZW5kbHlcRXh0ZXJuYWxDYWxsYmFjay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/Medical-Athena-Calendly/Views/Calendly/OrganizationMemberships.cshtml]
+[E:/PROJECTS/Athena On/Athena-Calendly/Views/Calendly/OrganizationMemberships.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsZW5kbHlcT3JnYW5pemF0aW9uTWVtYmVyc2hpcHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/Medical-Athena-Calendly/Views/Home/Dashboard.cshtml]
+[E:/PROJECTS/Athena On/Athena-Calendly/Views/Home/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/Medical-Athena-Calendly/Views/Home/Index.cshtml]
+[E:/PROJECTS/Athena On/Athena-Calendly/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/Medical-Athena-Calendly/Views/Home/Privacy.cshtml]
+[E:/PROJECTS/Athena On/Athena-Calendly/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/Medical-Athena-Calendly/Views/Login/Index.cshtml]
+[E:/PROJECTS/Athena On/Athena-Calendly/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/Medical-Athena-Calendly/Views/Patient/Index.cshtml]
+[E:/PROJECTS/Athena On/Athena-Calendly/Views/Patient/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/Medical-Athena-Calendly/Views/Patient/PatientRegistration.cshtml]
+[E:/PROJECTS/Athena On/Athena-Calendly/Views/Patient/PatientRegistration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxQYXRpZW50UmVnaXN0cmF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/Medical-Athena-Calendly/Views/Registration/Index.cshtml]
+[E:/PROJECTS/Athena On/Athena-Calendly/Views/Registration/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/Medical-Athena-Calendly/Views/Shared/Error.cshtml]
+[E:/PROJECTS/Athena On/Athena-Calendly/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/Medical-Athena-Calendly/Views/Shared/_Breadcrumb.cshtml]
+[E:/PROJECTS/Athena On/Athena-Calendly/Views/Shared/_Breadcrumb.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9CcmVhZGNydW1iLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/Medical-Athena-Calendly/Views/Shared/_CalendlyUser.cshtml]
+[E:/PROJECTS/Athena On/Athena-Calendly/Views/Shared/_CalendlyUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYWxlbmRseVVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/Medical-Athena-Calendly/Views/Shared/_Layout.cshtml]
+[E:/PROJECTS/Athena On/Athena-Calendly/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/Medical-Athena-Calendly/Views/Shared/_LayoutRegistration.cshtml]
+[E:/PROJECTS/Athena On/Athena-Calendly/Views/Shared/_LayoutRegistration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRSZWdpc3RyYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/Medical-Athena-Calendly/Views/Shared/_LayoutTopNav.cshtml]
+[E:/PROJECTS/Athena On/Athena-Calendly/Views/Shared/_LayoutTopNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRUb3BOYXYuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/Medical-Athena-Calendly/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/PROJECTS/Athena On/Athena-Calendly/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/Medical-Athena-Calendly/Views/_ViewImports.cshtml]
+[E:/PROJECTS/Athena On/Athena-Calendly/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git/Medical-Athena-Calendly/Views/_ViewStart.cshtml]
+[E:/PROJECTS/Athena On/Athena-Calendly/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

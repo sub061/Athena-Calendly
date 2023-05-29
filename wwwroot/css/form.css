@@ -133,3 +133,20 @@ label.light {
 .mb-24 {
   margin-bottom: 24px;
 }
+
+.table {
+  background:#ffffff;
+}
+
+.table thead th {
+  color: #709532;
+}
+
+.table tbody td img {
+  height: 32px;
+  width: auto;
+}
+
+.w-60 {
+  width: 60px;
+}
