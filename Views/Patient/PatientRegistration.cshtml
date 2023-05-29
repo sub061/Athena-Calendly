@@ -4,9 +4,12 @@
     ViewData["Title"] = "PatientRegistration";
     Layout = "~/Views/Shared/_LayoutTopNav.cshtml";
 }
+
+<link href="~/css/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
 <link href="~/css/form.css" rel="stylesheet" />
 
-<hr />
+
+<hr class="mt-0" />
 <div class="d-flex flex-row flex-wrap">
 
     @*Identification start here*@
@@ -76,13 +79,13 @@
         <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
         <h4 class="w-100">Contact</h4>
 
-        <span class="label-wrapper d-flex flex-column">
+        <span class="label-wrapper d-flex flex-column w-435px">
             <label asp-for="address1">Address</label>
             <input asp-for="address1" type="text">
             <span asp-validation-for="address1" class="text-danger"></span>
         </span>
 
-        <span class="label-wrapper d-flex flex-column">
+        <span class="label-wrapper d-flex flex-column  w-435px">
             <label asp-for="address2">Address (ctd)</label>
             <input asp-for="address2" type="text">
             <span asp-validation-for="address2" class="text-danger"></span>
@@ -210,19 +213,19 @@
 
     @* Aditional Information*@
             <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
-        <h4 class="w-100">Aditional Information</h4>
+        <h1 class="w-100">Aditional Information</h1>
 
         </section>
 
 
     @*Billing*@
     <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
-        <h4 class="w-100">Billing</h4>
-
+        <h3 class="w-100">Billing</h3>
     </section>
 
         @*Provider*@
-    <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
+    <div class="d-flex align-start justify-start">
+    <section class="d-flex flex-row flex-wrap  gap-24 mb-24 max-w-458">
         <h4 class="w-100">Provider/ Registration Date</h4>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="primaryproviderid">Usual provider</label>
@@ -239,7 +242,7 @@
 
 
   @*Emergency Contact*@
-  <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
+  <section class="d-flex flex-row flex-wrap grow-1 gap-24 mb-24">
         <h4 class="w-100">Emergency Contact</h4>
               <span class="label-wrapper d-flex flex-column">
             <label asp-for="contactname">Name</label>
@@ -259,7 +262,10 @@
 
       </section>
 
-    @*Guardian*@
+    </div>
+
+    @*Guardian*@    
+   
     <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
         <h4 class="w-100">Guardian</h4>
                 <span class="label-wrapper d-flex flex-column">
@@ -285,20 +291,23 @@
             <input asp-for="guardiansuffix" type="text">
             <span asp-validation-for="guardiansuffix" class="text-danger"></span>
         </span>
-
     </section>
+
+
 
         
     @*Guarantor*@
-    <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
-        <h4 class="w-100">Guarantor</h4>
-
+     <div class="d-flex align-start justify-start">
+        <section class="d-flex flex-row flex-wrap grow-1 gap-24 mb-24 max-w-230">
+            <h4 class="w-100">Guarantor</h4>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="guarantorrelationshiptopatient">Patient relationship to guarantor </label>
             <input asp-for="guarantorrelationshiptopatient" type="text">
             <span asp-validation-for="guarantorrelationshiptopatient" class="text-danger"></span>
         </span>
-
+        </section>
+    
+    <section class="d-flex flex-row flex-wrap grow-1 gap-24 mb-24">
          <h4 class="w-100">Guarantor (Name to whom statement are sent)</h4>
                  <span class="label-wrapper d-flex flex-column">
             <label asp-for="guarantorlastname">Last name</label>
@@ -317,10 +326,12 @@
             <input asp-for="guarantormiddlename" type="text">
             <span asp-validation-for="guarantormiddlename" class="text-danger"></span>
         </span>
+    </section>
 
 
+     </div>
+    <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
         <h4 class="w-100">Mailling Address (Guarantor address same as above)</h4>
-
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="guarantoraddress1">Address</label>
             <input asp-for="guarantoraddress1" type="text">
@@ -349,7 +360,7 @@
             <span asp-validation-for="guarantorstate" class="text-danger"></span>
         </span> 
 
-         <h4 class="w-100">Optional Information</h4>
+         <h4 class="w-100 mt-3">Optional Information</h4>
 
 
             <span class="label-wrapper d-flex flex-column">
@@ -375,19 +386,19 @@
             <input asp-for="guarantoremployerid" type="text">
             <span asp-validation-for="guarantoremployerid" class="text-danger"></span>
         </span>
-       
 
+     <span class="label-wrapper d-flex flex-column">
+            <label asp-for="agriculturalworker">Agriculturalworker</label>
+            <input asp-for="agriculturalworker" type="text">
+            <span asp-validation-for="agriculturalworker" class="text-danger"></span>
+        </span>
 
     </section>
 
 
 
 
-        <span class="label-wrapper d-flex flex-column">
-            <label asp-for="agriculturalworker">Agriculturalworker</label>
-            <input asp-for="agriculturalworker" type="text">
-            <span asp-validation-for="agriculturalworker" class="text-danger"></span>
-        </span>
+       
 
     <!--section 1 end here-->
 
@@ -430,52 +441,52 @@
 
 
     </section>
-    <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
-        <span class="label-wrapper d-flex flex-row align-center">
+    <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24 inside-width-263">
+        <span class="label-wrapper d-flex flex-row align-items-center">
             <label asp-for="contactpreference_announcement_email" class="mb-0">Contactpreference_announcement_email</label>
             <input asp-for="contactpreference_announcement_email" type="checkbox">
             <span asp-validation-for="contactpreference_announcement_email" class="text-danger"></span>
-        </span> <span class="label-wrapper d-flex flex-row align-center">
+        </span> <span class="label-wrapper d-flex flex-row align-items-center">
             <label asp-for="contactpreference_announcement_phone" class="mb-0">Contactpreference_announcement_phone</label>
             <input asp-for="contactpreference_announcement_phone" type="checkbox">
             <span asp-validation-for="contactpreference_announcement_phone" class="text-danger"></span>
-        </span> <span class="label-wrapper d-flex flex-row align-center">
+        </span> <span class="label-wrapper d-flex flex-row align-items-center">
             <label asp-for="contactpreference_announcement_sms" class="mb-0">Contactpreference_announcement_sms</label>
             <input asp-for="contactpreference_announcement_sms" type="checkbox">
             <span asp-validation-for="contactpreference_announcement_sms" class="text-danger"></span>
-        </span> <span class="label-wrapper d-flex flex-row align-center">
+        </span> <span class="label-wrapper d-flex flex-row align-items-center">
             <label asp-for="contactpreference_appointment_email" class="mb-0">Contactpreference_appointment_email</label>
             <input asp-for="contactpreference_appointment_email" type="checkbox">
             <span asp-validation-for="contactpreference_appointment_email" class="text-danger"></span>
-        </span> <span class="label-wrapper d-flex flex-row align-center">
+        </span> <span class="label-wrapper d-flex flex-row align-items-center">
             <label asp-for="contactpreference_appointment_phone" class="mb-0">Contactpreference_appointment_phone</label>
             <input asp-for="contactpreference_appointment_phone" type="checkbox">
             <span asp-validation-for="contactpreference_appointment_phone" class="text-danger"></span>
-        </span> <span class="label-wrapper d-flex flex-row align-center">
+        </span> <span class="label-wrapper d-flex flex-row align-items-center">
             <label asp-for="contactpreference_appointment_sms" class="mb-0">Contactpreference_appointment_sms</label>
             <input asp-for="contactpreference_appointment_sms" type="checkbox">
             <span asp-validation-for="contactpreference_appointment_sms" class="text-danger"></span>
-        </span> <span class="label-wrapper d-flex flex-row align-center">
+        </span> <span class="label-wrapper d-flex flex-row align-items-center">
             <label asp-for="contactpreference_billing_email" class="mb-0">Contactpreference_billing_email</label>
             <input asp-for="contactpreference_billing_email" type="checkbox">
             <span asp-validation-for="contactpreference_billing_email" class="text-danger"></span>
-        </span> <span class="label-wrapper d-flex flex-row align-center">
+        </span> <span class="label-wrapper d-flex flex-row align-items-center">
             <label asp-for="contactpreference_billing_phone" class="mb-0">Contactpreference_billing_phone</label>
             <input asp-for="contactpreference_billing_phone" type="checkbox">
             <span asp-validation-for="contactpreference_billing_phone" class="text-danger"></span>
-        </span> <span class="label-wrapper d-flex flex-row align-center">
+        </span> <span class="label-wrapper d-flex flex-row align-items-center">
             <label asp-for="contactpreference_billing_sms" class="mb-0">Contactpreference_billing_sms</label>
             <input asp-for="contactpreference_billing_sms" type="checkbox">
             <span asp-validation-for="contactpreference_billing_sms" class="text-danger"></span>
-        </span> <span class="label-wrapper d-flex flex-row align-center">
+        </span> <span class="label-wrapper d-flex flex-row align-items-center">
             <label asp-for="contactpreference_lab_email" class="mb-0">Contactpreference_lab_email</label>
             <input asp-for="contactpreference_lab_email" type="checkbox">
             <span asp-validation-for="contactpreference_lab_email" class="text-danger"></span>
-        </span> <span class="label-wrapper d-flex flex-row align-center">
+        </span> <span class="label-wrapper d-flex flex-row align-items-center">
             <label asp-for="contactpreference_lab_phone" class="mb-0">Contactpreference_lab_phone</label>
             <input asp-for="contactpreference_lab_phone" type="checkbox">
             <span asp-validation-for="contactpreference_lab_phone" class="text-danger"></span>
-        </span> <span class="label-wrapper d-flex flex-row align-center">
+        </span> <span class="label-wrapper d-flex flex-row align-items-center">
             <label asp-for="contactpreference_lab_sms" class="mb-0">Contactpreference_lab_sms</label>
             <input asp-for="contactpreference_lab_sms" type="checkbox">
             <span asp-validation-for="contactpreference_lab_sms" class="text-danger"></span>
@@ -593,7 +604,7 @@
             <span asp-validation-for="homelesstype" class="text-danger"></span>
         </span>
 
-        <span class="label-wrapper d-flex flex-row align-center">
+        <span class="label-wrapper d-flex flex-row align-items-center justify-start">
             <label asp-for="ignorerestrictions" class="mb-0">Ignorerestrictions</label>
             <input asp-for="ignorerestrictions" type="checkbox">
             <span asp-validation-for="ignorerestrictions" class="text-danger"></span>
@@ -636,11 +647,11 @@
             <label asp-for="occupationcode">Occupationcode</label>
             <input asp-for="occupationcode" type="text">
             <span asp-validation-for="occupationcode" class="text-danger"></span>
-        </span> <span class="label-wrapper d-flex flex-row align-center">
+        </span> <span class="label-wrapper d-flex flex-row align-items-center">
             <label asp-for="onlinestatementonlyyn" class="mb-0">Onlinestatementonlyyn</label>
             <input asp-for="onlinestatementonlyyn" type="checkbox">
             <span asp-validation-for="onlinestatementonlyyn" class="text-danger"></span>
-        </span> <span class="label-wrapper d-flex flex-row align-center">
+        </span> <span class="label-wrapper d-flex flex-row align-items-center">
             <label asp-for="portalaccessgiven" class="mb-0">Portalaccessgiven</label>
             <input asp-for="portalaccessgiven" type="checkbox">
             <span asp-validation-for="portalaccessgiven" class="text-danger"></span>
@@ -652,7 +663,7 @@
             <label asp-for="povertylevelfamilysize">Povertylevelfamilysize</label>
             <input asp-for="povertylevelfamilysize" type="text">
             <span asp-validation-for="povertylevelfamilysize" class="text-danger"></span>
-        </span> <span class="label-wrapper d-flex flex-row align-center">
+        </span> <span class="label-wrapper d-flex flex-row align-items-center">
             <label asp-for="povertylevelfamilysizedeclined" class="mb-0">Povertylevelfamilysizedeclined</label>
             <input asp-for="povertylevelfamilysizedeclined" type="checkbox">
             <span asp-validation-for="povertylevelfamilysizedeclined" class="text-danger"></span>
@@ -668,7 +679,7 @@
             <label asp-for="povertylevelincomeperpayperiod">Povertylevelincomeperpayperiod</label>
             <input asp-for="povertylevelincomeperpayperiod" type="text">
             <span asp-validation-for="povertylevelincomeperpayperiod" class="text-danger"></span>
-        </span> <span class="label-wrapper d-flex flex-row align-center">
+        </span> <span class="label-wrapper d-flex flex-row align-items-center">
             <label asp-for="povertylevelincomerangedeclined" class="mb-0">Povertylevelincomerangedeclined</label>
             <input asp-for="povertylevelincomerangedeclined" type="checkbox">
             <span asp-validation-for="povertylevelincomerangedeclined" class="text-danger"></span>
