@@ -2,6 +2,8 @@
 using Medical_Athena_Calendly.Interface;
 using Medical_Athena_Calendly.ViewModel.Athena;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 
 namespace Medical_Athena_Calendly.Controllers
 {
@@ -22,7 +24,34 @@ namespace Medical_Athena_Calendly.Controllers
         {
             ViewData["ActionName"] = "Patient Registration";
             ViewData["ControllerName"] = "Athena";
-            return View("PatientRegistration");
+
+            var contactPreference = new ContactPreference
+            {
+                DropdownOptions = Enum.GetValues(typeof(ContactPreferenceEnum))
+            .Cast<ContactPreferenceEnum>()
+            .Select(e => new SelectListItem
+            {
+                Value = e.ToString(),
+                Text = e.ToString()
+            })
+            };
+
+            var sex = new Sex
+            {
+                DropdownOptions = Enum.GetValues(typeof(SexEnum))
+            .Cast<SexEnum>()
+            .Select(e => new SelectListItem
+            {
+                Value = e.ToString(),
+                Text = e.ToString()
+            })
+            };
+
+            PatientModel model = new PatientModel();
+            model.contactpreference = contactPreference;
+            model.sex = sex;
+
+            return View("PatientRegistration", model);
         }
 
         public async Task<IActionResult> CreateAsync(PatientModel patient)

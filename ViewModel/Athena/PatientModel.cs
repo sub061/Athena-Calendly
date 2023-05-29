@@ -1,11 +1,13 @@
 ﻿
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Medical_Athena_Calendly.ViewModel.Athena
 {
     public class PatientModel
     {
-        [Key]
+  
         public string patientid { get; set; }
         public string address1 { get; set; }
         public string address2 { get; set; }
@@ -163,7 +165,13 @@ namespace Medical_Athena_Calendly.ViewModel.Athena
         PAPER,
         PORTAL
     }
-    public enum ContactPreference
+
+    public class ContactPreference
+    {
+        public ContactPreferenceEnum SelectedValue { get; set; }
+        public IEnumerable<SelectListItem> DropdownOptions { get; set; }
+    }
+    public enum ContactPreferenceEnum
     {
         None,
         HOMEPHONE,
@@ -303,9 +311,14 @@ namespace Medical_Athena_Calendly.ViewModel.Athena
         WEEK,
         YEAR
     }
-    public enum Sex
+
+    public class Sex
     {
-        None,
+        public SexEnum SelectedValue { get; set; }
+        public IEnumerable<SelectListItem> DropdownOptions { get; set; }
+    }
+    public enum SexEnum
+    {
         F,
         M
     }
