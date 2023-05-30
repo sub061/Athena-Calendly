@@ -1,48 +1,38 @@
-@charset "utf-8";
-/* CSS Document */
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
-
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;}
 
 body {
-  font-family: 'Nunito', sans-serif;
+ 
   color: #384047;
-  font-size: 14px;
+  font-size: 13px;
   background: #f4f7f8;
 }
+
 form {
   padding: 24px;
   column-gap: 24px;
 }
-h1, h3 {
-	color: #633588;
-	font-size: 1.8rem;
+
+ h1, h3 {
+color: #633588;
+font-size: 1.8rem;
 }
 
 h3 {
-	font-size: 24px;
+  font-size: 24px;
 }
 
-h4 {
-	font-size: 20px;
-	color: #709532;
+h4 { 
+  font-size: 20px;
+  color: #709532; 
 }
-h1 {
-  margin: 16px;
-  text-align: center;
-}
+
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea, select {
   background: rgba(255, 255, 255, 0.1);
   border: none;
-  font-size: 16px;
+  font-size: 13px;
   height: auto;
   margin: 0;
   outline: 0;
-  padding: 10px 16px;
+  padding: 6px 12px;
   width: 100%;
   background-color: #e8eeef;
   color: #8a97a0;
@@ -60,33 +50,21 @@ select {
   height: 32px;
   border-radius: 2px;
 }
+
 .label-wrapper {
   column-gap: 8px;
-  margin-bottom: 16px;
-  min-width: 320px;
+  margin-bottom: 12px;
+   width: 205px; 
 }
+
 .inside-width-263 .label-wrapper {
-	width: 263px;
+  width: 263px; 
 }
 
 .inside-width-263 .label-wrapper label {
-width: 238px;
+  width: 238px;
 }
-.d-flex {
-  display: flex;
-}
-.flex-column {
-  flex-direction: column;
-}
-.flex-row {
-  flex-direction: row;
-}
-.flex-wrap {
-  flex-wrap: wrap;
-}
-.align-center {
-  align-items: center;
-}
+
 button {
   padding: 19px 39px 18px 39px;
   color: #FFF;
@@ -95,7 +73,7 @@ button {
   text-align: center;
   font-style: normal;
   border-radius: 5px;
-  width: 320px;
+  width: 220px;
   border: 1px solid #3ac162;
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
@@ -117,10 +95,14 @@ legend {
 }
 label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 4px;  
+}
+
+label:not(.form-check-label):not(.custom-file-label) {
+  font-weight: 400;
 }
 label.light {
-  font-weight: 300;
+  font-weight: normal;
   display: inline;
 }
 .number {
@@ -136,22 +118,27 @@ label.light {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
   border-radius: 100%;
 }
-.asterisk-mark {
-  font-size: 16px;
+.asterisk-mark { 
   color: red;
   margin-left: 4px;
-}
-.mb-0 {
-  margin-bottom: 0;
-}
-.w-100 {
-  width: 100%;
 }
 .gap-24 {
   gap: 0 24px;
 }
 .mb-24 {
   margin-bottom: 24px;
+}
+
+.w-435px {
+  width: 435px;
+}
+
+.max-w-458 {
+  max-width: 458px;
+}
+
+.max-w-230 {
+  max-width: 230px;
 }
 
 .table {
@@ -170,86 +157,5 @@ label.light {
 .w-60 {
   width: 60px;
 }
-button {
-	padding: 19px 39px 18px 39px;
-	color: #FFF;
-	background-color: #4bc970;
-	font-size: 18px;
-	text-align: center;
-	font-style: normal;
-	border-radius: 5px;
-	width: 220px;
-	border: 1px solid #3ac162;
-	border-width: 1px 1px 3px;
-	box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
-	margin-bottom: 10px;
-}
 
-	button:hover {
-		background-color: #1ea646;
-		border-color: #1ea646;
-		cursor: pointer;
-	}
 
-fieldset {
-	margin-bottom: 30px;
-	border: none;
-}
-
-legend {
-	font-size: 1.4em;
-	margin-bottom: 10px;
-}
-
-label {
-	display: block;
-	margin-bottom: 4px;
-}
-
-	label:not(.form-check-label):not(.custom-file-label) {
-		font-weight: 400;
-	}
-
-	label.light {
-		font-weight: normal;
-		display: inline;
-	}
-
-.number {
-	background-color: #5fcf80;
-	color: #fff;
-	height: 30px;
-	width: 30px;
-	display: inline-block;
-	font-size: 0.8em;
-	margin-right: 4px;
-	line-height: 30px;
-	text-align: center;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-	border-radius: 100%;
-}
-
-.asterisk-mark {
-	color: red;
-	margin-left: 4px;
-}
-
-.gap-24 {
-	gap: 0 24px;
-}
-
-.mb-24 {
-	margin-bottom: 24px;
-}
-
-.w-435px {
-	width: 435px;
-}
-
-.max-w-458 {
-	max-width: 458px;
-}
-
-.max-w-230 {
-	max-width: 230px;
-}
