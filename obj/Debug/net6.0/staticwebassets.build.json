@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xqVKcs1WFMGigQF5R9t3JwmkbrG+yhBlfqeWcetB6Hc=",
+  "Hash": "CiN+dZsdSyZUxkro8J2Rbc36NajpPIdnfOg5gFHVjs0=",
   "Source": "Medical-Athena-Calendly",
   "BasePath": "_content/Medical-Athena-Calendly",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\img\\Athena-healthsm-logo.png",
+      "SourceId": "Medical-Athena-Calendly",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\",
+      "BasePath": "_content/Medical-Athena-Calendly",
+      "RelativePath": "img/Athena-healthsm-logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Athena-healthsm-logo.png"
+    },
+    {
       "Identity": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\img\\athenahealth.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
@@ -100,6 +117,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\athenahealth.png"
+    },
+    {
+      "Identity": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\img\\google-plus-g.svg",
+      "SourceId": "Medical-Athena-Calendly",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\",
+      "BasePath": "_content/Medical-Athena-Calendly",
+      "RelativePath": "img/google-plus-g.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\google-plus-g.svg"
+    },
+    {
+      "Identity": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\img\\login-bg.jpg",
+      "SourceId": "Medical-Athena-Calendly",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\",
+      "BasePath": "_content/Medical-Athena-Calendly",
+      "RelativePath": "img/login-bg.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\login-bg.jpg"
     },
     {
       "Identity": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\img\\user.png",
