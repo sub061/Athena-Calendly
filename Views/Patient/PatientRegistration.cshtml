@@ -29,11 +29,13 @@
         </span>
 
         @*first name used *@
-        <span class="label-wrapper d-flex flex-column">
+        <span class="label-wrapper d-flex flex-column w-435px">
             <label asp-for="altfirstname">First name used </label>
+            <span class="d-flex flex-row">
             <input asp-for="altfirstname" type="text">
-            <span> This name may be viewable and editable by the patient.</span>
+            <span class="ps-2"> <i>This name may be viewable and editable by the patient.</i></span>
             <span asp-validation-for="altfirstname" class="text-danger"></span>
+            </span>
         </span>
 
         @* middle name and suffix*@
