@@ -1,8 +1,10 @@
-﻿@model Medical_Athena_Calendly.ViewModel.Athena.PatientModel
-
+﻿@using Medical_Athena_Calendly.ViewModel.Athena
+@model Medical_Athena_Calendly.ViewModel.Athena.PatientModel
+@*@model Medical_Athena_Calendly.ViewModel.Athena.Language*@
 @{
     ViewData["Title"] = "PatientRegistration";
     Layout = "~/Views/Shared/_LayoutTopNav.cshtml";
+    var code = ViewData["Language"] as List<Language>;
 }
 
 
@@ -122,7 +124,9 @@
 
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="consenttotext">Consent to text</label>
-            <input asp-for="consenttotext" type="text">
+            
+                <input asp-for="consenttotext"  type="radio"  value="Yes">
+            <input asp-for="consenttotext" type="radio" value="No">
             <span asp-validation-for="consenttotext" class="text-danger"></span>
         </span>
 
@@ -155,8 +159,11 @@
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="language6392code">Language</label>
             <select asp-for="language6392code">
-                <option>English</option>
-                <option>French</option>
+                <option>--Select--</option>
+                  @foreach (var language in code)
+            {
+                <option value="@language.Alpha3Code">@language.ToString()</option>
+            }
             </select>
             <span asp-validation-for="language6392code" class="text-danger"></span>
         </span>

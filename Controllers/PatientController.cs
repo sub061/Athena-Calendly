@@ -25,6 +25,9 @@ namespace Medical_Athena_Calendly.Controllers
             ViewData["ActionName"] = "Patient Registration";
             ViewData["ControllerName"] = "Athena";
 
+            var language = LanguageData.GetData();
+            ViewData["Language"] = language;
+         
             var contactPreference = new ContactPreference
             {
                 DropdownOptions = Enum.GetValues(typeof(ContactPreferenceEnum))
@@ -35,6 +38,7 @@ namespace Medical_Athena_Calendly.Controllers
                 Text = e.ToString()
             })
             };
+
 
             var sex = new Sex
             {
@@ -50,6 +54,7 @@ namespace Medical_Athena_Calendly.Controllers
             PatientModel model = new PatientModel();
             model.contactpreference = contactPreference;
             model.sex = sex;
+            
 
             return View("PatientRegistration", model);
         }

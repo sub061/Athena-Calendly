@@ -282,8 +282,3 @@ D:\Git\Medical-Athena-Calendly\obj\Debug\net6.0\refint\Medical-Athena-Calendly.d
 D:\Git\Medical-Athena-Calendly\obj\Debug\net6.0\Medical-Athena-Calendly.pdb
 D:\Git\Medical-Athena-Calendly\obj\Debug\net6.0\Medical-Athena-Calendly.genruntimeconfig.cache
 D:\Git\Medical-Athena-Calendly\obj\Debug\net6.0\ref\Medical-Athena-Calendly.dll
-D:\Git\Medical-Athena-Calendly\obj\Debug\net6.0\staticwebassets\msbuild.Medical-Athena-Calendly.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Git\Medical-Athena-Calendly\obj\Debug\net6.0\staticwebassets\msbuild.build.Medical-Athena-Calendly.props
-D:\Git\Medical-Athena-Calendly\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Medical-Athena-Calendly.props
-D:\Git\Medical-Athena-Calendly\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Medical-Athena-Calendly.props
-D:\Git\Medical-Athena-Calendly\obj\Debug\net6.0\staticwebassets.pack.json
