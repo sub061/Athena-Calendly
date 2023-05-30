@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\img\\athenahealth.png"
     },
     {
+      "Id": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\img\\user.png",
+      "PackagePath": "staticwebassets\\img\\user.png"
+    },
+    {
       "Id": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

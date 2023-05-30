@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gne+6vRqIl4wwhtoWNy7oprhMGR4bNktscbR/hj5vb8=",
+  "Hash": "F4k/ev93+LTcRLaTJat0dj+iZ8Kt+9MhKCadppPXGxU=",
   "Source": "Medical-Athena-Calendly",
   "BasePath": "_content/Medical-Athena-Calendly",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\athenahealth.png"
+    },
+    {
+      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\img\\user.png",
+      "SourceId": "Medical-Athena-Calendly",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "BasePath": "_content/Medical-Athena-Calendly",
+      "RelativePath": "img/user.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\user.png"
     },
     {
       "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\js\\site.js",

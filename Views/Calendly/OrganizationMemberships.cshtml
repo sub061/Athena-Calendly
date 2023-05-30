@@ -1,29 +1,27 @@
 ﻿@model Medical_Athena_Calendly.ViewModel.Calendly.CalendlyOrganizationMembership
 
-<h4>Dr. List</h4>
-<table>
-    @foreach (var item in Model.collection)
-    {
-        <tr>
-            <td></td>
-            <td> <img src=@item.user.avatar_url alt=@item.user.email></td>
-        </tr>
-        <tr>
-         <td>Name</td>
-         <td>@item.user.name</td>
-     </tr>
-     <tr>
-         <td>
-            
-         </td>
-         <td>
-                <a href=@item.user.scheduling_url>Book Appointment </a>
-            </td>
-     </tr>
-     
 
-    }
+<h4 class="mt-3">Dr. List</h4>
+
+<table class="table rounded border table-striped table-hover mt-3">
+  <thead class="bg-green-light">
     <tr>
-
+      <th class="w-60 border-bottom-0" scope="col">#</th>
+      <th class="w-60 border-bottom-0" scope="col"></th>
+      <th class="border-bottom-0" scope="col">Name</th>
+      <th class="border-bottom-0" scope="col">Book Appointment</th>
     </tr>
+  </thead>
+  <tbody>
+      @foreach (var item in Model.collection)
+    {
+    <tr>
+      <td>1</td>
+      <td class="p-0 pt-1"><img src="~/img/user.png"></td>
+      <td>@item.user.name</td>
+      <td><a href=@item.user.scheduling_url>Book</a></td>
+    </tr>
+    }
+  </tbody>
 </table>
+   
