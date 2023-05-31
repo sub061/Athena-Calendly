@@ -173,3 +173,9 @@ label {
 .w-60 {
     width: 60px;
 }
+
+
+.usr-image img {
+    width: 72px;
+    height: 72px;
+}
