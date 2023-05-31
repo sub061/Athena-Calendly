@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9ZnARTfKxJsXm5SWGbL1T3crw1BBMF7wV4nCJ87MK2c=",
+  "Hash": "tdrVpZkCcX9Pa0dqoqQ91fUIlHKTFvRyVo7n1Q6smw8=",
   "Source": "Medical-Athena-Calendly",
   "BasePath": "_content/Medical-Athena-Calendly",
   "Mode": "Default",
@@ -16,23 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\css\\calendar.css",
-      "SourceId": "Medical-Athena-Calendly",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\",
-      "BasePath": "_content/Medical-Athena-Calendly",
-      "RelativePath": "css/calendar.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\calendar.css"
-    },
     {
       "Identity": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\css\\form.css",
       "SourceId": "Medical-Athena-Calendly",
@@ -83,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\css\\utility.css",
+      "SourceId": "Medical-Athena-Calendly",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\",
+      "BasePath": "_content/Medical-Athena-Calendly",
+      "RelativePath": "css/utility.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\utility.css"
     },
     {
       "Identity": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\favicon.ico",

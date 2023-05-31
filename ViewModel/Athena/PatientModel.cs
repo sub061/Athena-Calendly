@@ -1,4 +1,5 @@
 ﻿
+using Medical_Athena_Calendly.CommonServices;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.ComponentModel.DataAnnotations;
@@ -11,12 +12,15 @@ namespace Medical_Athena_Calendly.ViewModel.Athena
         public string patientid { get; set; }
         public string address1 { get; set; }
         public string address2 { get; set; }
+        public Boolean israce { get; set; }
+        public Boolean isethnicitycode { get; set; }
+        public Boolean islanguage6392code { get; set; }
 
         public Race race { get; set; }
         public AgriculturalWorker? agriculturalworker { get; set; }
         public AgriculturalWorkerType? agriculturalworkertype { get; set; }
         public string altfirstname { get; set; }
-        public AssignedSexAtBirth? assignedsexatbirth { get; set; }
+        public AssignedSexAtBirth assignedsexatbirth { get; set; }
         public CareSummaryDeliveryPreference? caresummarydeliverypreference { get; set; }
         public string city { get; set; }
         public string clinicalordertypegroupid { get; set; }
@@ -38,7 +42,7 @@ namespace Medical_Athena_Calendly.ViewModel.Athena
         public Boolean contactpreference_lab_email { get; set; }
         public Boolean contactpreference_lab_phone { get; set; }
         public Boolean contactpreference_lab_sms { get; set; }
-        public ContactRelationship contactrelationship { get; set; }
+        public Relationship contactrelationship { get; set; }
         public string countrycode3166 { get; set; }
         public string deceaseddate { get; set; }
         public string defaultpharmacyncpdpid { get; set; }
@@ -81,7 +85,7 @@ namespace Medical_Athena_Calendly.ViewModel.Athena
         public string guardianmiddlename { get; set; }
         public string guardiansuffix { get; set; }
         public Boolean hasmobileyn { get; set; }
-        public Boolean homeboundyn { get; set; }
+        public BooleanValue homeboundyn { get; set; }
         public CommonEnum homeless { get; set; }
         public HomelessType homelesstype { get; set; }
         public string homephone { get; set; }
@@ -96,7 +100,7 @@ namespace Medical_Athena_Calendly.ViewModel.Athena
         public string mobilephone { get; set; }
         public string nextkinname { get; set; }
         public string nextkinphone { get; set; }
-        public NextkinRelationship nextkinrelationship { get; set; }
+        public Relationship nextkinrelationship { get; set; }
         public string notes { get; set; }
         public string occupationcode { get; set; }
         public Boolean onlinestatementonlyyn { get; set; }
@@ -117,7 +121,7 @@ namespace Medical_Athena_Calendly.ViewModel.Athena
         public string referralsourceother { get; set; }
         public CommonEnum schoolbasedhealthcenter { get; set; }
         public Sex sex { get; set; }
-        public string sexualorientation { get; set; } //sexualorientation
+        public SexualOrientation sexualorientation { get; set; } //sexualorientation
         public string sexualorientationother { get; set; }
         public Boolean showerrormessage { get; set; }
         public string ssn { get; set; }
@@ -151,9 +155,14 @@ namespace Medical_Athena_Calendly.ViewModel.Athena
         SEASONAL,
         UNSPECIFIED
     }
-    public enum AssignedSexAtBirth
+
+    public class AssignedSexAtBirth
     {
-        None,
+        public AssignedSexAtBirthEnum SelectedValue { get; set; }
+        public IEnumerable<SelectListItem> DropdownOptions { get; set; }
+    }
+    public enum AssignedSexAtBirthEnum
+    {
         M,
         F,
         N,
@@ -171,6 +180,18 @@ namespace Medical_Athena_Calendly.ViewModel.Athena
         public ContactPreferenceEnum SelectedValue { get; set; }
         public IEnumerable<SelectListItem> DropdownOptions { get; set; }
     }
+
+    public class MaritalStatus
+    {
+        public MaritalStatusEnum SelectedValue { get; set; }
+        public IEnumerable<SelectListItem> DropdownOptions { get; set; }
+    }
+
+    public class BooleanValue
+    {
+        public BooleanValueEnum SelectedValue { get; set; }
+        public IEnumerable<SelectListItem> DropdownOptions { get; set; }
+    }
     public enum ContactPreferenceEnum
     {
         None,
@@ -180,9 +201,16 @@ namespace Medical_Athena_Calendly.ViewModel.Athena
         PORTAL,
         WORKPHONE
     }
-    public enum ContactRelationship
+
+
+    public class Relationship
     {
-        None,
+        public ContactRelationshipEnum SelectedValue { get; set; }
+        public IEnumerable<SelectListItem> DropdownOptions { get; set; }
+    }
+
+    public enum ContactRelationshipEnum
+    {
         CHILD,
         COUSIN,
         FRIEND,
@@ -266,9 +294,14 @@ namespace Medical_Athena_Calendly.ViewModel.Athena
         P,
         Y
     }
+
+    public enum BooleanValueEnum
+    {
+        True,
+        False
+    }
     public enum HomelessType
     {
-        None,
         DOUBLINGUP,
         OTHER,
         PERMANENT,
@@ -278,9 +311,8 @@ namespace Medical_Athena_Calendly.ViewModel.Athena
         UNKNOWN,
         UNSPECIFIED
     }
-    public enum MaritalStatus
+    public enum MaritalStatusEnum
     {
-        None,
         D,
         M,
         P,
