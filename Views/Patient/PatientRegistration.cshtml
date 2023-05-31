@@ -11,7 +11,7 @@
 
 
 
-<hr class="mt-0" />
+<hr class="mt-0 h-0" />
 <div class="d-flex flex-row flex-wrap">
 
     @*Identification start here*@
@@ -35,7 +35,7 @@
             <label asp-for="altfirstname">First name used </label>
             <span class="d-flex flex-row">
                 <input asp-for="altfirstname" type="text">
-                <span class="ps-2"> <i>This name may be viewable and editable by the patient.</i></span>
+                <span class="ps-2 h-34"> This name may be viewable and editable by the patient.</span>
                 <span asp-validation-for="altfirstname" class="text-danger"></span>
             </span>
         </span>
@@ -126,7 +126,7 @@
         </span>
 
 
-        <span class="label-wrapper d-flex flex-row align-items-center">            
+        <span class="label-wrapper d-flex flex-row align-items-center mt-4">            
             <label asp-for="consenttotext">Consent to text</label>
             <input asp-for="consenttotext" type="radio" value="Yes">
             <label>Yes</label>
@@ -161,7 +161,7 @@
     <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
         <h4 class="w-100">Demographics</h4>
 
-        <span class="label-wrapper d-flex flex-column">
+        <span class="label-wrapper d-flex flex-column w-435px">
             <label asp-for="language6392code">Language</label>
             <select asp-for="language6392code">
                 <option>--Select--</option>
@@ -172,7 +172,7 @@
             </select>
             
         </span>
-         <span class="label-wrapper d-flex flex-column">
+         <span class="label-wrapper d-flex flex-row mt-4 align-items-center">
             <label asp-for="islanguage6392code">Patient Desclined </label>
             <input asp-for="islanguage6392code" value="true" type="checkbox">
             <span asp-validation-for="language6392code" class="text-danger"></span>
@@ -182,7 +182,7 @@
             <label asp-for="race">Race </label>
             <select asp-for="race" type="text"></select>          
         </span>
-    <span>
+    <span class="label-wrapper d-flex flex-row mt-4 align-items-center">
          <label asp-for="israce">Patient Desclined </label>
             <input asp-for="israce" value="true" type="checkbox">
             <span asp-validation-for="race" class="text-danger"></span>
@@ -193,7 +193,7 @@
             <select asp-for="ethnicitycode" type="text"></select>           
         </span>
 
-        <span class="label-wrapper d-flex flex-column">
+         <span class="label-wrapper d-flex flex-row mt-4 align-items-center">
              <label asp-for="isethnicitycode">Patient Desclined </label>
             <input asp-for="isethnicitycode" value="true" type="checkbox">
             <span asp-validation-for="ethnicitycode" class="text-danger"></span>
@@ -215,10 +215,12 @@
                 {
                     <option value="@orientation.Name">@orientation.Name</option>
                 }
-            </select>           
-
+            </select>
         </span>
-        <span class="label-wrapper d-flex flex-column"><input asp-for="sexualorientationother" type="text"></span>
+        <span class="label-wrapper d-flex flex-column justify-content-end">           
+            <input asp-for="sexualorientationother" type="text">
+            </span>
+
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="genderidentity">Gender identity</label>
             <select asp-for="genderidentity" type="text"></select>
@@ -256,7 +258,7 @@
         <h4 class="w-100">Aditional Information</h4>
 
         <span class="label-wrapper d-flex flex-row w-100">
-            <label asp-for="caresummarydeliverypreference">Patient care summary and patient latter delivery preference</label>
+            <label asp-for="caresummarydeliverypreference" class="me-4">Patient care summary and patient latter delivery preference</label>
 
             <label>Portal</label>
             <input asp-for="caresummarydeliverypreference" type="radio" value="Portal">
@@ -309,7 +311,7 @@
     <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
         <h4 class="w-100"> Privacy</h4>
 
-        <span class="label-wrapper d-flex flex-row">
+        <span class="label-wrapper d-flex flex-row  align-items-center mt-4">
             <label asp-for="consenttocall">Consent to call</label>
             <input asp-for="consenttocall" type="radio" value="Yes">
             <label>Yes</label>
@@ -387,7 +389,7 @@
             <input asp-for="employerphone" type="text">
             <span asp-validation-for="employerphone" class="text-danger"></span>
         </span>
-        <span class="label-wrapper d-flex flex-column">
+        <span class="label-wrapper d-flex flex-column w-300-px">
             <label asp-for="occupationcode">Usual occupation (current or most recent)</label>
             <input asp-for="occupationcode" type="text">
             <span asp-validation-for="occupationcode" class="text-danger"></span>
@@ -477,8 +479,11 @@
         </section>
 
     <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
-        <h4 class="w-100"><span>Mailling Address</span>  <b><input asp-for="guarantoraddresssameaspatient" type="checkbox">Guarantor address same as above</b>
-</h4>
+        <div class="d-flex align-items-center flex-row justify-content-start w-100">  
+            <h4 class="me-4"><span>Mailling Address</span></h4>
+            <span><b><input asp-for="guarantoraddresssameaspatient" type="checkbox">Guarantor address same as above</b></span>
+            </div>
+      
        
 
 
@@ -532,9 +537,9 @@
             <input asp-for="guarantoremail" type="text">          
         </span>
 
-        <span  class="label-wrapper d-flex flex-column">
+        <span  class="label-wrapper d-flex flex-row mt-4">
              
-            <b><input type="checkbox">No Guarantor Email</b>
+           <input type="checkbox">No Guarantor Email
         </span>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="guarantoremployerid">Employer</label>
@@ -549,10 +554,10 @@
 
 </div>
 
-<div>
-    <button asp-action="Index" asp-controller="Patient">Save</button>
-     <button asp-action="Index" asp-controller="Patient">Draft</button>
-     <button asp-action="Index" asp-controller="Patient">Sav and Continue</button>
+<div  class="d-flex flex-row align-items-center justify-content-start mb-4">
+    <button class="ms-0" asp-action="Index" asp-controller="Patient">Save</button>
+     <button class="ms-4" asp-action="Index" asp-controller="Patient">Draft</button>
+     <button class="ms-4" asp-action="Index" asp-controller="Patient">Sav and Continue</button>
 </div>
 
 @*@section Scripts {
