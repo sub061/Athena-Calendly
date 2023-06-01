@@ -1,6 +1,7 @@
 ﻿using Medical_Athena_Calendly.CommonServices;
 using Medical_Athena_Calendly.Interface;
 using Medical_Athena_Calendly.Models;
+using Medical_Athena_Calendly.Repository;
 using Medical_Athena_Calendly.ViewModel.Calendly;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -16,21 +17,32 @@ namespace Medical_Athena_Calendly.Controllers
         private readonly IUnitOfWork _unitOfWork;
         private readonly IPasswordEncryption _passwordEncryption;
         private readonly ApiService _apiService;
+        private readonly ICalendly _calendly;
 
-        public HomeController(ILogger<HomeController> logger , IUnitOfWork unitOfWork, IPasswordEncryption passwordEncryption, ApiService apiService)
+        public HomeController(ILogger<HomeController> logger , IUnitOfWork unitOfWork, IPasswordEncryption passwordEncryption, ApiService apiService, ICalendly calendly)
         {
             _logger = logger;
             _unitOfWork = unitOfWork;
             _passwordEncryption = passwordEncryption;
             _apiService = apiService;
+            _calendly = calendly;
         }
 
-        public  IActionResult Dashboard()
+        public async Task<IActionResult> Dashboard()
         {
             ViewData["ActionName"] = "Dashboard";
             ViewData["ControllerName"] = "Home";
-         
-            return View("Dashboard");
+
+            var response = await _calendly.GetAppointments();
+
+            if (response.EventCollection == null)
+            {
+                // use no meeting and 
+                return View("Dashboard", "Home");
+            }
+
+            return View("Dashboard", "Home");
+
         }
 
 

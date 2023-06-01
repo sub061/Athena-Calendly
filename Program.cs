@@ -28,6 +28,8 @@ builder.Services.AddRepository();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddHttpContextAccessor();
+
 
 
 

@@ -13,3 +13,30 @@
 .fs-14 {
     font-size: 14px;
 }
+
+/* Model Popup */
+
+.calendly-overlay {
+    background: #00000087;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.calendly-popup-content,
+.calendly-popup {
+    height: 100%;
+}
+
+.calendly-close-overlay {
+    width: 34px;
+    height: 34px;
+    background:url(../img/xmark-light.svg) no-repeat center center;
+    background-size: 24px 24px;
+    right: 24px;
+    position: absolute;
+    top: 24px;
+}

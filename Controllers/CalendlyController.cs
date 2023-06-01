@@ -13,11 +13,13 @@ namespace Medical_Athena_Calendly.Controllers
         private readonly IUnitOfWork _unitOfWork;
         private readonly ICalendlyAuth _calendlyAuth;
         private readonly ApiService _apiService;
-        public CalendlyController(IUnitOfWork unitOfWork, ICalendlyAuth calendlyAuth, ApiService apiService)
+        private readonly ICalendly _calendly;
+        public CalendlyController(IUnitOfWork unitOfWork, ICalendlyAuth calendlyAuth, ApiService apiService, ICalendly calendly)
         {
             _unitOfWork = unitOfWork;
             _calendlyAuth = calendlyAuth;
             _apiService = apiService;
+            _calendly = calendly;
         }
 
         /// <summary>
@@ -62,36 +64,37 @@ namespace Medical_Athena_Calendly.Controllers
             // Store and retrieve access token in session
             HttpContext.Session.SetString("CalendlyAccessToken", response.access_token);
 
-            CalendlyUserModel calendlyUserModel = await GetCurrentCalendlyUser();
+            CalendlyUserModel calendlyUserModel = await _calendly.GetCurrentCalendlyAdminUserAndOrganization();
+            var userUri = await _calendly.GetUserUri();
 
 
-            //return RedirectToAction("Dashboard", "Home");
-
-            return RedirectToAction("AddUserInCalendly", "Calendly");
-        }
-        public async Task<CalendlyUserModel> GetCurrentCalendlyUser()
-        {
-            var token = HttpContext.Session.GetString("CalendlyAccessToken");
-            var apiUrl = "https://api.calendly.com/users/me";
-            CalendlyUserModel response = await _apiService.GetAsync<CalendlyUserModel>(apiUrl, token);
-            // set current_organization
-            HttpContext.Session.SetString("calendly_current_organization", response.resource.current_organization);
-            return response;
-        }
-
-        public async Task<IActionResult> AddUserInCalendly()
-        {
-            var organitionCode = HttpContext.Session.GetString("calendly_current_organization");
-            var token = HttpContext.Session.GetString("CalendlyAccessToken");
-            var apiUrl = organitionCode + "/invitations";
-
-            CalendlyInviteUserModel request = new CalendlyInviteUserModel();
-            request.email = HttpContext.Session.GetString("userEmail");
-
-            //CalendlyInviteUserOutputModel responseR = await _apiService.PostAsync<CalendlyInviteUserModel, CalendlyInviteUserOutputModel>(apiUrl, request, token );
-            OrganizationInvitations();
             return RedirectToAction("Dashboard", "Home");
+
+           
         }
+        //public async Task<CalendlyUserModel> GetCurrentCalendlyUser()
+        //{
+        //    var token = HttpContext.Session.GetString("CalendlyAccessToken");
+        //    var apiUrl = "https://api.calendly.com/users/me";
+        //    CalendlyUserModel response = await _apiService.GetAsync<CalendlyUserModel>(apiUrl, token);
+        //    // set current_organization
+        //    HttpContext.Session.SetString("calendly_current_organization", response.resource.current_organization);
+        //    return response;
+        //}
+
+        //public async Task<IActionResult> AddUserInCalendly()
+        //{
+        //    var organitionCode = HttpContext.Session.GetString("calendly_current_organization");
+        //    var token = HttpContext.Session.GetString("CalendlyAccessToken");
+        //    var apiUrl = organitionCode + "/invitations";
+
+        //    CalendlyInviteUserModel request = new CalendlyInviteUserModel();
+        //    request.email = HttpContext.Session.GetString("userEmail");
+
+        //    //CalendlyInviteUserOutputModel responseR = await _apiService.PostAsync<CalendlyInviteUserModel, CalendlyInviteUserOutputModel>(apiUrl, request, token );
+        //    OrganizationInvitations();
+        //    return RedirectToAction("Dashboard", "Home");
+        //}
 
         public async Task<IActionResult> ScheduledEvents()
         {
@@ -101,23 +104,26 @@ namespace Medical_Athena_Calendly.Controllers
             return View();
         }
 
-        /// <summary>
-        /// filter for current user record
-        /// </summary>
-        /// <param name="currentOrgination"></param>
-        /// <returns></returns>
-        public async Task<CalendlyInvitation> OrganizationInvitations()
-        {
-            ViewData["ActionName"] = "OrganizationInvitations";
-            ViewData["ControllerName"] = "Home";
+        ///// <summary>
+        ///// filter for current user record
+        ///// </summary>
+        ///// <param name="currentOrgination"></param>
+        ///// <returns></returns>
+        //public async Task<CalendlyInvitation> OrganizationInvitations()
+        //{
+        //    ViewData["ActionName"] = "OrganizationInvitations";
+        //    ViewData["ControllerName"] = "Home";
 
-            var currentOrgination = HttpContext.Session.GetString("calendly_current_organization");
+        //    var currentOrgination = HttpContext.Session.GetString("calendly_current_organization");
            
-            var apiUrl = currentOrgination + "/invitations?email="+ HttpContext.Session.GetString("userEmail");
-            var token = HttpContext.Session.GetString("CalendlyAccessToken");
-            var response = await _apiService.GetAsync<CalendlyInvitation>(apiUrl, token);
-            return  response;
-        }
+        //    var apiUrl = currentOrgination + "/invitations?email="+ HttpContext.Session.GetString("userEmail");
+        //    var token = HttpContext.Session.GetString("CalendlyAccessToken");
+        //    var response = await _apiService.GetAsync<CalendlyInvitation>(apiUrl, token);
+        //    var user = response.collection[0].user;
+        //    HttpContext.Session.SetString("calendly_user_uri", user);
+
+        //    return  response;
+        //}
          
         public async  Task<IActionResult> OrganizationMemberships()
         {
