@@ -5,55 +5,53 @@ namespace Medical_Athena_Calendly.ViewModel.Calendly
 {
     public class CalendlyInvitation
     {
-        [JsonProperty("collection")]
-        public Invitation[] Collection { get; set; }
+    
+        public Invitation[] collection { get; set; }
 
-        [JsonProperty("pagination")]
-        public Pagination Pagination { get; set; }
+    
+        public Pagination pagination { get; set; }
     }
     public class Invitation
     {
-        [JsonProperty("created_at")]
-        [JsonConverter(typeof(IsoDateTimeConverter))]
-        public DateTime CreatedAt { get; set; }
 
-        [JsonProperty("email")]
-        public string Email { get; set; }
+        public DateTime created_at { get; set; }
 
-        [JsonProperty("last_sent_at")]
-        [JsonConverter(typeof(IsoDateTimeConverter))]
-        public DateTime LastSentAt { get; set; }
 
-        [JsonProperty("organization")]
-        public string Organization { get; set; }
+        public string email { get; set; }
 
-        [JsonProperty("status")]
-        public string Status { get; set; }
+        public DateTime last_sent_at { get; set; }
 
-        [JsonProperty("updated_at")]
-        [JsonConverter(typeof(IsoDateTimeConverter))]
-        public DateTime UpdatedAt { get; set; }
 
-        [JsonProperty("uri")]
-        public string Uri { get; set; }
+        public string organization { get; set; }
+
+  
+        public string status { get; set; }
+
+
+        public DateTime updated_at { get; set; }
+
+
+        public string uri { get; set; }
+
+        public string user { get; set; }
     }
 
     public class Pagination
     {
-        [JsonProperty("count")]
-        public int Count { get; set; }
 
-        [JsonProperty("next_page")]
-        public object NextPage { get; set; }
+        public int count { get; set; }
 
-        [JsonProperty("next_page_token")]
-        public object NextPageToken { get; set; }
 
-        [JsonProperty("previous_page")]
-        public object PreviousPage { get; set; }
+        public object next_page { get; set; }
 
-        [JsonProperty("previous_page_token")]
-        public object PreviousPageToken { get; set; }
+
+        public object next_page_token { get; set; }
+
+
+        public object previous_page { get; set; }
+
+
+        public object previous_page_token { get; set; }
     }
 
 

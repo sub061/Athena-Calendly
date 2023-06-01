@@ -38,5 +38,9 @@ namespace Medical_Athena_Calendly.Repository
             var clientToken = Encryption.ConvertToBase64(clientId + ":" + clientSecret);
             return clientToken;
         }
+
+       
+
+
     }
 }

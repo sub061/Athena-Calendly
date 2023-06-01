@@ -4,7 +4,7 @@
     {
         public static string GetResult(string inputString)
         {
-            int index = inputString.IndexOf('/'); // Find the index of the first occurrence of "/"
+            int index = inputString.LastIndexOf('/'); // Find the index of the first occurrence of "/"
 
             if (index >= 0 && index < inputString.Length - 1)
             {
