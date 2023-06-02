@@ -129,6 +129,8 @@ namespace Medical_Athena_Calendly.Controllers
         {
             ViewData["ActionName"] = "OrganizationMemberships";
             ViewData["ControllerName"] = "Home";
+            ViewData["userEmail"] = HttpContext.Session.GetString("userEmail");
+            ViewData["userName"] = HttpContext.Session.GetString("userName");
 
             var currentOrgination = HttpContext.Session.GetString("calendly_current_organization");
             var url = "https://api.calendly.com/organization_memberships";

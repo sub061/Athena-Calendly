@@ -23,6 +23,9 @@ namespace Medical_Athena_Calendly.Controllers
         public async Task<IActionResult> GetAppointments()
         {
             var response = await _calendly.GetAppointments();
+            ViewData["userEmail"] = HttpContext.Session.GetString("userEmail");
+            ViewData["userName"] = HttpContext.Session.GetString("userName");
+
 
             if(response.EventCollection == null)
             {
