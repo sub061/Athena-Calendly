@@ -2,6 +2,7 @@
 using Medical_Athena_Calendly.Interface;
 using Medical_Athena_Calendly.Models;
 using Medical_Athena_Calendly.Repository;
+using Medical_Athena_Calendly.ViewModel;
 using Medical_Athena_Calendly.ViewModel.Calendly;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -33,18 +34,48 @@ namespace Medical_Athena_Calendly.Controllers
             ViewData["ActionName"] = "Dashboard";
             ViewData["ControllerName"] = "Home";
 
-            var response = await _calendly.GetAppointments();
+            //var response = await _calendly.GetAppointmentsForPaitient();
 
-            if (response.EventCollection == null)
-            {
-                // use no meeting and 
-                return View("Dashboard", "Home");
-            }
+
+            //if (response == null)
+            //{
+            //    // use no meeting and 
+            //    return View("Dashboard", "Home");
+            //}
+
+            await GetEvents();
 
             return View("Dashboard", "Home");
 
         }
+        //public List<EventViewModel> GetEvents(DateTime start, DateTime end)
+        public async Task< List<EventViewModel> > GetEvents()
+        {
+            var response = await _calendly.GetAppointmentsForPaitient();
 
+            var viewModel = new EventViewModel();
+            var events = new List<EventViewModel>();
+            var start = DateTime.Today ;
+            var end = DateTime.Today.AddDays(+30);
+
+            for (var i = 1; i <response.collection.Count; i++)
+            {
+                events.Add(new EventViewModel()
+                {
+                    id = i,
+                    title = "Event " + i,
+                    start = response.collection[i].start_time.ToString("yyyy-MM-dd'T'HH:mm:ss"),
+                    end = response.collection[i].end_time.ToString("yyyy-MM-dd'T'HH:mm:ss"),
+                    allDay = false
+                });
+
+                start = start.AddDays(7);
+                end = end.AddDays(7);
+            }
+
+            var res = events;
+            return res;
+        }
 
 
         //public async Task<IActionResult> ShowMeeting()

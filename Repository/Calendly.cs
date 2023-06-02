@@ -49,7 +49,24 @@ namespace Medical_Athena_Calendly.Repository
             return user;
         }
 
+        public async Task<AppointmentsForPaitientRoot> GetAppointmentsForPaitient()
+        {
+            var session = _contextAccessor.HttpContext.Session;
+            var uri = "";
+            var url = "https://api.calendly.com/scheduled_events";
+            var patientEmail = session.GetString("userEmail");
+            var organization = session.GetString("calendly_current_organization");
+            var token = session.GetString("CalendlyAccessToken");
 
+            // for sorting
+            var sort = "start_time:desc";
+
+            var apiUrl = url + "?invitee_email="+patientEmail+"&organization=" +organization+"&sort="+sort;
+            var response = await _apiService.GetAsync<AppointmentsForPaitientRoot>(apiUrl, token);
+
+            return response;
+
+        }
         public  async Task<AppointmentResponse> GetAppointments()
         {
             var session = _contextAccessor.HttpContext.Session;

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tdrVpZkCcX9Pa0dqoqQ91fUIlHKTFvRyVo7n1Q6smw8=",
+  "Hash": "DOdetNSTfs0KcVWZZmQgtQQTcM5z/NAMTWUzVWNHrLA=",
   "Source": "Medical-Athena-Calendly",
   "BasePath": "_content/Medical-Athena-Calendly",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\css\\calender.css",
+      "SourceId": "Medical-Athena-Calendly",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\",
+      "BasePath": "_content/Medical-Athena-Calendly",
+      "RelativePath": "css/calender.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\calender.css"
+    },
     {
       "Identity": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\css\\form.css",
       "SourceId": "Medical-Athena-Calendly",
@@ -185,6 +202,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\user.png"
+    },
+    {
+      "Identity": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\img\\xmark-light.svg",
+      "SourceId": "Medical-Athena-Calendly",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\",
+      "BasePath": "_content/Medical-Athena-Calendly",
+      "RelativePath": "img/xmark-light.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\xmark-light.svg"
     },
     {
       "Identity": "E:\\PROJECTS\\Athena On\\Athena-Calendly\\wwwroot\\js\\calendar.js",

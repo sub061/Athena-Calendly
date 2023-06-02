@@ -4,6 +4,7 @@ namespace Medical_Athena_Calendly.Interface
 {
     public interface ICalendly
     {
+        Task<AppointmentsForPaitientRoot> GetAppointmentsForPaitient();
         Task<string> GetUserUri();
         Task<CalendlyUserModel> GetCurrentCalendlyAdminUserAndOrganization();
         Task<AppointmentResponse> GetAppointments();

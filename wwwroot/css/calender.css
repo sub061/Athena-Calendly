@@ -1,0 +1,50 @@
+﻿
+
+.fc-button-group  button {
+width: auto;
+}
+
+.fc-toolbar-chunk button {
+width: auto;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+    padding-top: 0;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 0;
+}
+
+.fc .fc-button-primary {
+    background-color: #633588;
+    border-color: #633588;
+    color: var(--fc-button-text-color);
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active {
+    background-color: #411e5d;
+    border-color: #411e5d;
+    color: var(--fc-button-text-color);
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active:focus, .fc .fc-button-primary:not(:disabled):active:focus {
+    box-shadow: none;
+}
+
+.fc .fc-toolbar-title {
+   color: #709532;
+}
+
+.fc .fc-col-header-cell-cushion a {
+   color: #000000;
+}
+
+.fc-direction-ltr a {
+    color: #000000;
+}
+
+.fc-theme-standard td, 
+.fc-theme-standard th {
+    height: 55px;
+}

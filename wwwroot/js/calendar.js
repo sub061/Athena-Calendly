@@ -77,7 +77,7 @@
 		},
 
 		// jquery-ui theming
-		theme: false,
+		theme: true,
 		buttonIcons: {
 			prev: 'circle-triangle-w',
 			next: 'circle-triangle-e'
@@ -115,7 +115,7 @@
 
 	;;
 
-	var fc = $.fullCalendar = { version: "1.6.4" };
+	var fc = $.fullCalendar = { version: "6.1.8" };
 	var fcViews = fc.views = {};
 
 
