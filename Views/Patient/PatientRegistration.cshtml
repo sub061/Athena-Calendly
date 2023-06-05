@@ -25,7 +25,7 @@
         </span>
         @* first name*@
         <span class="label-wrapper d-flex flex-column">
-            <label asp-for="firstname">Legal last tname<span class="asterisk-mark">*</span></label>
+            <label asp-for="firstname">Legal last name<span class="asterisk-mark">*</span></label>
             <input asp-for="firstname" type="text" required>
             <span asp-validation-for="firstname" class="text-danger"></span>
         </span>
@@ -173,7 +173,7 @@
             
         </span>
          <span class="label-wrapper d-flex flex-row mt-4 align-items-center">
-            <label asp-for="islanguage6392code">Patient Desclined </label>
+            <label asp-for="islanguage6392code">Patient Declined </label>
             <input asp-for="islanguage6392code" value="true" type="checkbox">
             <span asp-validation-for="language6392code" class="text-danger"></span>
          </span>
@@ -183,7 +183,7 @@
             <select asp-for="race" type="text"></select>          
         </span>
     <span class="label-wrapper d-flex flex-row mt-4 align-items-center">
-         <label asp-for="israce">Patient Desclined </label>
+         <label asp-for="israce">Patient declined </label>
             <input asp-for="israce" value="true" type="checkbox">
             <span asp-validation-for="race" class="text-danger"></span>
     </span>
@@ -194,7 +194,7 @@
         </span>
 
          <span class="label-wrapper d-flex flex-row mt-4 align-items-center">
-             <label asp-for="isethnicitycode">Patient Desclined </label>
+             <label asp-for="isethnicitycode">Patient declined </label>
             <input asp-for="isethnicitycode" value="true" type="checkbox">
             <span asp-validation-for="ethnicitycode" class="text-danger"></span>
         </span>
@@ -321,7 +321,7 @@
         </span>
 
         <span class="label-wrapper d-flex flex-column">
-            <label asp-for="notes">Patiest notes</label>
+            <label asp-for="notes">Patient notes</label>
             <input asp-for="notes" type="text">
             <span asp-validation-for="notes" class="text-danger"></span>
         </span>
@@ -557,7 +557,7 @@
 <div  class="d-flex flex-row align-items-center justify-content-start mb-4">
     <button class="ms-0" asp-action="Index" asp-controller="Patient">Save</button>
      <button class="ms-4" asp-action="Index" asp-controller="Patient">Draft</button>
-     <button class="ms-4" asp-action="Index" asp-controller="Patient">Sav and Continue</button>
+     <button class="ms-4" asp-action="Index" asp-controller="Patient">Save and Continue</button>
 </div>
 
 @*@section Scripts {

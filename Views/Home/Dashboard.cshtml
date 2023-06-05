@@ -30,7 +30,7 @@
 	<div class="card mr-3">
   <div class="card-body fs-14 flex-column d-flex  justify-content-center align-items-center">
     <div class="usr-image  pt-3 pb-3"><img src="../img/user.png"></div>
-	 <div class="customer-name"><h4>Sherya Sinde</h4></div>
+						<div class="customer-name"><h4>@ViewData["userName"]</h4></div>
 	 <div class="w-100 border-bottom pb-2"><b>Details</b></div>
 	  <div class="w-100 d-flex align-items-center justify-content-center flex-row pt-2 pb-2">
 		<span class="d-flex flex-grow-1">Age</span>
@@ -59,19 +59,7 @@
 	</div>
     <div class="col-xl-9">
 		<div class="card text-center">
-  <div class="card-header">
-    <ul class="nav nav-tabs card-header-tabs">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled">Disabled</a>
-      </li>
-    </ul>
-  </div>
+  
   <div class="card-body">
 @*    <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -110,8 +98,11 @@
 			headerToolbar: {
 				left: 'prevYear,prev,next,nextYear today',
 				center: 'title',
-				right: 'dayGridMonth,dayGridWeek,dayGridDay'
+				//right: 'dayGridMonth,dayGridWeek,dayGridDay'
+				right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
 			},
+			navLinks: true, // can click day/week names to navigate views
+			selectable: true,
 			events: '@Url.RouteUrl(new{ action="GetEvents", controller="Home"})'
 		})
 		calendar.render()

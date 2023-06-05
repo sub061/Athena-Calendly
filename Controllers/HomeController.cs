@@ -33,6 +33,7 @@ namespace Medical_Athena_Calendly.Controllers
         {
             ViewData["ActionName"] = "Dashboard";
             ViewData["ControllerName"] = "Home";
+            ViewData["userName"] = HttpContext.Session.GetString("userName");
 
             //var response = await _calendly.GetAppointmentsForPaitient();
 
@@ -52,21 +53,26 @@ namespace Medical_Athena_Calendly.Controllers
         public async Task< List<EventViewModel> > GetEvents()
         {
             var response = await _calendly.GetAppointmentsForPaitient();
+           
 
             var viewModel = new EventViewModel();
             var events = new List<EventViewModel>();
             var start = DateTime.Today ;
             var end = DateTime.Today.AddDays(+30);
 
-            for (var i = 1; i <response.collection.Count; i++)
+            for (var i = 0; i < response.collection.Count; i++)
             {
+                var eventName = response.collection[i].uri + "/invitees";
+                var linkCollection = await _calendly.GetCancleAndRescheduleLink(eventName);
                 events.Add(new EventViewModel()
                 {
                     id = i,
-                    title = "Event " + i,
+                    title = response.collection[i].name ,
                     start = response.collection[i].start_time.ToString("yyyy-MM-dd'T'HH:mm:ss"),
                     end = response.collection[i].end_time.ToString("yyyy-MM-dd'T'HH:mm:ss"),
-                    allDay = false
+                    allDay = false,
+                    cancleLink = linkCollection.collection[0].cancel_url,
+                    rescheduleLink = linkCollection.collection[0].reschedule_url
                 });
 
                 start = start.AddDays(7);

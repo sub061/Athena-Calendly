@@ -83,5 +83,15 @@ namespace Medical_Athena_Calendly.Repository
             return response;
            
         }
+
+        public async Task<CancleAndRescheduleLinkModel> GetCancleAndRescheduleLink(string apiUrl)
+        {
+            var session = _contextAccessor.HttpContext.Session;
+            var token = session.GetString("CalendlyAccessToken");
+            var response = await _apiService.GetAsync<CancleAndRescheduleLinkModel>(apiUrl, token);
+
+            return response;
+
+        }
     }
 }

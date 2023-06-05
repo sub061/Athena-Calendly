@@ -11,5 +11,7 @@
         public String end { get; set; }
 
         public bool allDay { get; set; }
+        public string cancleLink { get; set; }
+        public string rescheduleLink { get; set; }
     }
 }
