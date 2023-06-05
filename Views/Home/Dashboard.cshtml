@@ -1,10 +1,140 @@
 ﻿@{
     Layout = "_LayoutTopNav";
 }
-<h2>Hello</h2>
 
+@*
 <a asp-controller="Calendly" asp-action="ScheduledEvents"> Show meeting </a>
 
 @{
     Html.RenderPartial("_CalendlyUser");
 }
+*@
+
+<!-- CSS Includes -->
+@*<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.min.css">*@
+<link rel="stylesheet" href="~/css/calender.css">
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+	<div class="container">
+		
+  <div class="row">
+    <div class="col-xl-3 ps-0">
+	<div class="card mr-3">
+  <div class="card-body fs-14 flex-column d-flex  justify-content-center align-items-center">
+    <div class="usr-image  pt-3 pb-3"><img src="../img/user.png"></div>
+						<div class="customer-name"><h4>@ViewData["userName"]</h4></div>
+	 <div class="w-100 border-bottom pb-2"><b>Details</b></div>
+	  <div class="w-100 d-flex align-items-center justify-content-center flex-row pt-2 pb-2">
+		<span class="d-flex flex-grow-1">Age</span>
+		<span class="font-weight-bolder">26 Years</span>
+	  </div>
+
+	  <div class="w-100 d-flex align-items-center justify-content-center flex-row pt-1 pb-1">
+		<span class="d-flex flex-grow-1"> Blood Group</span>
+		<span class="font-weight-bolder">O+</span>
+	  </div>
+
+	  <div class="w-100 d-flex align-items-center justify-content-center flex-row pt-1 pb-1">
+		<span class="d-flex flex-grow-1"> Height(m)</span>
+		<span class="font-weight-bolder">1.78</span>
+	  </div>
+
+	  <div class="w-100 d-flex align-items-center border-bottom justify-content-center flex-row pt-1 pb-3 mb-3">
+		<span class="d-flex flex-grow-1"> Weight (Kg)</span>
+		<span class="font-weight-bolder">60</span>
+	  </div>   
+<p><a href="#" class="card-link">jotform</a></p>
+ <p><a href="#" class="card-link">educational items</a></p>   
+<p><a href="#" class="card-link">Athena portal</a></p>	
+  </div>
+</div>
+	</div>
+    <div class="col-xl-9">
+		<div class="card text-center">
+  
+  <div class="card-body">
+@*    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>*@
+						<div id="calendar"></div>
+
+					</div>
+</div>
+	</div>
+  </div>
+</div>
+
+<div id='wrap'>
+
+@* <div style='clear:both'></div> *@
+</div>
+</body>
+
+
+<!-- JS includes -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	
+		<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+		<script src="//ajax.aspnetcdn.com/ajax/mvc/4.0/jquery.validate.unobtrusive.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.16.0/moment.min.js"></script>
+		@*<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.min.js"></script>*@
+@*<script src="~/js/calendar.js"></script>*@
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
+		
+		<script type="text/javascript">	
+			$(document).ready(function () {
+
+		const calendarEl = document.getElementById('calendar')
+		const calendar = new FullCalendar.Calendar(calendarEl, {
+			headerToolbar: {
+				left: 'prevYear,prev,next,nextYear today',
+				center: 'title',
+				//right: 'dayGridMonth,dayGridWeek,dayGridDay'
+				right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+			},
+			navLinks: true, // can click day/week names to navigate views
+			selectable: true,
+			events: '@Url.RouteUrl(new{ action="GetEvents", controller="Home"})'
+		})
+		calendar.render()
+
+
+			//	$('#calendar').fullCalendar({
+			//initialView: 'dayGridMonth',
+			//headerToolbar: {
+			//	left: 'prevYear,prev,next,nextYear today',
+			//	center: 'title',
+			//	right: 'dayGridMonth,dayGridWeek,dayGridDa
+			//		},
+   //         		firstDay: 1, //The day that each week begins (Monday=1)
+   //         		//slotMinutes: 60,
+   //         		events: '@Url.RouteUrl(new{ action="GetEvents", controller="Home"})'
+   //     		});
+    		});
+		</script>
+
+@*<script>
+
+	document.addEventListener('DOMContentLoaded', function () {
+		const calendarEl = document.getElementById('calendar')
+		const calendar = new FullCalendar.Calendar(calendarEl, {
+			  headerToolbar: {
+        left: 'prevYear,prev,next,nextYear today',
+        center: 'title',
+        right: 'dayGridMonth,dayGridWeek,dayGridDay'
+      },
+		})
+		calendar.render()
+	})
+*@
+</script>
+</html>

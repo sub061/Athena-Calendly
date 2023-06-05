@@ -1,6 +1,8 @@
 ﻿using Medical_Athena_Calendly.CommonServices;
 using Medical_Athena_Calendly.Interface;
 using Medical_Athena_Calendly.Models;
+using Medical_Athena_Calendly.Repository;
+using Medical_Athena_Calendly.ViewModel;
 using Medical_Athena_Calendly.ViewModel.Calendly;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -16,23 +18,70 @@ namespace Medical_Athena_Calendly.Controllers
         private readonly IUnitOfWork _unitOfWork;
         private readonly IPasswordEncryption _passwordEncryption;
         private readonly ApiService _apiService;
+        private readonly ICalendly _calendly;
 
-        public HomeController(ILogger<HomeController> logger , IUnitOfWork unitOfWork, IPasswordEncryption passwordEncryption, ApiService apiService)
+        public HomeController(ILogger<HomeController> logger , IUnitOfWork unitOfWork, IPasswordEncryption passwordEncryption, ApiService apiService, ICalendly calendly)
         {
             _logger = logger;
             _unitOfWork = unitOfWork;
             _passwordEncryption = passwordEncryption;
             _apiService = apiService;
+            _calendly = calendly;
         }
 
-        public  IActionResult Dashboard()
+        public async Task<IActionResult> Dashboard()
         {
             ViewData["ActionName"] = "Dashboard";
             ViewData["ControllerName"] = "Home";
-         
-            return View("Dashboard");
-        }
+            ViewData["userName"] = HttpContext.Session.GetString("userName");
 
+            //var response = await _calendly.GetAppointmentsForPaitient();
+
+
+            //if (response == null)
+            //{
+            //    // use no meeting and 
+            //    return View("Dashboard", "Home");
+            //}
+
+            await GetEvents();
+
+            return View("Dashboard", "Home");
+
+        }
+        //public List<EventViewModel> GetEvents(DateTime start, DateTime end)
+        public async Task< List<EventViewModel> > GetEvents()
+        {
+            var response = await _calendly.GetAppointmentsForPaitient();
+           
+
+            var viewModel = new EventViewModel();
+            var events = new List<EventViewModel>();
+            var start = DateTime.Today ;
+            var end = DateTime.Today.AddDays(+30);
+
+            for (var i = 0; i < response.collection.Count; i++)
+            {
+                var eventName = response.collection[i].uri + "/invitees";
+                var linkCollection = await _calendly.GetCancleAndRescheduleLink(eventName);
+                events.Add(new EventViewModel()
+                {
+                    id = i,
+                    title = response.collection[i].name ,
+                    start = response.collection[i].start_time.ToString("yyyy-MM-dd'T'HH:mm:ss"),
+                    end = response.collection[i].end_time.ToString("yyyy-MM-dd'T'HH:mm:ss"),
+                    allDay = false,
+                    cancleLink = linkCollection.collection[0].cancel_url,
+                    rescheduleLink = linkCollection.collection[0].reschedule_url
+                });
+
+                start = start.AddDays(7);
+                end = end.AddDays(7);
+            }
+
+            var res = events;
+            return res;
+        }
 
 
         //public async Task<IActionResult> ShowMeeting()

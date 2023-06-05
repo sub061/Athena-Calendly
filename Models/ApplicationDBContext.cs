@@ -17,7 +17,7 @@ namespace Medical_Athena_Calendly.Models
 
         // Table initialise
 
-        public DbSet<Medical_Athena_Calendly.ViewModel.Athena.PatientModel>? PatientModel { get; set; }
+        
 
     }
 }
