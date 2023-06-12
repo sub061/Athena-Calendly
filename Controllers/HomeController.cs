@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Newtonsoft.Json.Linq;
 using NuGet.Common;
 using System.Diagnostics;
+using System.Security.Claims;
 
 namespace Medical_Athena_Calendly.Controllers
 {
@@ -35,21 +36,11 @@ namespace Medical_Athena_Calendly.Controllers
             ViewData["ControllerName"] = "Home";
             ViewData["userName"] = HttpContext.Session.GetString("userName");
 
-            //var response = await _calendly.GetAppointmentsForPaitient();
-
-
-            //if (response == null)
-            //{
-            //    // use no meeting and 
-            //    return View("Dashboard", "Home");
-            //}
-
             await GetEvents();
 
             return View("Dashboard", "Home");
 
         }
-        //public List<EventViewModel> GetEvents(DateTime start, DateTime end)
         public async Task< List<EventViewModel> > GetEvents()
         {
             var response = await _calendly.GetAppointmentsForPaitient();
@@ -71,8 +62,9 @@ namespace Medical_Athena_Calendly.Controllers
                     start = response.collection[i].start_time.ToString("yyyy-MM-dd'T'HH:mm:ss"),
                     end = response.collection[i].end_time.ToString("yyyy-MM-dd'T'HH:mm:ss"),
                     allDay = false,
-                    cancleLink = linkCollection.collection[0].cancel_url,
-                    rescheduleLink = linkCollection.collection[0].reschedule_url
+                    cancleUrl = linkCollection.collection[0].cancel_url,
+                    rescheduleLink = linkCollection.collection[0].reschedule_url,
+                    url="#"
                 });
 
                 start = start.AddDays(7);
@@ -120,8 +112,6 @@ namespace Medical_Athena_Calendly.Controllers
 
             return View("Dashboard", "Home");
         }
-
-        
 
     }
 }

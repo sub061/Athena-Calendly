@@ -2,6 +2,7 @@
 using Medical_Athena_Calendly.Interface;
 using Medical_Athena_Calendly.ViewModel.Calendly;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Identity.Client;
 using System;
 
 namespace Medical_Athena_Calendly.Repository
@@ -28,26 +29,12 @@ namespace Medical_Athena_Calendly.Repository
             CalendlyUserModel response = await _apiService.GetAsync<CalendlyUserModel>(apiUrl, token);
             // set current_organization
             session.SetString("calendly_current_organization", response.resource.current_organization);
+            session.SetString("calendly_user_uri", response.resource.uri);
+            session.SetString("calendly_scheduling_url", response.resource.scheduling_url);
             return response;
         }
 
-        /// <summary>
-        /// Get user uri 
-        /// </summary>
-        /// <returns></returns>
-        public async Task<string>  GetUserUri()
-        {
-            var session = _contextAccessor.HttpContext.Session;
-            var currentOrgination =  session.GetString("calendly_current_organization");
 
-            //var apiUrl = currentOrgination + "/invitations?email=" + session.GetString("userEmail");
-            var apiUrl = currentOrgination + "/invitations";
-            var token = session.GetString("CalendlyAccessToken");
-            var response = await _apiService.GetAsync<CalendlyInvitation>(apiUrl, token);
-            var user = response.collection[0].user;
-            session.SetString("calendly_user_uri", user);
-            return user;
-        }
 
         public async Task<AppointmentsForPaitientRoot> GetAppointmentsForPaitient()
         {
@@ -57,17 +44,20 @@ namespace Medical_Athena_Calendly.Repository
             var patientEmail = session.GetString("userEmail");
             var organization = session.GetString("calendly_current_organization");
             var token = session.GetString("CalendlyAccessToken");
+            var user = session.GetString("calendly_user_uri");
 
             // for sorting
             var sort = "start_time:desc";
-
+            //var apiUrl = url + "?user=" + user + "&organization=" + organization + "&sort=" + sort;
             var apiUrl = url + "?invitee_email="+patientEmail+"&organization=" +organization+"&sort="+sort;
             var response = await _apiService.GetAsync<AppointmentsForPaitientRoot>(apiUrl, token);
 
             return response;
 
         }
-        public  async Task<AppointmentResponse> GetAppointments()
+
+
+        public async Task<AppointmentResponse> GetAppointments()
         {
             var session = _contextAccessor.HttpContext.Session;
             var uri = "";
