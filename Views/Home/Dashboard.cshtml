@@ -1,28 +1,37 @@
 ﻿@{
     Layout = "_LayoutTopNav";
+	 var userName = ViewData["userName"];
 }
 
-@*
-<a asp-controller="Calendly" asp-action="ScheduledEvents"> Show meeting </a>
-
-@{
-    Html.RenderPartial("_CalendlyUser");
-}
-*@
-
-<!-- CSS Includes -->
-@*<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.min.css">*@
 <link rel="stylesheet" href="~/css/calender.css">
 <!------ Include the above in your HEAD tag ---------->
 
 <!DOCTYPE html>
 <html>
 <head>
-
 </head>
 <body>
 
+	<!-- Modal Popup -->
+	<div class="modal" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="eventModalLabel">Event Details</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<!-- Content of the modal goes here -->
+					<div id="eventDetails"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="container">
 		
   <div class="row">
@@ -65,6 +74,7 @@
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>*@
 						<div id="calendar"></div>
+						<!-- Popup container -->
 
 					</div>
 </div>
@@ -80,8 +90,8 @@
 
 
 <!-- JS includes -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	
 		<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 		<script src="//ajax.aspnetcdn.com/ajax/mvc/4.0/jquery.validate.unobtrusive.min.js"></script>
@@ -89,9 +99,11 @@
 		@*<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.min.js"></script>*@
 @*<script src="~/js/calendar.js"></script>*@
 <script src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 		
 		<script type="text/javascript">	
-			$(document).ready(function () {
+			//$(document).ready(function () {
+				document.addEventListener('DOMContentLoaded', function() {
 
 		const calendarEl = document.getElementById('calendar')
 		const calendar = new FullCalendar.Calendar(calendarEl, {
@@ -103,38 +115,48 @@
 			},
 			navLinks: true, // can click day/week names to navigate views
 			selectable: true,
-			events: '@Url.RouteUrl(new{ action="GetEvents", controller="Home"})'
-		})
-		calendar.render()
+			events: '@Url.RouteUrl(new{ action="GetEvents", controller="Home"})',
+			eventClick: function (info) {
+				var eventElement = info.el;
+				$("#eventModal").modal("show");
+				var eventDetails = document.getElementById('eventDetails');
+				eventDetails.innerHTML = '<h3>' + info.event.title + '</h3>' +
+				' <p><h5> Meeting Time</h5>' +
+					'<h5>' + info.event.start + '</h5>' +
+					'<h5>' + info.event.end + '</h5></p>' +
+					'<p><a onclick="openCalendly(' + "'" + info.event.extendedProps.cancleUrl + "'," + "'@userName'" + ')" href="#">Cancel Appointment </a></p>' +
+					'<p><a onclick="openCalendly(' + "'" + info.event.extendedProps.rescheduleLink + "'," + "'@userName'" + ')" href="#">Reschedule Appointment </a></p>';
+				// Attach onclick event handler
+				//eventElement.addEventListener('click', function () {
+				//	// Open the modal
+					
+				//	console.log(info);
+				//	// Set the event details in the modal body
+				//	var eventDetails = document.getElementById('eventDetails');
+				//	eventDetails.innerHTML = '<h3>' + info.event.title + '</h3>' +
+				//		'<p>' + info.event.extendedProps.cancleUrl + '</p>';
+				//});
+			}
+		});
+			
+		calendar.render();
+
+			});
 
 
-			//	$('#calendar').fullCalendar({
-			//initialView: 'dayGridMonth',
-			//headerToolbar: {
-			//	left: 'prevYear,prev,next,nextYear today',
-			//	center: 'title',
-			//	right: 'dayGridMonth,dayGridWeek,dayGridDa
-			//		},
-   //         		firstDay: 1, //The day that each week begins (Monday=1)
-   //         		//slotMinutes: 60,
-   //         		events: '@Url.RouteUrl(new{ action="GetEvents", controller="Home"})'
-   //     		});
-    		});
+	function openCalendly(url, userName) {
+		console.log("click")
+		Calendly.initPopupWidget({
+			url: url,
+			prefill: {
+				name: userName
+			}
+			//    , text: 'Schedule Meeting', color: '#006bff', textColor: '#ffffff', branding: true
+			//parentElement: document.getElementById("calendlyContainer"),
+		});
+	}
 		</script>
 
-@*<script>
 
-	document.addEventListener('DOMContentLoaded', function () {
-		const calendarEl = document.getElementById('calendar')
-		const calendar = new FullCalendar.Calendar(calendarEl, {
-			  headerToolbar: {
-        left: 'prevYear,prev,next,nextYear today',
-        center: 'title',
-        right: 'dayGridMonth,dayGridWeek,dayGridDay'
-      },
-		})
-		calendar.render()
-	})
-*@
 </script>
 </html>

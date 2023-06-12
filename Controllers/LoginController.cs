@@ -27,6 +27,8 @@ namespace Medical_Athena_Calendly.Controllers
         }
         public IActionResult Login(User user)
         {
+            HttpContext.Session.Clear();
+
             // Create hash Value to password text
             var hashPassword = _passwordEncryption.EncryptPassword(user.Password);
             var userDetails = _user.FindByCondition(m => m.Email == user.Email && m.Password == hashPassword).FirstOrDefault();
@@ -39,12 +41,14 @@ namespace Medical_Athena_Calendly.Controllers
             // Set Session
             HttpContext.Session.SetString("userName", userDetails.Name);
             HttpContext.Session.SetString("userEmail", userDetails.Email);
-            // if user exist then need to redirect CalendlyAuthorize action
-            return RedirectToAction("GetCalendlyAuthorize", "Calendly");
+
+
+            return RedirectToAction("CalendlyLogin", "Calendly");
         }
 
         public IActionResult Logout()
         {
+            HttpContext.Session.Clear();
 
             return RedirectToAction("Index");
         }

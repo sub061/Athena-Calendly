@@ -5,6 +5,8 @@ using Medical_Athena_Calendly.Interface;
 using Medical_Athena_Calendly.ViewModel;
 using Medical_Athena_Calendly.ViewModel.Calendly;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Identity.Client;
+using System.Text;
 
 namespace Medical_Athena_Calendly.Controllers
 {
@@ -22,26 +24,62 @@ namespace Medical_Athena_Calendly.Controllers
             _calendly = calendly;
         }
 
-        /// <summary>
-        /// Get Authorize Code for calendly login
-        /// </summary>
-        /// <returns></returns>
-        public async Task<IActionResult> GetCalendlyAuthorize()
+
+
+        public async Task<IActionResult> CalendlyLogin()
+        {
+
+            // Get Personal token
+            string clientToken = _calendlyAuth.ClientPersonalToken();
+            HttpContext.Session.SetString("CalendlyAccessToken", clientToken);
+            var apiUrl = "https://api.calendly.com/users/me";
+            CalendlyUserModel response = await _apiService.GetAsync<CalendlyUserModel>(apiUrl, clientToken);
+            // set current_organization
+            HttpContext.Session.SetString("calendly_current_organization", response.resource.current_organization);
+            HttpContext.Session.SetString("calendly_user_uri", response.resource.uri);
+            HttpContext.Session.SetString("calendly_scheduling_url", response.resource.scheduling_url);
+
+                return RedirectToAction("Dashboard", "Home");
+         
+        }
+
+
+
+
+
+    /// <summary>
+    /// Get Authorize Code for calendly login
+    /// </summary>
+    /// <returns></returns>
+    public async Task<IActionResult> GetCalendlyAuthorize()
         {  
             // Calling calendly Authorize api
             var clientId = _calendlyAuth.ClientId();
             var returnUrl = _calendlyAuth.ReturnUrl();
+
+
+            //var a = await GetAccessToken();
             var redirectUrl = "https://calendly.com/oauth/authorize?client_id=" + clientId + "&response_type=code&redirect_uri=" + returnUrl;
 
             return Redirect(redirectUrl);
 
         }
-        
+
+
         /// <summary>
         /// Callback for calendly
         /// </summary>
         /// <param name="code"></param>
         /// <returns></returns>
+        /// 
+
+        [HttpGet]
+        //public IActionResult ExternalCallbackAsync()
+        //{
+        //    // Handle the callback action if needed
+
+        //    return RedirectToAction("Dashboard", "Home");
+        //}
         public async Task<IActionResult> ExternalCallbackAsync(string code)
         {
             // Getting  Authorization Code
@@ -65,7 +103,7 @@ namespace Medical_Athena_Calendly.Controllers
             HttpContext.Session.SetString("CalendlyAccessToken", response.access_token);
 
             CalendlyUserModel calendlyUserModel = await _calendly.GetCurrentCalendlyAdminUserAndOrganization();
-            var userUri = await _calendly.GetUserUri();
+           // var userUri = await _calendly.GetUserUri();
 
 
             return RedirectToAction("Dashboard", "Home");

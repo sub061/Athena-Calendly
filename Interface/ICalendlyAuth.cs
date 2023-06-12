@@ -6,5 +6,6 @@
         public string ClientSecret();
         public string ReturnUrl();
         public string ClientToken();
+        public string ClientPersonalToken();
     }
 }

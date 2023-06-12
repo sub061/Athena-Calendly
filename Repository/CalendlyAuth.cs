@@ -18,6 +18,12 @@ namespace Medical_Athena_Calendly.Repository
             string clientId = _configuration.GetValue<string>("CalendlyClientId");
             return clientId;
         }
+
+         public string ClientPersonalToken()
+        {
+            string token = _configuration.GetValue<string>("CalendlyToken");
+            return token;
+        }
         // Get calendly clientsecret value from appsetting
         public string ClientSecret()
         {
@@ -39,8 +45,9 @@ namespace Medical_Athena_Calendly.Repository
             return clientToken;
         }
 
-       
-
-
+        public string ClientTokenSecret()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

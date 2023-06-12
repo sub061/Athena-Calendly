@@ -6,7 +6,7 @@ namespace Medical_Athena_Calendly.Interface
     {
         Task<CancleAndRescheduleLinkModel> GetCancleAndRescheduleLink(string apiUrl);
         Task<AppointmentsForPaitientRoot> GetAppointmentsForPaitient();
-        Task<string> GetUserUri();
+        //Task<string> GetUserUri();
         Task<CalendlyUserModel> GetCurrentCalendlyAdminUserAndOrganization();
         Task<AppointmentResponse> GetAppointments();
     }
