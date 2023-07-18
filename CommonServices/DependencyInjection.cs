@@ -7,12 +7,14 @@ namespace Medical_Athena_Calendly.CommonServices
     {
         public static IServiceCollection AddRepository( this IServiceCollection services)
         {
+            services.AddTransient<ICal, CalRepo>();
             services.AddTransient<ICalendly , Calendly>();
             services.AddTransient<IUser , UserRepo>();
             services.AddScoped<IPasswordEncryption, PasswordEncryptionRepo>();
             services.AddScoped<ICalendlyAuth, CalendlyAuth>();
             services.AddScoped<IAthenaAuth, AthenaAuth>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
+            
        
 
             return services;

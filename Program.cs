@@ -76,10 +76,10 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("AppSettings"));
 
 // Add database connection
-builder.Services.AddDbContext<ApplicationDBContext>
-    (options => options.UseNpgsql(builder.Configuration.GetConnectionString("MedicalDb")));
 //builder.Services.AddDbContext<ApplicationDBContext>
-//    (options => options.UseSqlServer(builder.Configuration.GetConnectionString("MedicalDb")));
+//    (options => options.UseNpgsql(builder.Configuration.GetConnectionString("MedicalDb")));
+builder.Services.AddDbContext<ApplicationDBContext>
+    (options => options.UseSqlServer(builder.Configuration.GetConnectionString("MedicalDb")));
 
 var app = builder.Build();
 

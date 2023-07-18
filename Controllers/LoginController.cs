@@ -41,9 +41,9 @@ namespace Medical_Athena_Calendly.Controllers
             // Set Session
             HttpContext.Session.SetString("userName", userDetails.Name);
             HttpContext.Session.SetString("userEmail", userDetails.Email);
+            return RedirectToAction("Dashboard", "Home");
 
-
-            return RedirectToAction("CalendlyLogin", "Calendly");
+            // return RedirectToAction("CalendlyLogin", "Calendly");
         }
 
         public IActionResult Logout()

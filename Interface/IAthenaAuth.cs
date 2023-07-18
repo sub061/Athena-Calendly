@@ -9,5 +9,7 @@
         public string ClientSecret();
         public string Scope();
         public string ClientToken();
+
+        Task Authentication();
     }
 }

@@ -26,12 +26,13 @@ namespace Medical_Athena_Calendly.Controllers
 
 
 
+
         public async Task<IActionResult> CalendlyLogin()
         {
 
             // Get Personal token
             string clientToken = _calendlyAuth.ClientPersonalToken();
-            HttpContext.Session.SetString("CalendlyAccessToken", clientToken);
+            HttpContext.Session.SetString("calendly_access_token", clientToken);
             var apiUrl = "https://api.calendly.com/users/me";
             CalendlyUserModel response = await _apiService.GetAsync<CalendlyUserModel>(apiUrl, clientToken);
             // set current_organization
@@ -100,7 +101,7 @@ namespace Medical_Athena_Calendly.Controllers
             var response = await _apiService.PostLoginAsync<AccessTokensRequestModel, AccessTokensResponseModel>("https://auth.calendly.com/oauth/token", request, clientTokan);
 
             // Store and retrieve access token in session
-            HttpContext.Session.SetString("CalendlyAccessToken", response.access_token);
+            HttpContext.Session.SetString("calendly_access_token", response.access_token);
 
             CalendlyUserModel calendlyUserModel = await _calendly.GetCurrentCalendlyAdminUserAndOrganization();
            // var userUri = await _calendly.GetUserUri();
@@ -112,7 +113,7 @@ namespace Medical_Athena_Calendly.Controllers
         }
         //public async Task<CalendlyUserModel> GetCurrentCalendlyUser()
         //{
-        //    var token = HttpContext.Session.GetString("CalendlyAccessToken");
+        //    var token = HttpContext.Session.GetString("calendly_access_token");
         //    var apiUrl = "https://api.calendly.com/users/me";
         //    CalendlyUserModel response = await _apiService.GetAsync<CalendlyUserModel>(apiUrl, token);
         //    // set current_organization
@@ -123,7 +124,7 @@ namespace Medical_Athena_Calendly.Controllers
         //public async Task<IActionResult> AddUserInCalendly()
         //{
         //    var organitionCode = HttpContext.Session.GetString("calendly_current_organization");
-        //    var token = HttpContext.Session.GetString("CalendlyAccessToken");
+        //    var token = HttpContext.Session.GetString("calendly_access_token");
         //    var apiUrl = organitionCode + "/invitations";
 
         //    CalendlyInviteUserModel request = new CalendlyInviteUserModel();
@@ -136,7 +137,7 @@ namespace Medical_Athena_Calendly.Controllers
 
         public async Task<IActionResult> ScheduledEvents()
         {
-            var token = HttpContext.Session.GetString("CalendlyAccessToken");
+            var token = HttpContext.Session.GetString("calendly_access_token");
             var apiUrl = "https://api.calendly.com/scheduled_events";
             object response = await _apiService.GetAsync<object>(apiUrl, token);
             return View();
@@ -155,7 +156,7 @@ namespace Medical_Athena_Calendly.Controllers
         //    var currentOrgination = HttpContext.Session.GetString("calendly_current_organization");
            
         //    var apiUrl = currentOrgination + "/invitations?email="+ HttpContext.Session.GetString("userEmail");
-        //    var token = HttpContext.Session.GetString("CalendlyAccessToken");
+        //    var token = HttpContext.Session.GetString("calendly_access_token");
         //    var response = await _apiService.GetAsync<CalendlyInvitation>(apiUrl, token);
         //    var user = response.collection[0].user;
         //    HttpContext.Session.SetString("calendly_user_uri", user);
@@ -165,7 +166,7 @@ namespace Medical_Athena_Calendly.Controllers
          
         public async  Task<IActionResult> OrganizationMemberships()
         {
-            ViewData["ActionName"] = "OrganizationMemberships";
+            ViewData["ActionName"] = "Organization Memberships";
             ViewData["ControllerName"] = "Home";
             ViewData["userEmail"] = HttpContext.Session.GetString("userEmail");
             ViewData["userName"] = HttpContext.Session.GetString("userName");
@@ -173,7 +174,7 @@ namespace Medical_Athena_Calendly.Controllers
             var currentOrgination = HttpContext.Session.GetString("calendly_current_organization");
             var url = "https://api.calendly.com/organization_memberships";
             var apiUrl = url+ "/?organization=" + currentOrgination;
-            var token = HttpContext.Session.GetString("CalendlyAccessToken");
+            var token = HttpContext.Session.GetString("calendly_access_token");
             var response = await _apiService.GetAsync<CalendlyOrganizationMembership>(apiUrl, token);
             return View(response);
         }

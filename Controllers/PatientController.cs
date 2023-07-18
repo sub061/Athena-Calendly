@@ -111,11 +111,18 @@ namespace Medical_Athena_Calendly.Controllers
 
             return View("PatientRegistration", model);
         }
+        public async Task<IActionResult> CreateAsync()
+        {
 
-        public async Task<IActionResult> CreateAsync(PatientModel patient)
+
+            return RedirectToAction("Dashboard", "Home");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(PatientModel patient)
         {
             // Get access code
-            var accessToken = HttpContext.Session.GetString("AthenaAccessToken");
+            var accessToken = HttpContext.Session.GetString("athena_access_token");
 
             // get PracticedId
             var practicedId = _athenaAuth.PracticedId();
@@ -127,7 +134,7 @@ namespace Medical_Athena_Calendly.Controllers
             Dictionary<string, string> parameters = DictionaryData.ConvertToDictionary(patient);
             var responce = await _apiService.PostAsync<PatientPostResponceModel>(authAPI, parameters, accessToken);
 
-            return View();
+            return RedirectToAction("Dashboard" ,"Home");
         }
     }
 }

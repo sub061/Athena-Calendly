@@ -51,14 +51,14 @@ namespace Medical_Athena_Calendly.Controllers
             var response = await _apiService.PostAsync<AthenaTokanResponseModel>(authAPI, request, clientTokan);
 
             // Store and retrieve access token in session
-            HttpContext.Session.SetString("AthenaAccessToken", response.access_token);
+            HttpContext.Session.SetString("athena_access_token", response.access_token);
             return RedirectToAction("AppointmentConfirmedStatuses");
         }
 
         public async Task<IActionResult> AppointmentConfirmedStatuses()
         {
             // Get access code
-            var accessToken = HttpContext.Session.GetString("AthenaAccessToken");
+            var accessToken = HttpContext.Session.GetString("athena_access_token");
 
             // get PracticedId
             var practicedId = _athenaAuth.PracticedId();

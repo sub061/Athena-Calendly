@@ -42,8 +42,8 @@ namespace Medical_Athena_Calendly.Controllers
 
                 // store user email
                 HttpContext.Session.SetString("userEmail", user.Email);
-
-                return RedirectToAction("GetCalendlyAuthorize", "Calendly");
+                return RedirectToAction("Dashboard", "Home");
+               // return RedirectToAction("GetCalendlyAuthorize", "Calendly");
             }
             catch (Exception ex)
             {

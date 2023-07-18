@@ -12,6 +12,8 @@
 
 
 <hr class="mt-0 h-0" />
+
+<form method="post" asp-action="Create"   asp-controller="Patient">
 <div class="d-flex flex-row flex-wrap">
 
     @*Identification start here*@
@@ -36,7 +38,7 @@
             <span class="d-flex flex-row">
                 <input asp-for="altfirstname" type="text">
                 <span class="ps-2 h-34"> This name may be viewable and editable by the patient.</span>
-                <span asp-validation-for="altfirstname" class="text-danger"></span>
+
             </span>
         </span>
 
@@ -44,12 +46,12 @@
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="middlename">Middle name</label>
             <input asp-for="middlename" type="text">
-            <span asp-validation-for="middlename" class="text-danger"></span>
+
         </span>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="suffix">Suffix</label>
             <input asp-for="suffix" type="text">
-            <span asp-validation-for="suffix" class="text-danger"></span>
+
         </span>
 
         @*      sex*@
@@ -58,7 +60,7 @@
             <select asp-for="sex" asp-items="Model.sex.DropdownOptions">
                 <option>--select--</option>
             </select>
-            <span asp-validation-for="sex" class="text-danger"></span>
+
         </span>
 
         @*dob*@
@@ -72,13 +74,13 @@
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="ssn">SSN</label>
             <input asp-for="ssn" type="text">
-            <span asp-validation-for="ssn" class="text-danger"></span>
+     @*       <span asp-validation-for="ssn" class="text-danger"></span>*@
         </span>
         @*Preferred name*@
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="preferredname">Preferred name</label>
             <input asp-for="preferredname" type="text">
-            <span asp-validation-for="preferredname" class="text-danger"></span>
+            @*<span asp-validation-for="preferredname" class="text-danger"></span>*@
         </span>
     </section>
 
@@ -89,40 +91,40 @@
         <span class="label-wrapper d-flex flex-column w-435px">
             <label asp-for="address1">Address</label>
             <input asp-for="address1" type="text">
-            <span asp-validation-for="address1" class="text-danger"></span>
+            @*<span asp-validation-for="address1" class="text-danger"></span>*@
         </span>
 
         <span class="label-wrapper d-flex flex-column  w-435px">
             <label asp-for="address2">Address (ctd)</label>
             <input asp-for="address2" type="text">
-            <span asp-validation-for="address2" class="text-danger"></span>
+            @*<span asp-validation-for="address2" class="text-danger"></span>*@
         </span>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="zip">ZIP code</label>
             <input asp-for="zip" type="text">
-            <span asp-validation-for="zip" class="text-danger"></span>
+            @*<span asp-validation-for="zip" class="text-danger"></span>*@
         </span>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="city">City</label>
             <input asp-for="city" type="text">
-            <span asp-validation-for="city" class="text-danger"></span>
+            @*<span asp-validation-for="city" class="text-danger"></span>*@
         </span>
 
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="state">State</label>
             <input asp-for="state" type="text">
-            <span asp-validation-for="state" class="text-danger"></span>
+            @*<span asp-validation-for="state" class="text-danger"></span>*@
         </span>
 
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="homephone">Home phone</label>
             <input asp-for="homephone" type="text">
-            <span asp-validation-for="homephone" class="text-danger"></span>
+            @*<span asp-validation-for="homephone" class="text-danger"></span>*@
         </span>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="mobilephone">Mobile phone</label>
             <input asp-for="mobilephone" type="text">
-            <span asp-validation-for="mobilephone" class="text-danger"></span>
+            @*<span asp-validation-for="mobilephone" class="text-danger"></span>*@
         </span>
 
 
@@ -132,19 +134,19 @@
             <label>Yes</label>
             <input asp-for="consenttotext" type="radio" value="No">
             <label>No</label>
-            <span asp-validation-for="consenttotext" class="text-danger"></span>
+            @*<span asp-validation-for="consenttotext" class="text-danger"></span>*@
         </span>
 
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="workphone">Work phone</label>
             <input asp-for="workphone" type="text">
-            <span asp-validation-for="workphone" class="text-danger"></span>
+            @*<span asp-validation-for="workphone" class="text-danger"></span>*@
         </span>
 
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="email">Patient email</label>
             <input asp-for="email" type="text">
-            <span asp-validation-for="email" class="text-danger"></span>
+            @*<span asp-validation-for="email" class="text-danger"></span>*@
         </span>
 
         <span class="label-wrapper d-flex flex-column">
@@ -153,7 +155,7 @@
                 <option value="">-- Select --</option>
             </select>
 
-            <span asp-validation-for="contactpreference" class="text-danger"></span>
+            @*<span asp-validation-for="contactpreference" class="text-danger"></span>*@
         </span>
     </section>
 
@@ -175,7 +177,7 @@
          <span class="label-wrapper d-flex flex-row mt-4 align-items-center">
             <label asp-for="islanguage6392code">Patient Declined </label>
             <input asp-for="islanguage6392code" value="true" type="checkbox">
-            <span asp-validation-for="language6392code" class="text-danger"></span>
+            @*<span asp-validation-for="language6392code" class="text-danger"></span>*@
          </span>
 
         <span class="label-wrapper d-flex flex-column">
@@ -185,7 +187,7 @@
     <span class="label-wrapper d-flex flex-row mt-4 align-items-center">
          <label asp-for="israce">Patient declined </label>
             <input asp-for="israce" value="true" type="checkbox">
-            <span asp-validation-for="race" class="text-danger"></span>
+            @*<span asp-validation-for="race" class="text-danger"></span>*@
     </span>
 
         <span class="label-wrapper d-flex flex-column">
@@ -196,7 +198,7 @@
          <span class="label-wrapper d-flex flex-row mt-4 align-items-center">
              <label asp-for="isethnicitycode">Patient declined </label>
             <input asp-for="isethnicitycode" value="true" type="checkbox">
-            <span asp-validation-for="ethnicitycode" class="text-danger"></span>
+            @*<span asp-validation-for="ethnicitycode" class="text-danger"></span>*@
         </span>
 
         <span class="label-wrapper d-flex flex-column">
@@ -204,7 +206,7 @@
             <select asp-for="maritalstatus" asp-items="Model.maritalstatus.DropdownOptions" type="text">
                 <option>--Select--</option>
             </select>
-            <span asp-validation-for="maritalstatus" class="text-danger"></span>
+            @*<span asp-validation-for="maritalstatus" class="text-danger"></span>*@
         </span>
 
         <span class="label-wrapper d-flex flex-column">
@@ -224,7 +226,7 @@
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="genderidentity">Gender identity</label>
             <select asp-for="genderidentity" type="text"></select>
-            <span asp-validation-for="genderidentity" class="text-danger"></span>
+            @*<span asp-validation-for="genderidentity" class="text-danger"></span>*@
         </span>
 
 
@@ -234,12 +236,12 @@
             <select asp-for="assignedsexatbirth" asp-items="Model.assignedsexatbirth.DropdownOptions" type="text">
                 <option>--Select--</option>
             </select>
-            <span asp-validation-for="assignedsexatbirth" class="text-danger"></span>
+            @*<span asp-validation-for="assignedsexatbirth" class="text-danger"></span>*@
         </span>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="preferredpronouns">Pronouns</label>
             <input asp-for="preferredpronouns" type="text">
-            <span asp-validation-for="preferredpronouns" class="text-danger"></span>
+            @*<span asp-validation-for="preferredpronouns" class="text-danger"></span>*@
         </span>
 
         <span class="label-wrapper d-flex flex-column">
@@ -247,7 +249,7 @@
             <select asp-for="homeboundyn" asp-items="Model.homeboundyn.DropdownOptions" type="text">
                 <option>--Select--</option>
             </select>
-            <span asp-validation-for="homeboundyn" class="text-danger"></span>
+            @*<span asp-validation-for="homeboundyn" class="text-danger"></span>*@
         </span>
 
     </section>
@@ -264,7 +266,7 @@
             <input asp-for="caresummarydeliverypreference" type="radio" value="Portal">
             <label>Paper</label>
             <input asp-for="caresummarydeliverypreference" type="radio" value="Paper">
-            <span asp-validation-for="caresummarydeliverypreference" class="text-danger"></span>
+            @*<span asp-validation-for="caresummarydeliverypreference" class="text-danger"></span>*@
         </span>
 
 
@@ -278,7 +280,7 @@
         <span class="label-wrapper d-flex flex-row align-items-center w-100">
             <label asp-for="onlinestatementonlyyn" class="mb-0">Statement delivered online only</label>
             <input asp-for="onlinestatementonlyyn" type="checkbox">
-            <span asp-validation-for="onlinestatementonlyyn" class="text-danger"></span>
+            @*<span asp-validation-for="onlinestatementonlyyn" class="text-danger"></span>*@
         </span>
     </section>
 
@@ -290,19 +292,19 @@
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="primaryproviderid">Usual provider</label>
             <input asp-for="primaryproviderid" type="text">
-            <span asp-validation-for="primaryproviderid" class="text-danger"></span>
+            @*<span asp-validation-for="primaryproviderid" class="text-danger"></span>*@
         </span>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="primarydepartmentid">Primary department </label>
             <select asp-for="primarydepartmentid"></select>
-            <span asp-validation-for="primarydepartmentid" class="text-danger"></span>
+            @*<span asp-validation-for="primarydepartmentid" class="text-danger"></span>*@
         </span>
 
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="deceaseddate">Deceased date</label>
 
             <input asp-for="deceaseddate" type="date">
-            <span asp-validation-for="deceaseddate" class="text-danger"></span>
+            @*<span asp-validation-for="deceaseddate" class="text-danger"></span>*@
         </span>
 
     </section>
@@ -317,13 +319,13 @@
             <label>Yes</label>
             <input asp-for="consenttocall" type="radio" value="No">
             <label>No</label>
-            <span asp-validation-for="consenttocall" class="text-danger"></span>
+            @*<span asp-validation-for="consenttocall" class="text-danger"></span>*@
         </span>
 
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="notes">Patient notes</label>
             <input asp-for="notes" type="text">
-            <span asp-validation-for="notes" class="text-danger"></span>
+            @*<span asp-validation-for="notes" class="text-danger"></span>*@
         </span>
     </section>
 
@@ -333,24 +335,24 @@
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="contactname">Name</label>
             <input asp-for="contactname" type="text">
-            <span asp-validation-for="contactname" class="text-danger"></span>
+            @*<span asp-validation-for="contactname" class="text-danger"></span>*@
         </span>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="contactrelationship">Relationship</label>
             <select asp-for="contactrelationship" asp-items="Model.contactrelationship.DropdownOptions">
                 <option>--Select--</option>
             </select>
-            <span asp-validation-for="contactrelationship" class="text-danger"></span>
+            @*<span asp-validation-for="contactrelationship" class="text-danger"></span>*@
         </span>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="contacthomephone">Home phone</label>
             <input asp-for="contacthomephone" type="text">
-            <span asp-validation-for="contacthomephone" class="text-danger"></span>
+            @*<span asp-validation-for="contacthomephone" class="text-danger"></span>*@
         </span>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="contactmobilephone">Mobile phone</label>
             <input asp-for="contactmobilephone" type="text">
-            <span asp-validation-for="contactmobilephone" class="text-danger"></span>
+            @*<span asp-validation-for="contactmobilephone" class="text-danger"></span>*@
         </span>
 
     </section>
@@ -362,19 +364,19 @@
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="nextkinname">Name</label>
             <input asp-for="nextkinname" type="text">
-            <span asp-validation-for="nextkinname" class="text-danger"></span>
+            @*<span asp-validation-for="nextkinname" class="text-danger"></span>*@
         </span>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="nextkinrelationship">Relationship</label>
             <select asp-for="nextkinrelationship" asp-items="Model.nextkinrelationship.DropdownOptions" type="text">
                 <option>--Select--</option>
             </select>
-            <span asp-validation-for="nextkinrelationship" class="text-danger"></span>
+            @*<span asp-validation-for="nextkinrelationship" class="text-danger"></span>*@
         </span>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="nextkinphone">Phone</label>
             <input asp-for="nextkinphone" type="text">
-            <span asp-validation-for="nextkinphone" class="text-danger"></span>
+            @*<span asp-validation-for="nextkinphone" class="text-danger"></span>*@
         </span>
 
     </section>
@@ -387,18 +389,18 @@
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="employerphone">Employer phone</label>
             <input asp-for="employerphone" type="text">
-            <span asp-validation-for="employerphone" class="text-danger"></span>
+            @*<span asp-validation-for="employerphone" class="text-danger"></span>*@
         </span>
         <span class="label-wrapper d-flex flex-column w-300-px">
             <label asp-for="occupationcode">Usual occupation (current or most recent)</label>
             <input asp-for="occupationcode" type="text">
-            <span asp-validation-for="occupationcode" class="text-danger"></span>
+            @*<span asp-validation-for="occupationcode" class="text-danger"></span>*@
         </span>
 
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="industrycode">Usual Industry</label>
             <input asp-for="industrycode" type="text">
-            <span asp-validation-for="industrycode" class="text-danger"></span>
+            @*<span asp-validation-for="industrycode" class="text-danger"></span>*@
         </span>
     </section>
 
@@ -409,25 +411,25 @@
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="guardianlastname">Last name</label>
             <input asp-for="guardianlastname" type="text">
-            <span asp-validation-for="guardianlastname" class="text-danger"></span>
+            @*<span asp-validation-for="guardianlastname" class="text-danger"></span>*@
         </span>
 
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="guardianfirstname">First name</label>
             <input asp-for="guardianfirstname" type="text">
-            <span asp-validation-for="guardianfirstname" class="text-danger"></span>
+            @*<span asp-validation-for="guardianfirstname" class="text-danger"></span>*@
         </span>
 
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="guardianmiddlename">Middle name</label>
             <input asp-for="guardianmiddlename" type="text">
-            <span asp-validation-for="guardianmiddlename" class="text-danger"></span>
+            @*<span asp-validation-for="guardianmiddlename" class="text-danger"></span>*@
         </span>
 
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="guardiansuffix">suffix</label>
             <input asp-for="guardiansuffix" type="text">
-            <span asp-validation-for="guardiansuffix" class="text-danger"></span>
+            @*<span asp-validation-for="guardiansuffix" class="text-danger"></span>*@
         </span>
     </section>
 
@@ -443,7 +445,7 @@
                 <select asp-for="guarantorrelationshiptopatient" type="text">
                     <option>--Select--</option>
                 </select>
-                <span asp-validation-for="guarantorrelationshiptopatient" class="text-danger"></span>
+                @*<span asp-validation-for="guarantorrelationshiptopatient" class="text-danger"></span>*@
             </span>
         </section>
 
@@ -452,29 +454,29 @@
             <span class="label-wrapper d-flex flex-column">
                 <label asp-for="guarantorlastname">Last name</label>
                 <input asp-for="guarantorlastname" type="text">
-                <span asp-validation-for="guarantorlastname" class="text-danger"></span>
+                @*<span asp-validation-for="guarantorlastname" class="text-danger"></span>*@
             </span>
 
             <span class="label-wrapper d-flex flex-column">
                 <label asp-for="guarantorfirstname">First name</label>
                 <input asp-for="guarantorfirstname" type="text">
-                <span asp-validation-for="guarantorfirstname" class="text-danger"></span>
+                @*<span asp-validation-for="guarantorfirstname" class="text-danger"></span>*@
             </span>
 
             <span class="label-wrapper d-flex flex-column">
                 <label asp-for="guarantormiddlename"> Middle name</label>
                 <input asp-for="guarantormiddlename" type="text">
-                <span asp-validation-for="guarantormiddlename" class="text-danger"></span>
+                @*<span asp-validation-for="guarantormiddlename" class="text-danger"></span>*@
             </span>
             <span class="label-wrapper d-flex flex-column">
                 <label asp-for="guarantorsuffix">suffix</label>
                 <input asp-for="guarantorsuffix" type="text">
-                <span asp-validation-for="guarantorsuffix" class="text-danger"></span>
+                @*<span asp-validation-for="guarantorsuffix" class="text-danger"></span>*@
             </span>
             <span class="label-wrapper d-flex flex-column">
                 <label asp-for="guarantordob">DOB</label>
                 <input asp-for="guarantordob" type="date">
-                <span asp-validation-for="guarantordob" class="text-danger"></span>
+                @*<span asp-validation-for="guarantordob" class="text-danger"></span>*@
             </span>
         </section>
 
@@ -491,29 +493,29 @@
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="guarantoraddress1">Address</label>
             <input asp-for="guarantoraddress1" type="text">
-            <span asp-validation-for="guarantoraddress1" class="text-danger"></span>
+            @*<span asp-validation-for="guarantoraddress1" class="text-danger"></span>*@
         </span>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="guarantoraddress2">Address (ctd)</label>
             <input asp-for="guarantoraddress2" type="text">
-            <span asp-validation-for="guarantoraddress2" class="text-danger"></span>
+            @*<span asp-validation-for="guarantoraddress2" class="text-danger"></span>*@
         </span>
 
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="guarantorzip">ZIP</label>
             <input asp-for="guarantorzip" type="text">
-            <span asp-validation-for="guarantorzip" class="text-danger"></span>
+            @*<span asp-validation-for="guarantorzip" class="text-danger"></span>*@
         </span>
 
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="guarantorcity">City</label>
             <input asp-for="guarantorcity" type="text">
-            <span asp-validation-for="guarantorcity" class="text-danger"></span>
+            @*<span asp-validation-for="guarantorcity" class="text-danger"></span>*@
         </span>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="guarantorstate">State</label>
             <input asp-for="guarantorstate" type="text">
-            <span asp-validation-for="guarantorstate" class="text-danger"></span>
+            @*<span asp-validation-for="guarantorstate" class="text-danger"></span>*@
         </span>
 
         <h4 class="w-100 mt-3">Optional Information</h4>
@@ -522,14 +524,14 @@
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="guarantorssn">SSN</label>
             <input asp-for="guarantorssn" type="text">
-            <span asp-validation-for="guarantorssn" class="text-danger"></span>
+            @*<span asp-validation-for="guarantorssn" class="text-danger"></span>*@
         </span>
 
 
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="guarantorphone">Phone</label>
             <input asp-for="guarantorphone" type="text">
-            <span asp-validation-for="guarantorphone" class="text-danger"></span>
+            @*<span asp-validation-for="guarantorphone" class="text-danger"></span>*@
         </span>
 
         <span class="label-wrapper d-flex flex-column">
@@ -544,7 +546,7 @@
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="guarantoremployerid">Employer</label>
             <input asp-for="guarantoremployerid" type="text">
-            <span asp-validation-for="guarantoremployerid" class="text-danger"></span>
+            @*<span asp-validation-for="guarantoremployerid" class="text-danger"></span>*@
         </span>
 
 
@@ -555,11 +557,12 @@
 </div>
 
 <div  class="d-flex flex-row align-items-center justify-content-start mb-4">
-    <button class="ms-0" asp-action="Index" asp-controller="Patient">Save</button>
-     <button class="ms-4" asp-action="Index" asp-controller="Patient">Draft</button>
-     <button class="ms-4" asp-action="Index" asp-controller="Patient">Save and Continue</button>
-</div>
 
+        <button class="ms-0" >Save</button>
+     <button class="ms-4" >Draft</button>
+    <button class="ms-4" >Save and Continue</button>
+</div>
+</form>
 @*@section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }*@

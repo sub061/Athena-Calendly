@@ -24,7 +24,7 @@ namespace Medical_Athena_Calendly.Repository
         public async Task<CalendlyUserModel> GetCurrentCalendlyAdminUserAndOrganization()
         {
             var session = _contextAccessor.HttpContext.Session;
-            var token = session.GetString("CalendlyAccessToken");
+            var token = session.GetString("calendly_access_token");
             var apiUrl = "https://api.calendly.com/users/me";
             CalendlyUserModel response = await _apiService.GetAsync<CalendlyUserModel>(apiUrl, token);
             // set current_organization
@@ -43,7 +43,7 @@ namespace Medical_Athena_Calendly.Repository
             var url = "https://api.calendly.com/scheduled_events";
             var patientEmail = session.GetString("userEmail");
             var organization = session.GetString("calendly_current_organization");
-            var token = session.GetString("CalendlyAccessToken");
+            var token = session.GetString("calendly_access_token");
             var user = session.GetString("calendly_user_uri");
 
             // for sorting
@@ -66,7 +66,7 @@ namespace Medical_Athena_Calendly.Repository
             var organization = session.GetString("calendly_current_organization");
 
 
-            var token = session.GetString("CalendlyAccessToken");
+            var token = session.GetString("calendly_access_token");
             var apiUrl = url + "?user=" + user + "&organization=" + organization;
             var response = await _apiService.GetAsync<AppointmentResponse>(apiUrl, token);
 
@@ -77,7 +77,7 @@ namespace Medical_Athena_Calendly.Repository
         public async Task<CancleAndRescheduleLinkModel> GetCancleAndRescheduleLink(string apiUrl)
         {
             var session = _contextAccessor.HttpContext.Session;
-            var token = session.GetString("CalendlyAccessToken");
+            var token = session.GetString("calendly_access_token");
             var response = await _apiService.GetAsync<CancleAndRescheduleLinkModel>(apiUrl, token);
 
             return response;

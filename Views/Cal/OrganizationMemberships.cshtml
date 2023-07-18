@@ -1,0 +1,71 @@
+﻿@model Medical_Athena_Calendly.ViewModel.CalCom.CalMembership
+@{
+    var userName = ViewData["userName"];
+    var userEmail = ViewData["userEmail"];
+}
+<link rel="stylesheet" href="~/css/utility.css" />
+
+<h4 class="mt-3">Dr. List</h4>
+
+
+<div id="calendlyContainer"></div>
+<div id="app"></div>
+<table class="table rounded border table-striped table-hover mt-3">
+    <thead class="bg-green-light">
+        <tr>
+            <th class="w-60 border-bottom-0" scope="col">#</th>
+            <th class="w-60 border-bottom-0" scope="col"></th>
+            <th class="border-bottom-0" scope="col">Name</th>
+            <th class="border-bottom-0" scope="col">Slug</th>
+            <th class="border-bottom-0" scope="col">Book Appointment</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model.memberships)
+        {
+            int serialNumber = Model.memberships.IndexOf(item) + 1;
+            <tr>
+                <td>@serialNumber</td>
+                <td class="p-0 pt-1"><img src="~/img/user.png"></td>
+                <td>@item.team.name</td>
+                <td>@item.team.metadata.requestedSlug</td>
+                <td><a onclick="openCalendly()" href="#">Book Now</a></td>
+             @*  <td><a onclick="openCalendly('@item.user.scheduling_url','@userName','@userEmail')" href="#">Book Now</a></td>*@
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+<script type="text/javascript">
+    function openCalendly() {
+        console.log("click")
+           
+            Cal("inline", {
+                elementOrSelector: "Your Embed Container Selector Path", // You can also provide an element directly
+                calLink: "jane", // The link that you want to embed. It would open https://cal.com/jane in embed
+                config: {
+                    name: "John Doe", // Prefill Name
+                    email: "johndoe@gmail.com", // Prefill Email
+                    notes: "Test Meeting", // Prefill Notes
+                    guests: ["janedoe@gmail.com", "test@gmail.com"], // Prefill Guests
+                    theme: "dark", // "dark" or "light" theme
+                },
+            });
+
+    }
+
+        //Calendly.initInlineWidget({
+        //    url: 'https://calendly.com/YOUR_LINK/30min',
+        //    prefill: {
+        //        name: "John Doe",
+        //        email: "john@doe2.com",
+        //        customAnswers: {
+        //            a1: "Yes",
+        //            a2: "At the Starbucks on 3rd and 16th"
+        //        }
+        //    }
+        //});
+</script>
