@@ -15,7 +15,10 @@
 <body class="login-body">
     @* <div class="login-box-msg"><img src="../img/Athena-healthsm-logo.png"></div> *@
     <p class="login-box-msg">Sign in to start your session</p>
-
+    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+    {
+        <p class="text-danger">@ViewBag.ErrorMessage</p>
+    }
     <form asp-action="Index">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="input-group mb-3">

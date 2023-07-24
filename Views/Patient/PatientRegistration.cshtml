@@ -6,7 +6,6 @@
     ViewData["Title"] = "PatientRegistration";
     Layout = "~/Views/Shared/_LayoutTopNav.cshtml";
     var code = ViewData["Language"] as List<Language>;
-    var sexualOrientation = ViewData["SexualOrientation"] as List<SexualOrientation>;
 }
 
 
@@ -31,17 +30,17 @@
         </span>
 
         @*first name used *@
-        <span class="label-wrapper d-flex flex-column w-435px">
+@*        <span class="label-wrapper d-flex flex-column w-435px">
             <label asp-for="altfirstname">First name used </label>
             <span class="d-flex flex-row">
                 <input asp-for="altfirstname" type="text">
                 <span class="ps-2 h-34"> This name may be viewable and editable by the patient.</span>
                 <span asp-validation-for="altfirstname" class="text-danger"></span>
             </span>
-        </span>
+        </span>*@
 
         @* middle name and suffix*@
-        <span class="label-wrapper d-flex flex-column">
+@*        <span class="label-wrapper d-flex flex-column">
             <label asp-for="middlename">Middle name</label>
             <input asp-for="middlename" type="text">
             <span asp-validation-for="middlename" class="text-danger"></span>
@@ -50,16 +49,16 @@
             <label asp-for="suffix">Suffix</label>
             <input asp-for="suffix" type="text">
             <span asp-validation-for="suffix" class="text-danger"></span>
-        </span>
+        </span>*@
 
         @*      sex*@
-        <span class="label-wrapper d-flex flex-column">
+@*        <span class="label-wrapper d-flex flex-column">
             <label asp-for="sex">Legal sex</label>
             <select asp-for="sex" asp-items="Model.sex.DropdownOptions">
                 <option>--select--</option>
             </select>
             <span asp-validation-for="sex" class="text-danger"></span>
-        </span>
+        </span>*@
 
         @*dob*@
         <span class="label-wrapper d-flex flex-column">
@@ -69,17 +68,17 @@
         </span>
 
         @*ssn*@
-        <span class="label-wrapper d-flex flex-column">
+@*        <span class="label-wrapper d-flex flex-column">
             <label asp-for="ssn">SSN</label>
             <input asp-for="ssn" type="text">
             <span asp-validation-for="ssn" class="text-danger"></span>
-        </span>
+        </span>*@
         @*Preferred name*@
-        <span class="label-wrapper d-flex flex-column">
+      @*  <span class="label-wrapper d-flex flex-column">
             <label asp-for="preferredname">Preferred name</label>
             <input asp-for="preferredname" type="text">
             <span asp-validation-for="preferredname" class="text-danger"></span>
-        </span>
+        </span>*@
     </section>
 
     @*Contact start here*@
@@ -87,31 +86,31 @@
         <h4 class="w-100">Contact</h4>
 
         <span class="label-wrapper d-flex flex-column w-435px">
-            <label asp-for="address1">Address</label>
+            <label asp-for="address1">Street Address</label>
             <input asp-for="address1" type="text">
-            <span asp-validation-for="address1" class="text-danger"></span>
+          
         </span>
 
         <span class="label-wrapper d-flex flex-column  w-435px">
-            <label asp-for="address2">Address (ctd)</label>
+            <label asp-for="address2">Street Address Line 2</label>
             <input asp-for="address2" type="text">
-            <span asp-validation-for="address2" class="text-danger"></span>
+           
         </span>
         <span class="label-wrapper d-flex flex-column">
-            <label asp-for="zip">ZIP code</label>
+            <label asp-for="zip">Postal / Zip Code</label>
             <input asp-for="zip" type="text">
             <span asp-validation-for="zip" class="text-danger"></span>
         </span>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="city">City</label>
             <input asp-for="city" type="text">
-            <span asp-validation-for="city" class="text-danger"></span>
+           
         </span>
 
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="state">State</label>
             <input asp-for="state" type="text">
-            <span asp-validation-for="state" class="text-danger"></span>
+           
         </span>
 
         <span class="label-wrapper d-flex flex-column">
@@ -122,23 +121,31 @@
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="mobilephone">Mobile phone</label>
             <input asp-for="mobilephone" type="text">
-            <span asp-validation-for="mobilephone" class="text-danger"></span>
+           
         </span>
 
 
         <span class="label-wrapper d-flex flex-row align-items-center mt-4">            
             <label asp-for="consenttotext">Consent to text</label>
-            <input asp-for="consenttotext" type="radio" value="Yes">
+            <input asp-for="consenttotext" type="radio" checked="checked" value="Yes">
             <label>Yes</label>
             <input asp-for="consenttotext" type="radio" value="No">
             <label>No</label>
-            <span asp-validation-for="consenttotext" class="text-danger"></span>
+            
+        </span>
+          <span class="label-wrapper d-flex flex-row  align-items-center mt-4">
+            <label asp-for="consenttocall">Consent to call</label>
+            <input asp-for="consenttocall" type="radio" value="Yes">
+            <label>Yes</label>
+            <input asp-for="consenttocall" type="radio" checked="checked" value="No">
+            <label>No</label>
+          
         </span>
 
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="workphone">Work phone</label>
             <input asp-for="workphone" type="text">
-            <span asp-validation-for="workphone" class="text-danger"></span>
+           
         </span>
 
         <span class="label-wrapper d-flex flex-column">
@@ -149,11 +156,11 @@
 
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="contactpreference">Contact preference</label>
-            <select asp-for="contactpreference" asp-items="Model.contactpreference.DropdownOptions">
+         @*   <select asp-for="contactpreference" asp-items="Model.contactpreference.DropdownOptions">
                 <option value="">-- Select --</option>
-            </select>
+            </select>*@
 
-            <span asp-validation-for="contactpreference" class="text-danger"></span>
+          
         </span>
     </section>
 
@@ -172,11 +179,11 @@
             </select>
             
         </span>
-         <span class="label-wrapper d-flex flex-row mt-4 align-items-center">
+        @* <span class="label-wrapper d-flex flex-row mt-4 align-items-center">
             <label asp-for="islanguage6392code">Patient Declined </label>
             <input asp-for="islanguage6392code" value="true" type="checkbox">
             <span asp-validation-for="language6392code" class="text-danger"></span>
-         </span>
+         </span>*@
 
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="race">Race </label>
@@ -184,8 +191,8 @@
         </span>
     <span class="label-wrapper d-flex flex-row mt-4 align-items-center">
          <label asp-for="israce">Patient declined </label>
-            <input asp-for="israce" value="true" type="checkbox">
-            <span asp-validation-for="race" class="text-danger"></span>
+            <input asp-for="israce" value="true" type="checkbox" checked="checked">
+           
     </span>
 
         <span class="label-wrapper d-flex flex-column">
@@ -195,11 +202,11 @@
 
          <span class="label-wrapper d-flex flex-row mt-4 align-items-center">
              <label asp-for="isethnicitycode">Patient declined </label>
-            <input asp-for="isethnicitycode" value="true" type="checkbox">
-            <span asp-validation-for="ethnicitycode" class="text-danger"></span>
+            <input asp-for="isethnicitycode" value="true" type="checkbox" checked="checked">
+          
         </span>
 
-        <span class="label-wrapper d-flex flex-column">
+      @*  <span class="label-wrapper d-flex flex-column">
             <label asp-for="maritalstatus">Marital status</label>
             <select asp-for="maritalstatus" asp-items="Model.maritalstatus.DropdownOptions" type="text">
                 <option>--Select--</option>
@@ -248,13 +255,13 @@
                 <option>--Select--</option>
             </select>
             <span asp-validation-for="homeboundyn" class="text-danger"></span>
-        </span>
+        </span>*@
 
     </section>
 
 
     @* Aditional Information*@
-    <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
+@*    <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
         <h4 class="w-100">Aditional Information</h4>
 
         <span class="label-wrapper d-flex flex-row w-100">
@@ -268,11 +275,11 @@
         </span>
 
 
-    </section>
+    </section>*@
 
 
     @*Billing*@
-    <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
+  @*  <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
         <h4 class="w-100">Billing</h4>
 
         <span class="label-wrapper d-flex flex-row align-items-center w-100">
@@ -280,12 +287,12 @@
             <input asp-for="onlinestatementonlyyn" type="checkbox">
             <span asp-validation-for="onlinestatementonlyyn" class="text-danger"></span>
         </span>
-    </section>
+    </section>*@
 
     @*Provider*@
     @*    <div class="d-flex align-start justify-start">
     </div>*@
-    <section class="d-flex flex-row flex-wrap grow-1 gap-24 mb-24">
+  @*  <section class="d-flex flex-row flex-wrap grow-1 gap-24 mb-24">
         <h4 class="w-100">Provider/ Registration Date</h4>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="primaryproviderid">Usual provider</label>
@@ -306,29 +313,29 @@
         </span>
 
     </section>
-
+*@
     @*    Privacy*@
-    <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
-        <h4 class="w-100"> Privacy</h4>
+@*    <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
+        <h4 class="w-100"> Privacy</h4>*@
 
-        <span class="label-wrapper d-flex flex-row  align-items-center mt-4">
+      @*  <span class="label-wrapper d-flex flex-row  align-items-center mt-4">
             <label asp-for="consenttocall">Consent to call</label>
             <input asp-for="consenttocall" type="radio" value="Yes">
             <label>Yes</label>
-            <input asp-for="consenttocall" type="radio" value="No">
+            <input asp-for="consenttocall" type="radio" checked="checked" value="No">
             <label>No</label>
             <span asp-validation-for="consenttocall" class="text-danger"></span>
-        </span>
+        </span>*@
 
-        <span class="label-wrapper d-flex flex-column">
+     @*   <span class="label-wrapper d-flex flex-column">
             <label asp-for="notes">Patient notes</label>
             <input asp-for="notes" type="text">
             <span asp-validation-for="notes" class="text-danger"></span>
         </span>
-    </section>
+    </section>*@
 
     @*Emergency Contact*@
-    <section class="d-flex flex-row flex-wrap grow-1 gap-24 mb-24">
+   @* <section class="d-flex flex-row flex-wrap grow-1 gap-24 mb-24">
         <h4 class="w-100">Emergency Contact</h4>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="contactname">Name</label>
@@ -353,10 +360,10 @@
             <span asp-validation-for="contactmobilephone" class="text-danger"></span>
         </span>
 
-    </section>
+    </section>*@
 
     @*Next of Kin*@
-    <section class="d-flex flex-row flex-wrap grow-1 gap-24 mb-24">
+  @*  <section class="d-flex flex-row flex-wrap grow-1 gap-24 mb-24">
         <h4 class="w-100">Next of Kin</h4>
 
         <span class="label-wrapper d-flex flex-column">
@@ -378,10 +385,10 @@
         </span>
 
     </section>
-
+*@
 
     @*Employment*@
-    <section class="d-flex flex-row flex-wrap grow-1 gap-24 mb-24">
+@*    <section class="d-flex flex-row flex-wrap grow-1 gap-24 mb-24">
         <h4 class="w-100">Employment</h4>
 
         <span class="label-wrapper d-flex flex-column">
@@ -400,11 +407,11 @@
             <input asp-for="industrycode" type="text">
             <span asp-validation-for="industrycode" class="text-danger"></span>
         </span>
-    </section>
+    </section>*@
 
     @*Guardian*@
 
-    <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
+ @*   <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
         <h4 class="w-100">Guardian</h4>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="guardianlastname">Last name</label>
@@ -429,7 +436,7 @@
             <input asp-for="guardiansuffix" type="text">
             <span asp-validation-for="guardiansuffix" class="text-danger"></span>
         </span>
-    </section>
+    </section>*@
 
 
 
@@ -443,11 +450,11 @@
                 <select asp-for="guarantorrelationshiptopatient" type="text">
                     <option>--Select--</option>
                 </select>
-                <span asp-validation-for="guarantorrelationshiptopatient" class="text-danger"></span>
+              
             </span>
         </section>
 
-        <section class="d-flex flex-row flex-wrap grow-1 gap-24 mb-24">
+   @*     <section class="d-flex flex-row flex-wrap grow-1 gap-24 mb-24">
             <h4 class="w-100">Guarantor (Name to whom statement are sent)</h4>
             <span class="label-wrapper d-flex flex-column">
                 <label asp-for="guarantorlastname">Last name</label>
@@ -476,7 +483,7 @@
                 <input asp-for="guarantordob" type="date">
                 <span asp-validation-for="guarantordob" class="text-danger"></span>
             </span>
-        </section>
+        </section>*@
 
     <section class="d-flex flex-row flex-wrap w-100 gap-24 mb-24">
         <div class="d-flex align-items-center flex-row justify-content-start w-100">  
@@ -489,34 +496,34 @@
 
 
         <span class="label-wrapper d-flex flex-column">
-            <label asp-for="guarantoraddress1">Address</label>
+            <label asp-for="guarantoraddress1">Street Address</label>
             <input asp-for="guarantoraddress1" type="text">
-            <span asp-validation-for="guarantoraddress1" class="text-danger"></span>
+           
         </span>
         <span class="label-wrapper d-flex flex-column">
-            <label asp-for="guarantoraddress2">Address (ctd)</label>
+            <label asp-for="guarantoraddress2">Street Address Line 2</label>
             <input asp-for="guarantoraddress2" type="text">
-            <span asp-validation-for="guarantoraddress2" class="text-danger"></span>
+          
         </span>
 
         <span class="label-wrapper d-flex flex-column">
-            <label asp-for="guarantorzip">ZIP</label>
+            <label asp-for="guarantorzip">Postal / Zip Code</label>
             <input asp-for="guarantorzip" type="text">
-            <span asp-validation-for="guarantorzip" class="text-danger"></span>
+           
         </span>
 
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="guarantorcity">City</label>
             <input asp-for="guarantorcity" type="text">
-            <span asp-validation-for="guarantorcity" class="text-danger"></span>
+      
         </span>
         <span class="label-wrapper d-flex flex-column">
             <label asp-for="guarantorstate">State</label>
             <input asp-for="guarantorstate" type="text">
-            <span asp-validation-for="guarantorstate" class="text-danger"></span>
+          
         </span>
 
-        <h4 class="w-100 mt-3">Optional Information</h4>
+ @*       <h4 class="w-100 mt-3">Optional Information</h4>
 
 
         <span class="label-wrapper d-flex flex-column">
@@ -547,7 +554,7 @@
             <span asp-validation-for="guarantoremployerid" class="text-danger"></span>
         </span>
 
-
+*@
 
     </section>
 

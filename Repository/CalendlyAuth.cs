@@ -1,5 +1,6 @@
 ﻿using Medical_Athena_Calendly.CommonServices;
 using Medical_Athena_Calendly.Interface;
+using Medical_Athena_Calendly.ViewModel.Calendly;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Medical_Athena_Calendly.Repository
@@ -45,9 +46,13 @@ namespace Medical_Athena_Calendly.Repository
             return clientToken;
         }
 
+
+
         public string ClientTokenSecret()
         {
             throw new NotImplementedException();
         }
+
+       
     }
 }

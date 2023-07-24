@@ -36,14 +36,14 @@
     {
         public CalendarEvent calendar_event { get; set; }
         public DateTime created_at { get; set; }
-        public DateTime end_time { get; set; }
+        public DateTimeOffset end_time { get; set; }
         public List<EventGuest> event_guests { get; set; }
         public List<EventMembership> event_memberships { get; set; }
         public string event_type { get; set; }
         public InviteesCounter invitees_counter { get; set; }
         public Location location { get; set; }
         public string name { get; set; }
-        public DateTime start_time { get; set; }
+        public DateTimeOffset start_time { get; set; }
         public string status { get; set; }
         public DateTime updated_at { get; set; }
         public string uri { get; set; }

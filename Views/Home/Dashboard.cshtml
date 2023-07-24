@@ -1,4 +1,6 @@
-﻿@{
+﻿@model List<Medical_Athena_Calendly.ViewModel.EventViewModel>
+
+@{
     Layout = "_LayoutTopNav";
 	 var userName = ViewData["userName"];
 }
@@ -11,6 +13,50 @@
 <head>
 </head>
 <body>
+
+	@foreach (var item in Model)
+	{
+		<!--start cart   -->
+		<div class="card mr-3" id="eventCart" role="dialog" aria-labelledby="eventCartLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title appointment-name" id="eventCartLabel"> @item.start </h5>
+					</div>
+					<div class="card-body fs-14 flex-column d-flex  justify-content-center align-items-center">
+						<!-- Content of the modal goes here -->
+						<div id="cartDetails">
+	  <div class="w-100 d-flex align-items-center justify-content-center flex-row pt-2 pb-2">
+		<div class="usr-image  pt-3 pb-3"><img src="~/img/doctor_001.png"></img></div>
+								<div class="font-weight-bolder"> @ViewData["calendly_current_user_name"]</div>
+	  </div>
+
+	  <div class="w-100 d-flex align-items-center justify-content-center flex-row pt-1 pb-1">
+								<div class="usr-image  pt-3 pb-3"><img src="~/img/meeting_02.svg"></img> </div>
+		<div class="font-weight-bolder">@item.title</div>
+	  </div>
+
+	  <div class="w-100 d-flex align-items-center justify-content-center flex-row pt-1 pb-1">
+		<div class="usr-image  pt-3 pb-3"><img src="~/img/zoom_01.svg"></img> </div>
+		<span class="font-weight-bolder">@item.url</span>
+	  </div>
+
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a href=@item.cancleUrl class="btn btn-secondary">Cancle Appointment</a>
+						<button type="button" href=@item.rescheduleLink class="btn btn-secondary">Reshedule Appointment</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--end  -->
+	}
+
+
+
+
 
 	<!-- Modal Popup -->
 	<div class="modal" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel" aria-hidden="true">
@@ -34,35 +80,33 @@
 	</div>
 	<div class="container">
 		
-  <div class="row">
+  <div class="row" style="display:;">
     <div class="col-xl-3 ps-0">
 	<div class="card mr-3">
   <div class="card-body fs-14 flex-column d-flex  justify-content-center align-items-center">
-    <div class="usr-image  pt-3 pb-3"><img src="../img/user.png"></div>
+    <div class="usr-image  pt-3 pb-3"></div>
 						<div class="customer-name"><h4>@ViewData["userName"]</h4></div>
-	 <div class="w-100 border-bottom pb-2"><b>Details</b></div>
+	 <div class="w-100 border-bottom pb-2"><b></b></div>
 	  <div class="w-100 d-flex align-items-center justify-content-center flex-row pt-2 pb-2">
-		<span class="d-flex flex-grow-1">Age</span>
-		<span class="font-weight-bolder">26 Years</span>
+		<span class="d-flex flex-grow-1"></span>
+		<span class="font-weight-bolder"> @ViewData["calendly_current_user_name"]</span>
 	  </div>
 
 	  <div class="w-100 d-flex align-items-center justify-content-center flex-row pt-1 pb-1">
-		<span class="d-flex flex-grow-1"> Blood Group</span>
-		<span class="font-weight-bolder">O+</span>
+		<span class="d-flex flex-grow-1"> Meeting name icon</span>
+		<span class="font-weight-bolder">Meeting Name</span>
 	  </div>
 
 	  <div class="w-100 d-flex align-items-center justify-content-center flex-row pt-1 pb-1">
-		<span class="d-flex flex-grow-1"> Height(m)</span>
-		<span class="font-weight-bolder">1.78</span>
+		<span class="d-flex flex-grow-1"> meeting link </span>
+		<span class="font-weight-bolder">link</span>
+	  </div>
+	
+	  <div class="w-100 d-flex align-items-center justify-content-center flex-row pt-1 pb-1">
+		<span class="d-flex flex-grow-1"><a href="#" class="card-link">Cancle link</a> </span>
+		<span class="font-weight-bolder"><a href="#" class="card-link">Rechedule Link</a></span>
 	  </div>
 
-	  <div class="w-100 d-flex align-items-center border-bottom justify-content-center flex-row pt-1 pb-3 mb-3">
-		<span class="d-flex flex-grow-1"> Weight (Kg)</span>
-		<span class="font-weight-bolder">60</span>
-	  </div>   
-<p><a href="#" class="card-link">jotform</a></p>
- <p><a href="#" class="card-link">educational items</a></p>   
-<p><a href="#" class="card-link">Athena portal</a></p>	
   </div>
 </div>
 	</div>
@@ -82,7 +126,7 @@
   </div>
 </div>
 
-<div id='wrap'>
+<div id='wrap' style="display:none;">
 
 @* <div style='clear:both'></div> *@
 </div>
@@ -104,6 +148,8 @@
 		<script type="text/javascript">	
 			//$(document).ready(function () {
 				document.addEventListener('DOMContentLoaded', function() {
+updateElements();
+		//const meetingName = document.getElementsByClassName('appointment-name')
 
 		const calendarEl = document.getElementById('calendar')
 		const calendar = new FullCalendar.Calendar(calendarEl, {
@@ -118,12 +164,17 @@
 			events: '@Url.RouteUrl(new{ action="GetEvents", controller="Home"})',
 			eventClick: function (info) {
 				var eventElement = info.el;
+				console.log(info.event.start);
 				$("#eventModal").modal("show");
+
+				
+				var eventModalLabel = document.getElementById('eventModalLabel');
+				eventModalLabel.innerHTML = '<h3>' + convertUtcToLocal(info.event.start) + '</h3>'
 				var eventDetails = document.getElementById('eventDetails');
 				eventDetails.innerHTML = '<h3>' + info.event.title + '</h3>' +
 				' <p><h5> Meeting Time</h5>' +
-					'<h5>' + info.event.start + '</h5>' +
-					'<h5>' + info.event.end + '</h5></p>' +
+					'<h5>' + convertUtcToLocal(info.event.start) + '</h5>' +
+					'<h5>' + convertUtcToLocal(info.event.end)+ '</h5></p>' +
 					'<p><a onclick="openCalendly(' + "'" + info.event.extendedProps.cancleUrl + "'," + "'@userName'" + ')" href="#">Cancel Appointment </a></p>' +
 					'<p><a onclick="openCalendly(' + "'" + info.event.extendedProps.rescheduleLink + "'," + "'@userName'" + ')" href="#">Reschedule Appointment </a></p>';
 				// Attach onclick event handler
@@ -142,6 +193,36 @@
 		calendar.render();
 
 			});
+
+	function updateElements() {
+		// Step 1: Get elements by class name
+		var elements = document.getElementsByClassName('appointment-name');
+		console.log("app");
+		// Step 2: Iterate through elements and update text
+		for (var i = 0; i < elements.length; i++) {
+			var starttime = elements[i].textContent;
+			console.log(starttime);
+			var newTime = convertUtcToLocal(starttime)
+			console.log(newTime);
+			elements[i].textContent = newTime;
+		}
+	}
+
+function convertUtcToLocal(utcDateTimeString) {
+		const options = {
+			hour: 'numeric',
+			minute: 'numeric',
+			hour12: true,
+			weekday: 'long',
+			month: 'long',
+			day: 'numeric',
+			year: 'numeric'
+		};
+  const utcDateTime = new Date(utcDateTimeString);
+		const localTime = utcDateTime.toLocaleString('en-US', options);
+		console.log(localTime);
+  return localTime;
+}
 
 
 	function openCalendly(url, userName) {

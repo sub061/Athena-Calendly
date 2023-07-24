@@ -15,20 +15,22 @@ namespace Medical_Athena_Calendly.Controllers
         private readonly IPasswordEncryption _passwordEncryption;
         private readonly ApiService _apiService;
         private readonly ICalendlyAuth _calendlyAuth;
+        private readonly ICalendly _calendly;
 
-        public RegistrationController(IUnitOfWork unitOfWork , IPasswordEncryption passwordEncryption, ApiService apiService, ICalendlyAuth calendlyAuth)
+        public RegistrationController(IUnitOfWork unitOfWork , IPasswordEncryption passwordEncryption, ApiService apiService, ICalendlyAuth calendlyAuth, ICalendly calendly)
         {
             _unitOfWork = unitOfWork;
             _passwordEncryption = passwordEncryption;
             _apiService = apiService;
             _calendlyAuth = calendlyAuth;
+            _calendly = calendly;
         }
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Register(User user)
+        public async Task< IActionResult> Register(User user)
         {
             try
             {
@@ -42,8 +44,13 @@ namespace Medical_Athena_Calendly.Controllers
 
                 // store user email
                 HttpContext.Session.SetString("userEmail", user.Email);
+                // Get Personal token
+                string clientToken = _calendlyAuth.ClientPersonalToken();
+                HttpContext.Session.SetString("CalendlyAccessToken", clientToken);
 
-                return RedirectToAction("GetCalendlyAuthorize", "Calendly");
+                await _calendly.SetCalendlySession();
+
+                return RedirectToAction("OrganizationMemberships", "Calendly");
             }
             catch (Exception ex)
             {

@@ -6,9 +6,9 @@
 
         public String title { get; set; }
 
-        public String start { get; set; }
+        public DateTimeOffset start { get; set; }
 
-        public String end { get; set; }
+        public DateTimeOffset end { get; set; }
 
         public bool allDay { get; set; }
         public string url { get; set; }

@@ -11,11 +11,30 @@ namespace Medical_Athena_Calendly.Repository
     {
         private readonly IHttpContextAccessor _contextAccessor;
         private readonly ApiService _apiService;
+       
         public Calendly(IHttpContextAccessor contextAccessor, ApiService apiService)
         {
             _contextAccessor = contextAccessor;
-            _apiService = apiService;   
+            _apiService = apiService;
+       
         }
+
+
+
+        public async Task SetCalendlySession()
+        {
+            var session = _contextAccessor.HttpContext.Session;
+
+            var token = session.GetString("CalendlyAccessToken");
+            var apiUrl = "https://api.calendly.com/users/me";
+            CalendlyUserModel response = await _apiService.GetAsync<CalendlyUserModel>(apiUrl, token);
+            // set current_organization
+            session.SetString("calendly_current_user_name", response.resource.name);
+            session.SetString("calendly_current_organization", response.resource.current_organization);
+            session.SetString("calendly_user_uri", response.resource.uri);
+            session.SetString("calendly_scheduling_url", response.resource.scheduling_url);
+        }
+
 
         /// <summary>
         ///  get current admin user and get organization

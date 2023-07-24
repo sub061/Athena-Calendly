@@ -28,85 +28,13 @@ namespace Medical_Athena_Calendly.Controllers
             var language = LanguageData.GetData();
             ViewData["Language"] = language;
 
-            var sexualOrientation = SexualOrientationData.GetData();
-            ViewData["SexualOrientation"] = sexualOrientation;
-
-            var contactPreference = new ContactPreference
-            {
-                DropdownOptions = Enum.GetValues(typeof(ContactPreferenceEnum))
-            .Cast<ContactPreferenceEnum>()
-            .Select(e => new SelectListItem
-            {
-                Value = e.ToString(),
-                Text = e.ToString()
-            })
-            };
-
-            var assignedSexAtBirth = new AssignedSexAtBirth
-            {
-                DropdownOptions = Enum.GetValues(typeof(AssignedSexAtBirthEnum))
-            .Cast<AssignedSexAtBirthEnum>()
-            .Select(e => new SelectListItem
-            {
-                Value = e.ToString(),
-                Text = e.ToString()
-            })
-            };
-
-            var maritalStatus = new MaritalStatus
-            {
-                DropdownOptions = Enum.GetValues(typeof(MaritalStatusEnum))
-           .Cast<MaritalStatusEnum>()
-           .Select(e => new SelectListItem
-           {
-               Value = e.ToString(),
-               Text = e.ToString()
-           })
-            };
-
-
-            var sex = new Sex
-            {
-                DropdownOptions = Enum.GetValues(typeof(SexEnum))
-            .Cast<SexEnum>()
-            .Select(e => new SelectListItem
-            {
-                Value = e.ToString(),
-                Text = e.ToString()
-            })
-            };
-
-
-            var booleanValue = new BooleanValue
-            {
-                DropdownOptions = Enum.GetValues(typeof(BooleanValueEnum))
-          .Cast<BooleanValueEnum>()
-          .Select(e => new SelectListItem
-          {
-              Value = e.ToString(),
-              Text = e.ToString()
-          })
-            };
-
-            var relationshipe = new Relationship
-            {
-                DropdownOptions = Enum.GetValues(typeof(ContactRelationshipEnum))
-     .Cast<ContactRelationshipEnum>()
-     .Select(e => new SelectListItem
-     {
-         Value = e.ToString(),
-         Text = e.ToString()
-     })
-            };
+  
+            var email = HttpContext.Session.GetString("userEmail");
 
             PatientModel model = new PatientModel();
-            model.contactpreference = contactPreference;
-            model.sex = sex;
-            model.maritalstatus = maritalStatus;
-            model.assignedsexatbirth = assignedSexAtBirth;
-            model.homeboundyn = booleanValue;
-            model.contactrelationship = relationshipe;
-            model.nextkinrelationship = relationshipe;
+           
+            model.email = email;
+
 
 
             return View("PatientRegistration", model);

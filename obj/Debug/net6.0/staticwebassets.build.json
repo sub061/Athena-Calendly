@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OjzP+Xjo6MCs/W9/itdpExQfLQGtaDVjqrEa3DcXt0I=",
+  "Hash": "VnRkWMkI4EDvmbJbCD2cqnGPfOV4L/sByeqksjH6BRk=",
   "Source": "Medical-Athena-Calendly",
   "BasePath": "_content/Medical-Athena-Calendly",
   "Mode": "Default",
@@ -153,6 +153,40 @@
       "OriginalItemSpec": "wwwroot\\img\\Athena-healthsm-logo.png"
     },
     {
+      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\img\\doctor_001.png",
+      "SourceId": "Medical-Athena-Calendly",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "BasePath": "_content/Medical-Athena-Calendly",
+      "RelativePath": "img/doctor_001.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\doctor_001.png"
+    },
+    {
+      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\img\\doctor_01.svg",
+      "SourceId": "Medical-Athena-Calendly",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "BasePath": "_content/Medical-Athena-Calendly",
+      "RelativePath": "img/doctor_01.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\doctor_01.svg"
+    },
+    {
       "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\img\\google-plus-g.svg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
@@ -187,6 +221,23 @@
       "OriginalItemSpec": "wwwroot\\img\\login-bg.jpg"
     },
     {
+      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\img\\meeting_02.svg",
+      "SourceId": "Medical-Athena-Calendly",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "BasePath": "_content/Medical-Athena-Calendly",
+      "RelativePath": "img/meeting_02.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\meeting_02.svg"
+    },
+    {
       "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\img\\user.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
@@ -219,6 +270,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\xmark-light.svg"
+    },
+    {
+      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\img\\zoom_01.svg",
+      "SourceId": "Medical-Athena-Calendly",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "BasePath": "_content/Medical-Athena-Calendly",
+      "RelativePath": "img/zoom_01.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\zoom_01.svg"
     },
     {
       "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\js\\calendar.js",
