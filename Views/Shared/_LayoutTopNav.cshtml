@@ -18,10 +18,10 @@
     <div>
     <div class="wrapper">
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
-            <div class="container">
+        <nav class="main-header navbar py-3 navbar-expand-md navbar-light navbar-white">
+            <div class="w-100 d-flex" style="margin: 0 70px;">
                 <a href="" class="navbar-brand">
-                    <img src="/img/athenahealth.png" alt="Calendly-Athena Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                    <img src="/img/HH Logo.JPG" alt="Calendly-Athena Logo" class="brand-image" style="opacity: .8;margin-right:10px;">
                         <span class="brand-text font-weight-light">Calendly-Athena</span>
                 </a>
 
@@ -29,20 +29,18 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+                <div class="collapse justify-content-center navbar-collapse order-3" id="navbarCollapse">
                     <!-- Left navbar links -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
                              <a asp-action="Dashboard" asp-controller="Home" class="nav-link">Dashboard</a>
                         </li>
+        
                         <li class="nav-item">
-                             <a asp-action="Form" asp-controller="Home" class="nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a asp-action="Index" asp-controller="Athena" class="nav-link">Athena</a>
+                            <a asp-action="Index" asp-controller="Athena" class="nav-link">Patient Portal</a>
                         </li>
                             <li class="nav-item">
-                                <a asp-action="Index" asp-controller="Patient" class="nav-link">Patient</a>
+                                <a asp-action="Index" asp-controller="Patient" class="nav-link">Patient Profile</a>
                             </li>
                             <li class="nav-item">
                                 <a asp-action="OrganizationMemberships" asp-controller="Calendly" class="nav-link">Book Appointment</a>
@@ -52,13 +50,24 @@
                 </div>
 
                 <!-- Right navbar links -->
-                <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" asp-action="Logout" asp-controller="Login">
-                            <i class="fas fa-th-large">Logout</i>
-                        </a>
-                    </li>
+                <ul class="log-out-btn order-1 order-md-3 align-items-center navbar-nav navbar-no-expand ml-auto">
+                   <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+</svg> Shubham
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Change Password</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+           
+          </ul>
+
                 </ul>
+
+
+                
             </div>
         </nav>
         <!-- /.navbar -->
@@ -78,7 +87,7 @@
     </div>
 
     <!--Footer-->
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <footer class="main-footer">
         <div class="float-right d-none d-sm-block">
             <b>Version</b> 3.1.0
