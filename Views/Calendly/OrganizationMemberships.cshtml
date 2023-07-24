@@ -9,7 +9,7 @@
 
 
 <div id="calendlyContainer"></div>
-<table class="table rounded border table-striped table-hover mt-3">
+@*<table class="table rounded border table-striped table-hover mt-3">
   <thead class="bg-green-light">
     <tr>
       <th class="w-60 border-bottom-0" scope="col">#</th>
@@ -35,31 +35,31 @@
     }
   </tbody>
 </table>
-
+*@
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 <script type="text/javascript">
-    function openCalendly(url, userName,userEmail) {
-        console.log("click")
-        Calendly.initPopupWidget({
-            url: url,
-            prefill:{
-                name: userName,
-                email: userEmail
-            }
-                //    , text: 'Schedule Meeting', color: '#006bff', textColor: '#ffffff', branding: true
-                //parentElement: document.getElementById("calendlyContainer"),
-        });
-    }
-
-    //Calendly.initInlineWidget({
-    //    url: 'https://calendly.com/YOUR_LINK/30min',
-    //    prefill: {
-    //        name: "John Doe",
-    //        email: "john@doe2.com",
-    //        customAnswers: {
-    //            a1: "Yes",
-    //            a2: "At the Starbucks on 3rd and 16th"
+    //function openCalendly(url, userName,userEmail) {
+    //    console.log("click")
+    //    Calendly.initPopupWidget({
+    //        url: url,
+    //        prefill:{
+    //            name: userName,
+    //            email: userEmail
     //        }
-    //    }
-    //});
+    //            //    , text: 'Schedule Meeting', color: '#006bff', textColor: '#ffffff', branding: true
+    //            //parentElement: document.getElementById("calendlyContainer"),
+    //    });
+    //}
+
+    Calendly.initInlineWidget({
+        url: 'https://calendly.com/team-fos/email-campaign?month=2023-07',
+        prefill: {
+            name: "John Doe",
+            email: "john@doe2.com",
+            customAnswers: {
+                a1: "Yes",
+                a2: "At the Starbucks on 3rd and 16th"
+            }
+        }
+    });
 </script>

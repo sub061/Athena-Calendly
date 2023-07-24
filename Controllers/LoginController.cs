@@ -8,6 +8,9 @@ using Microsoft.EntityFrameworkCore;
 using Medical_Athena_Calendly.Models;
 using Medical_Athena_Calendly.Interface;
 using System.Net;
+using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace Medical_Athena_Calendly.Controllers
 {
@@ -59,9 +62,15 @@ namespace Medical_Athena_Calendly.Controllers
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();
-
+            // for google
+            //return SignOut(CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Index");
         }
 
+        public IActionResult GoogleLogin()
+        {
+            var properties = new AuthenticationProperties { RedirectUri = "/Home/Index" };
+            return Challenge(properties, GoogleDefaults.AuthenticationScheme);
+        }
     }
 }

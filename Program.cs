@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authentication.OAuth;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication.Google;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add Provider
@@ -12,39 +13,50 @@ var provider = builder.Services.BuildServiceProvider();
 
 // add for calendly
 
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = "Calendly";
-})
-        .AddCookie()
-        .AddOAuth("Calendly", options =>
-        {
-            options.ClientId = "WyDfIWccnmIl2Hn_aCDlhbelxocevjroQB8nEqRfNsA";
-            options.ClientSecret = "u-OZkauuDWKruBhfABpQ8fUG2pryCIc-qqhM4gCl4gA";
-            options.CallbackPath = "/Calendly/ExternalCallbackAsync";
+//builder.Services.AddAuthentication(options =>
+//{
+//    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+//    options.DefaultChallengeScheme = "Calendly";
+//})
+//        .AddCookie()
+//        .AddOAuth("Calendly", options =>
+//        {
+//            options.ClientId = "WyDfIWccnmIl2Hn_aCDlhbelxocevjroQB8nEqRfNsA";
+//            options.ClientSecret = "u-OZkauuDWKruBhfABpQ8fUG2pryCIc-qqhM4gCl4gA";
+//            options.CallbackPath = "/Calendly/ExternalCallbackAsync";
 
-            options.AuthorizationEndpoint = "https://calendly.com/oauth/authorize";
-            options.TokenEndpoint = "https://calendly.com/oauth/token";
-            options.UserInformationEndpoint = "https://calendly.com/api/users/me";
+//            options.AuthorizationEndpoint = "https://calendly.com/oauth/authorize";
+//            options.TokenEndpoint = "https://calendly.com/oauth/token";
+//            options.UserInformationEndpoint = "https://calendly.com/api/users/me";
 
-            options.ClaimActions.MapJsonKey(ClaimTypes.NameIdentifier, "id");
-            options.ClaimActions.MapJsonKey(ClaimTypes.Name, "name");
+//            options.ClaimActions.MapJsonKey(ClaimTypes.NameIdentifier, "id");
+//            options.ClaimActions.MapJsonKey(ClaimTypes.Name, "name");
 
-            options.Events = new OAuthEvents
-            {
-                OnCreatingTicket = context =>
-                {
-                    // Add additional claims if needed
-                    // Example: context.Identity.AddClaim(new Claim(ClaimTypes.Email, context.User["email"].ToString()));
+//            options.Events = new OAuthEvents
+//            {
+//                OnCreatingTicket = context =>
+//                {
+//                    // Add additional claims if needed
+//                    // Example: context.Identity.AddClaim(new Claim(ClaimTypes.Email, context.User["email"].ToString()));
 
-                    return Task.CompletedTask;
-                }
-            };
-        });
+//                    return Task.CompletedTask;
+//                }
+//            };
+//        });
 
 // end calendly
 
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
+})
+  .AddCookie()
+  .AddGoogle(options =>
+  {
+      options.ClientId = "963608127901-m96s4i9oji19olc7hghqn3vllr2tp3us.apps.googleusercontent.com";
+      options.ClientSecret = "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";
+  });
 
 // add Configuration
 var configuration = provider.GetService<IConfiguration>();

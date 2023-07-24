@@ -3,7 +3,7 @@
 @model Medical_Athena_Calendly.ViewModel.Athena.PatientModel
 @*@model Medical_Athena_Calendly.ViewModel.Athena.Language*@
 @{
-    ViewData["Title"] = "PatientRegistration";
+    ViewData["Title"] = "Patient Profile";
     Layout = "~/Views/Shared/_LayoutTopNav.cshtml";
     var code = ViewData["Language"] as List<Language>;
 }
@@ -155,7 +155,7 @@
         </span>
 
         <span class="label-wrapper d-flex flex-column">
-            <label asp-for="contactpreference">Contact preference</label>
+          @*  <label asp-for="contactpreference">Contact preference</label>*@
          @*   <select asp-for="contactpreference" asp-items="Model.contactpreference.DropdownOptions">
                 <option value="">-- Select --</option>
             </select>*@
@@ -196,8 +196,8 @@
     </span>
 
         <span class="label-wrapper d-flex flex-column">
-            <label asp-for="ethnicitycode">Ethnicity </label>
-            <select asp-for="ethnicitycode" type="text"></select>           
+          @*  <label asp-for="ethnicitycode">Ethnicity </label>
+            <select asp-for="ethnicitycode" type="text"></select>       *@    
         </span>
 
          <span class="label-wrapper d-flex flex-row mt-4 align-items-center">

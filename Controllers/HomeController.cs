@@ -86,42 +86,5 @@ namespace Medical_Athena_Calendly.Controllers
         }
 
 
-        //public async Task<IActionResult> ShowMeeting()
-        //{
-        //    ViewData["ActionName"] = "Meeting";
-        //    ViewData["ControllerName"] = "Home";
-
-        //    return View("Dashboard");
-
-        //    //CalendlyInviteUserOutputModel responce = await AddUserInCalendly(currentUser.resource.current_organization);
-        //    //var responce = await OrganizationInvitations(currentUser.resource.current_organization);
-
-        //    //return PartialView("_CalendlyUser", responce.resource);
-        //    return View();
-        //}
-
-        //    public async Task<CalendlyUserModel> GetCurrentUser()
-        //    {
-        //        var token = HttpContext.Session.GetString("CalendlyAccessToken");
-        //        var apiUrl = "https://api.calendly.com/users/me";
-        //        CalendlyUserModel response = await _apiService.GetAsync<CalendlyUserModel>(apiUrl, token);
-        //        return response;
-        //}
-
-        //Invites a user to an organization.
-        public async Task<IActionResult> AddUserInCalendly()
-        {
-            var calendly_current_organization = HttpContext.Session.GetString("calendly_current_organization");
-            var token = HttpContext.Session.GetString("CalendlyAccessToken");
-            var apiUrl = calendly_current_organization + "/invitations";
-
-            CalendlyInviteUserModel request = new CalendlyInviteUserModel();
-            request.email = HttpContext.Session.GetString("userEmail");
-
-            CalendlyInviteUserOutputModel response = await _apiService.PostAsync<CalendlyInviteUserModel, CalendlyInviteUserOutputModel>(apiUrl, request, token);
-
-            return View("Dashboard", "Home");
-        }
-
     }
 }

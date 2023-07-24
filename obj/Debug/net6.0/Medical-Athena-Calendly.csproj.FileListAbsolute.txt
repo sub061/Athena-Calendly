@@ -11,6 +11,7 @@ D:\Git\Medical-Athena-Calendly\bin\Debug\net6.0\Azure.Identity.dll
 D:\Git\Medical-Athena-Calendly\bin\Debug\net6.0\Humanizer.dll
 D:\Git\Medical-Athena-Calendly\bin\Debug\net6.0\MessagePack.dll
 D:\Git\Medical-Athena-Calendly\bin\Debug\net6.0\MessagePack.Annotations.dll
+D:\Git\Medical-Athena-Calendly\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll
 D:\Git\Medical-Athena-Calendly\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 D:\Git\Medical-Athena-Calendly\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Git\Medical-Athena-Calendly\bin\Debug\net6.0\Microsoft.Build.dll

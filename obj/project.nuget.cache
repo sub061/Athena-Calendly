@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nztdSPhvp6zCxbtW3QmztwAVzdFfUx5Z8KUywBDmHH+sXJaI0aKw8eJih9f7ktLurzTEzuUROjiq+KKnxdKjag==",
+  "dgSpecHash": "3o27Pmpjkt6b1oP5c5fQjPvqh3yT4Vb7vQ2Dwao6q7+ws0lLKM53XHgOAfEK8EH9Qkn9k2oj05J8q+jieoFkig==",
   "success": true,
   "projectFilePath": "D:\\Git\\Medical-Athena-Calendly\\Medical-Athena-Calendly.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\6.0.20\\microsoft.aspnetcore.authentication.google.6.0.20.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.authentication.oauth\\2.2.0\\microsoft.aspnetcore.authentication.oauth.2.2.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\2.2.0\\microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\2.2.0\\microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",
