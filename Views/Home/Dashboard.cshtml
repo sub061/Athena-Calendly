@@ -262160,8 +262160,47 @@
 	{
 
 																			<!--start cart   -->
-																			<div class="card flex-row mr-3" id="eventCart" role="dialog" aria-labelledby="eventCartLabel" aria-hidden="true">
+																			<div class="card card-board flex-row just mr-3" id="eventCart" role="dialog" aria-labelledby="eventCartLabel" aria-hidden="true">
 																				<div class="modal-width" role="document">
+																					<div class="content-box">
+																						<div class="header-top">
+																							<h5 class="mb-0 appointment-name" id="eventCartLabel"> @item.start </h5>
+																						</div>
+																						<div class="card-body fs-14 flex-column d-flex   justify-content-center align-items-center">
+																							<!-- Content of the modal goes here -->
+																							<div id="cartDetails" class="w-100 d-flex flex-wrap">
+																		  <div class="d-flex w-100 gap-3 pt-2 pb-2 align-items-baseline">
+																			<div class="usr-image new-user-icon pb-1"><img src="~/img/doctor_001.png"></img></div>
+																									<div class="font-sz"> @ViewData["calendly_current_user_name"]</div>
+																		  </div>
+
+																		  <div class="d-flex w-100 gap-3 pt-1 pb-1 align-items-baseline">
+																									<div class="usr-image new-user-icon pb-1"><img src="~/img/meeting_02.svg"></img> </div>
+																			<div class="font-sz">@item.title</div>
+																		  </div>
+
+																		  <div class="d-flex w-100 gap-3 pt-1 pb-1 align-items-baseline">
+																			<div class="usr-image new-user-icon  pb-1"><img src="~/img/zoom_01.svg"></img> </div>
+																			<span class="font-sz ">@item.url</span>
+																		  </div>
+
+																			<div class="linking-row d-flex border-top w-100 gap-3 pt-3 pb-1 align-items-baseline">
+																				
+																			<a target="_blank" href="">Please fill this form</a>
+																							
+																			<a target="_blank" href="">Please fill this form</a>
+																		  </div>
+
+																							</div>
+																						</div>
+																						<div class="footer-box justify-content-center">
+																							<a href=@item.cancleUrl class="btn-clr btn btn-secondary">Cancle Appointment</a>
+																							<button type="button" href=@item.rescheduleLink class="btn-clr btn btn-secondary">Reshedule Appointment</button>
+																						</div>
+																					</div>
+																				</div>
+
+																					<div class="modal-width" role="document">
 																					<div class="content-box">
 																						<div class="header-top">
 																							<h5 class="mb-0 appointment-name" id="eventCartLabel"> @item.start </h5>

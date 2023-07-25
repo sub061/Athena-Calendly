@@ -43,6 +43,12 @@
 
 /* Jitender 24 July 2023 */
 
+.card-board {
+
+    justify-content: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
 .modal-width {
 
     max-width: 330px;
@@ -97,11 +103,11 @@
 }
 
 .linking-row a {
-    text-decoration: underline !important;
     color: #384047 !important;
     background: #eee;
     padding: 8px;
     border-radius: 4px;
+    font-size: 12px;
 }
 
 /* Jitender - for master page */
