@@ -1,7 +1,4 @@
-﻿using Azure;
-using Microsoft.DotNet.MSIdentity.Shared;
-using Newtonsoft.Json;
-using System.Net.Http;
+﻿using Newtonsoft.Json;
 using System.Net.Http.Headers;
 using System.Text;
 
@@ -14,6 +11,7 @@ namespace Medical_Athena_Calendly.CommonServices
         {
             this._httpClient = httpClient;
         }
+
         public async Task<TResponse> GetAsync<TResponse>(string apiUrl, string accessToken = null)
         {
             var request = new HttpRequestMessage(HttpMethod.Get, apiUrl);
@@ -28,7 +26,6 @@ namespace Medical_Athena_Calendly.CommonServices
             if (response.IsSuccessStatusCode)
             {
                 var responseData = await response.Content.ReadFromJsonAsync<TResponse>();
-                //var responseObject = JsonConvert.DeserializeObject<TResponse>(responseData["resource"][0]);
                 return responseData;
             }
             else
@@ -36,7 +33,7 @@ namespace Medical_Athena_Calendly.CommonServices
                 throw new Exception($"API request failed with status code: {response.StatusCode}");
             }
         }
-        //Dictionary<string, string> formData
+
         public async Task<TResponse> PostAsync<TResponse>(string url, Dictionary<string, string> formData, string authHeader = null)
         {
             var content = new FormUrlEncodedContent(formData);
@@ -69,7 +66,7 @@ namespace Medical_Athena_Calendly.CommonServices
                 if (authHeader != null)
                 {
                     // We use Bearer Tokan
-                    _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic",authHeader);
+                    _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", authHeader);
                 }
                 var response = await _httpClient.PostAsync(url, content);
                 response.EnsureSuccessStatusCode();
@@ -90,6 +87,28 @@ namespace Medical_Athena_Calendly.CommonServices
             }
 
 
+        }
+
+        public async Task<(System.Net.HttpStatusCode, object)> AthenaPostAsync(string url, Dictionary<string, string> formData, string authHeader = null)
+        {
+            var content = new FormUrlEncodedContent(formData);
+
+            var request = new HttpRequestMessage(HttpMethod.Post, url);
+            request.Content = content;
+
+            // if access tokan avaliable then need to append in Header section
+            if (authHeader != null)
+            {
+                // We use Bearer Tokan
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authHeader);
+            }
+
+            var response = await _httpClient.PostAsync(url, content);
+            //response.EnsureSuccessStatusCode();
+
+            var jsonResponse = await response.Content.ReadAsStringAsync();
+            // var responseObject = JsonConvert.DeserializeObject<TResponse>(jsonResponse);
+            return (response.StatusCode, jsonResponse);
         }
         public async Task<TResponse> PostAsync<TRequest, TResponse>(string url, TRequest request, string accessToken = null)
         {
@@ -121,7 +140,7 @@ namespace Medical_Athena_Calendly.CommonServices
             {
                 _httpClient.DefaultRequestHeaders.Authorization = null; // Reset authorization header
             }
-           
+
 
         }
     }

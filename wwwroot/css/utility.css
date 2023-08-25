@@ -7,7 +7,7 @@
 }
 
 .w-300-px {
- width: 300px !important;
+    width: 300px !important;
 }
 
 .fs-14 {
@@ -20,9 +20,9 @@
     background: #00000087;
     width: 100%;
     height: 100%;
-    z-index: 9999;
+    /*    z-index: 9999;*/
     position: absolute;
-    top: 0;
+    top: 60px;
     left: 0;
 }
 
@@ -34,9 +34,95 @@
 .calendly-close-overlay {
     width: 34px;
     height: 34px;
-    background:url(../img/xmark-light.svg) no-repeat center center;
+    background: url(../img/xmark-light.svg) no-repeat center center;
     background-size: 24px 24px;
     right: 24px;
     position: absolute;
     top: 24px;
+}
+
+/* Jitender 24 July 2023 */
+
+.card-board {
+    justify-content: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.modal-width {
+    max-width: 330px;
+    width: 100%;
+    margin: 10px;
+}
+
+.content-box {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.header-top {
+    padding: 0.75rem;
+    border-bottom: 1px solid #eee;
+}
+
+    .header-top h5 {
+        font-size: 16px;
+    }
+
+.footer-box {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.75rem;
+    border-top: 1px solid #e9ecef;
+    border-bottom-right-radius: calc(0.3rem - 1px);
+    border-bottom-left-radius: calc(0.3rem - 1px);
+    gap: 10px;
+}
+
+
+.font-sz {
+    font-size: 16px;
+    font-family: 300;
+}
+
+.usr-image.new-user-icon img {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.btn-clr {
+    background-color: #633588;
+    margin-bottom: 0;
+    font-size: 12px;
+    width: auto;
+}
+
+.linking-row a {
+    color: #384047 !important;
+    background: #eee;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+/* Jitender - for master page */
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+}
+
+.log-out-btn a.nav-link {
+    background-color: #f8f9fa;
+    border-radius: 3px;
+}
+
+.layout-top-nav .wrapper .main-header .brand-image {
+    margin-top: 0 !important;
+    max-height: 80px;
+    height: 100%;
+}
+
+.navbar-light .navbar-brand {
+    padding: 0;
 }

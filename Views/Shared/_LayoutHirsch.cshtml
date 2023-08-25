@@ -1,0 +1,106 @@
+﻿@using Medical_Athena_Calendly.CommonServices
+@using Microsoft.Extensions.Options
+@inject IOptions<AppSettings> AppSettings
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/admin-lte/css/adminlte.min.css" rel="stylesheet" />
+    <link href="~/lib/admin-lte/css/adminlte.css" rel="stylesheet" />
+    <link href="~/css/utility.css" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body class="hold-transition layout-top-nav">
+    <div>
+        <div class="wrapper">
+            <!-- Navbar -->
+            <nav class="main-header navbar py-3 navbar-expand-md navbar-light navbar-white">
+                <div class="w-100 d-flex" style="margin: 0 70px;">
+                    <a href="" class="navbar-brand">
+
+                        <img src="/img/HH Logo.jpg" class="brand-image" style="opacity:.8;margin-right:10px;height: 50px;width: 45px;">
+
+
+
+
+                        <span class="brand-text font-weight-light">@AppSettings.Value.ProjectName</span>
+                    </a>
+
+                    <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+                    <div class="collapse justify-content-center navbar-collapse order-3" id="navbarCollapse">
+                        <!-- Left navbar links -->
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a asp-action="DashBoard" asp-controller="Home" asp-route-app=@ViewData["CalendlyUser"] class="nav-link">Dashboard</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a asp-action="PatientDetails" asp-controller="Home" asp-route-app=@ViewData["CalendlyUser"] class="nav-link">Patient Portal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-action="Index" asp-controller="Patient" asp-route-app=@ViewData["CalendlyUser"] class="nav-link">Patient Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-action="Scheduling" asp-controller="Appointment" asp-route-app=@ViewData["CalendlyUser"] class="nav-link">Book Appointment</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <!-- Right navbar links -->
+                    <ul class="log-out-btn order-1 order-md-3 align-items-center navbar-nav navbar-no-expand ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                </svg> @ViewData["UserName"]
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" asp-action="ChangePassword" asp-controller="Account" asp-route-app=@ViewData["CalendlyUser"]>Change Password</a></li>
+                                <li><a class="dropdown-item" asp-action="Logout" asp-controller="Account" asp-route-app=@ViewData["CalendlyUser"]>Logout</a></li>
+
+                            </ul>
+
+                    </ul>
+
+
+
+                </div>
+            </nav>
+            <!-- /.navbar -->
+            <!--Main Page-->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    @Html.Partial("_Breadcrumb")
+                </section>
+
+                <section class="content">
+                    <div class="container">
+                        @RenderBody()
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                <b>Version</b> 3.1.0
+            </div>
+            <strong>Copyright &copy; 2023 <a href="">@AppSettings.Value.ProjectName</a>.</strong> All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>

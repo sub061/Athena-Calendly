@@ -1,7 +1,4 @@
-﻿using Medical_Athena_Calendly.CommonServices;
-using Medical_Athena_Calendly.Interface;
-using Medical_Athena_Calendly.ViewModel.Calendly;
-using Microsoft.AspNetCore.Mvc;
+﻿using Medical_Athena_Calendly.Interface;
 
 namespace Medical_Athena_Calendly.Repository
 {
@@ -14,37 +11,31 @@ namespace Medical_Athena_Calendly.Repository
         }
 
         // Get calendly clientid value from appsetting
-        public string ClientId()
-        {
-            string clientId = _configuration.GetValue<string>("CalendlyClientId");
-            return clientId;
-        }
+        //public string ClientId()
+        //{
+        //    string clientId = _configuration.GetValue<string>("CalendlyClientId");
+        //    return clientId;
+        //}
 
-         public string ClientPersonalToken()
+        public string ClientPersonalToken(string app)
         {
-            string token = _configuration.GetValue<string>("CalendlyToken");
+            var key = "";
+            if (app == "nihar")
+            {
+                key = "NiharCalendlyToken";
+            }
+            else if (app == "hirsch")
+            {
+                key = "HirschCalendlyToken";
+            }
+            else
+            {
+                key = "CalendlyToken";
+            }
+            string token = _configuration.GetValue<string>(key);
             return token;
         }
-        // Get calendly clientsecret value from appsetting
-        public string ClientSecret()
-        {
-            string clientSecret = _configuration.GetValue<string>("CalendlyClentSecret");
-            return clientSecret;
-        }
-        // Get calendly return page url value from appsetting
-        public string ReturnUrl()
-        {
-            string returnUrl = _configuration.GetValue<string>("CalendlyReturnUrl");
-            return returnUrl;
-        }
-        // Get calendly client token which provide in header 
-        public string ClientToken()
-        {
-            string clientId = ClientId();
-            string clientSecret = ClientSecret();
-            var clientToken = Encryption.ConvertToBase64(clientId + ":" + clientSecret);
-            return clientToken;
-        }
+
 
 
 
@@ -53,6 +44,6 @@ namespace Medical_Athena_Calendly.Repository
             throw new NotImplementedException();
         }
 
-       
+
     }
 }

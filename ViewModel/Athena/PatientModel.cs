@@ -1,14 +1,45 @@
-﻿
-using Medical_Athena_Calendly.CommonServices;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using System;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.DataAnnotations;
 
 namespace Medical_Athena_Calendly.ViewModel.Athena
 {
+    public class NewPatientModel
+    {
+        public string firstname { get; set; }
+        public string lastname { get; set; }
+        public string dob { get; set; }
+        public string email { get; set; }
+        public int departmentid { get; set; }
+        public string address1 { get; set; }
+        public string address2 { get; set; }
+        public string city { get; set; }
+        public Boolean consenttocall { get; set; }
+        public Boolean consenttotext { get; set; }
+
+        public Boolean isethnicitycode { get; set; }
+        public string state { get; set; }
+        public string mobilephone { get; set; }
+
+        public string homephone { get; set; }
+        public string workphone { get; set; }
+        public string zip { get; set; }
+        public Boolean islanguage6392code { get; set; }
+        public string language6392code { get; set; }
+        public string race { get; set; }
+        public Boolean israce { get; set; }
+        public string guarantoraddress1 { get; set; }
+        public string guarantoraddress2 { get; set; }
+        public Boolean guarantoraddresssameaspatient { get; set; }
+        public string guarantorcity { get; set; }
+        public string guarantorrelationshiptopatient { get; set; } //GuarantorRelationshipToPatient
+        public string guarantorstate { get; set; }
+        public string guarantorzip { get; set; }
+
+    }
+
     public class PatientModel
     {
-  
+
         public string patientid { get; set; }
         public string address1 { get; set; }
         public string address2 { get; set; }

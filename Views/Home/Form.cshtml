@@ -2,10 +2,27 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewBag.Title = "Patient Details";
+    var user = ViewData["CalendlyUser"];
+    var calendlyUser = user.ToString();
+
+    if (calendlyUser == "nihar")
+    {
+        Layout = "~/Views/Shared/_LayoutNihar.cshtml";
+    }
+    else if (calendlyUser == "hirsch")
+    {
+        Layout = "~/Views/Shared/_LayoutHirsch.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
 }
 
+<script type="text/javascript" src="https://form.jotform.com/jsform/230895145086159"></script>
 
-<iframe id="JotFormIFrame-231991921773465"
+@*<iframe id="JotFormIFrame-231991921773465"
         title="Patient Information Request Form"
         onload="window.parent.scrollTo(0,0)"
         allowtransparency="true"
@@ -98,4 +115,4 @@
     } else if (window.attachEvent) {
         window.attachEvent("onmessage", handleIFrameMessage);
     }
-</script>
+</script>*@

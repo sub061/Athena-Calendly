@@ -1,0 +1,463 @@
+2023-08-07T16:01:44.9606470+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-07T16:01:45.1179077+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-07T16:01:45.1655490+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-07T16:01:45.1868115+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-07T16:03:21.2667982+05:30 0HMSN65VLGKU3:00000003 [INF] Executed DbCommand ("668"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"Email\", u.\"IsDeleted\", u.\"Name\", u.\"Password\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-07T16:03:21.8756750+05:30 0HMSN65VLGKU3:00000003 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-07T16:03:21.8892863+05:30 0HMSN65VLGKU3:00000003 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-07T16:03:23.0184751+05:30 0HMSN65VLGKU3:00000003 [INF] Received HTTP response headers after 1055.0895ms - 200 (f0742c1f)
+2023-08-07T16:03:23.0436019+05:30 0HMSN65VLGKU3:00000003 [INF] End processing HTTP request after 1338.2627ms - 200 (7656b38e)
+2023-08-07T16:03:23.2784054+05:30 0HMSN65VLGKU3:00000003 [INF] API started at:8/7/2023 4:03:23 PM (0cfcde58)
+2023-08-07T16:03:23.5658897+05:30 0HMSN65VLGKU3:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=&organization=https://api.calendly.com/organizations/6fe6e232-9ea4-4b62-be2e-6f8259ee2082&sort=start_time:desc (338f1c77)
+2023-08-07T16:03:23.5738885+05:30 0HMSN65VLGKU3:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=&organization=https://api.calendly.com/organizations/6fe6e232-9ea4-4b62-be2e-6f8259ee2082&sort=start_time:desc (2e7ac211)
+2023-08-07T16:03:23.9037425+05:30 0HMSN65VLGKU3:00000004 [INF] Received HTTP response headers after 296.7596ms - 400 (f0742c1f)
+2023-08-07T16:03:23.9416498+05:30 0HMSN65VLGKU3:00000004 [INF] End processing HTTP request after 345.8778ms - 400 (7656b38e)
+2023-08-07T16:03:26.5239004+05:30 0HMSN65VLGKU3:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: API request failed with status code: BadRequest
+   at Medical_Athena_Calendly.CommonServices.ApiService.GetAsync[TResponse](String apiUrl, String accessToken) in F:\Subhash\git\Athena-Calendly\CommonServices\ApiService.cs:line 36
+   at Medical_Athena_Calendly.Repository.Calendly.GetAppointmentsForPaitient() in F:\Subhash\git\Athena-Calendly\Repository\Calendly.cs:line 72
+   at Medical_Athena_Calendly.Controllers.HomeController.GetEvents() in F:\Subhash\git\Athena-Calendly\Controllers\HomeController.cs:line 45
+   at Medical_Athena_Calendly.Controllers.HomeController.Dashboard() in F:\Subhash\git\Athena-Calendly\Controllers\HomeController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-07T16:45:57.1348923+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-07T16:45:57.2449647+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-07T16:45:57.2581556+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-07T16:45:57.2651608+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-07T16:47:03.2326498+05:30 0HMSN6UM5LTEO:00000003 [INF] Executed DbCommand ("562"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"Email\", u.\"IsDeleted\", u.\"Name\", u.\"Password\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-07T16:47:03.7407665+05:30 0HMSN6UM5LTEO:00000003 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-07T16:47:03.7519597+05:30 0HMSN6UM5LTEO:00000003 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-07T16:47:04.8697199+05:30 0HMSN6UM5LTEO:00000003 [INF] Received HTTP response headers after 1049.1736ms - 200 (f0742c1f)
+2023-08-07T16:47:04.8840332+05:30 0HMSN6UM5LTEO:00000003 [INF] End processing HTTP request after 1262.5572ms - 200 (7656b38e)
+2023-08-07T16:47:05.0731049+05:30 0HMSN6UM5LTEO:00000003 [INF] API started at:8/7/2023 4:47:05 PM (fa9e9378)
+2023-08-07T16:47:05.3718822+05:30 0HMSN6UM5LTEO:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=&organization=https://api.calendly.com/organizations/6fe6e232-9ea4-4b62-be2e-6f8259ee2082&sort=start_time:desc (338f1c77)
+2023-08-07T16:47:05.3927779+05:30 0HMSN6UM5LTEO:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=&organization=https://api.calendly.com/organizations/6fe6e232-9ea4-4b62-be2e-6f8259ee2082&sort=start_time:desc (2e7ac211)
+2023-08-07T16:47:05.7194916+05:30 0HMSN6UM5LTEO:00000004 [INF] Received HTTP response headers after 318.3897ms - 400 (f0742c1f)
+2023-08-07T16:47:05.7270942+05:30 0HMSN6UM5LTEO:00000004 [INF] End processing HTTP request after 357.1493ms - 400 (7656b38e)
+2023-08-07T16:47:07.1053432+05:30 0HMSN6UM5LTEO:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: API request failed with status code: BadRequest
+   at Medical_Athena_Calendly.CommonServices.ApiService.GetAsync[TResponse](String apiUrl, String accessToken) in F:\Subhash\git\Athena-Calendly\CommonServices\ApiService.cs:line 36
+   at Medical_Athena_Calendly.Repository.Calendly.GetAppointmentsForPaitient() in F:\Subhash\git\Athena-Calendly\Repository\Calendly.cs:line 72
+   at Medical_Athena_Calendly.Controllers.HomeController.GetEvents() in F:\Subhash\git\Athena-Calendly\Controllers\HomeController.cs:line 45
+   at Medical_Athena_Calendly.Controllers.HomeController.Dashboard() in F:\Subhash\git\Athena-Calendly\Controllers\HomeController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-07T16:48:54.9474944+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-07T16:48:55.1341474+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-07T16:48:55.1556685+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-07T16:48:55.2057331+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-07T16:49:44.8789909+05:30 0HMSN70B77S9M:00000003 [INF] Executed DbCommand ("590"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"Email\", u.\"IsDeleted\", u.\"Name\", u.\"Password\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-07T16:49:45.4809602+05:30 0HMSN70B77S9M:00000003 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-07T16:49:45.4974262+05:30 0HMSN70B77S9M:00000003 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-07T16:49:46.8424105+05:30 0HMSN70B77S9M:00000003 [INF] Received HTTP response headers after 1264.7094ms - 200 (f0742c1f)
+2023-08-07T16:49:46.8545356+05:30 0HMSN70B77S9M:00000003 [INF] End processing HTTP request after 1565.6721ms - 200 (7656b38e)
+2023-08-07T16:49:47.0821112+05:30 0HMSN70B77S9M:00000003 [INF] API started at:8/7/2023 4:49:47 PM (0204759a)
+2023-08-07T16:49:47.3436596+05:30 0HMSN70B77S9M:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=&organization=https://api.calendly.com/organizations/6fe6e232-9ea4-4b62-be2e-6f8259ee2082&sort=start_time:desc (338f1c77)
+2023-08-07T16:49:47.3558673+05:30 0HMSN70B77S9M:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=&organization=https://api.calendly.com/organizations/6fe6e232-9ea4-4b62-be2e-6f8259ee2082&sort=start_time:desc (2e7ac211)
+2023-08-07T16:49:47.6709968+05:30 0HMSN70B77S9M:00000004 [INF] Received HTTP response headers after 279.3578ms - 400 (f0742c1f)
+2023-08-07T16:49:47.6768342+05:30 0HMSN70B77S9M:00000004 [INF] End processing HTTP request after 334.732ms - 400 (7656b38e)
+2023-08-07T16:49:49.6819022+05:30 0HMSN70B77S9M:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: API request failed with status code: BadRequest
+   at Medical_Athena_Calendly.CommonServices.ApiService.GetAsync[TResponse](String apiUrl, String accessToken) in F:\Subhash\git\Athena-Calendly\CommonServices\ApiService.cs:line 36
+   at Medical_Athena_Calendly.Repository.Calendly.GetAppointmentsForPaitient() in F:\Subhash\git\Athena-Calendly\Repository\Calendly.cs:line 72
+   at Medical_Athena_Calendly.Controllers.HomeController.GetEvents() in F:\Subhash\git\Athena-Calendly\Controllers\HomeController.cs:line 45
+   at Medical_Athena_Calendly.Controllers.HomeController.Dashboard() in F:\Subhash\git\Athena-Calendly\Controllers\HomeController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-08-07T16:50:04.0686177+05:30 0HMSN70B77S9M:00000004 [ERR] An exception was thrown attempting to execute the error handler. (e55ade05)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCoreGeneratedDocument.Views_Shared_Error.ExecuteAsync() in F:\Subhash\git\Athena-Calendly\Views\Shared\Error.cshtml:line 9
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+2023-08-07T16:50:04.1506172+05:30 0HMSN70B77S9M:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: API request failed with status code: BadRequest
+   at Medical_Athena_Calendly.CommonServices.ApiService.GetAsync[TResponse](String apiUrl, String accessToken) in F:\Subhash\git\Athena-Calendly\CommonServices\ApiService.cs:line 36
+   at Medical_Athena_Calendly.Repository.Calendly.GetAppointmentsForPaitient() in F:\Subhash\git\Athena-Calendly\Repository\Calendly.cs:line 72
+   at Medical_Athena_Calendly.Controllers.HomeController.GetEvents() in F:\Subhash\git\Athena-Calendly\Controllers\HomeController.cs:line 45
+   at Medical_Athena_Calendly.Controllers.HomeController.Dashboard() in F:\Subhash\git\Athena-Calendly\Controllers\HomeController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-07T16:51:00.3324837+05:30 0HMSN70B77S9L:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=&organization=https://api.calendly.com/organizations/6fe6e232-9ea4-4b62-be2e-6f8259ee2082&sort=start_time:desc (338f1c77)
+2023-08-07T16:51:00.3377611+05:30 0HMSN70B77S9L:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=&organization=https://api.calendly.com/organizations/6fe6e232-9ea4-4b62-be2e-6f8259ee2082&sort=start_time:desc (2e7ac211)
+2023-08-07T16:51:00.7210559+05:30 0HMSN70B77S9L:00000004 [INF] Received HTTP response headers after 377.7048ms - 400 (f0742c1f)
+2023-08-07T16:51:00.7271322+05:30 0HMSN70B77S9L:00000004 [INF] End processing HTTP request after 394.3112ms - 400 (7656b38e)
+2023-08-07T16:51:01.4766299+05:30 0HMSN70B77S9L:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Exception: API request failed with status code: BadRequest
+   at Medical_Athena_Calendly.CommonServices.ApiService.GetAsync[TResponse](String apiUrl, String accessToken)
+   at Medical_Athena_Calendly.Repository.Calendly.GetAppointmentsForPaitient()
+   at Medical_Athena_Calendly.Controllers.HomeController.GetEvents()
+   at Medical_Athena_Calendly.Controllers.HomeController.Dashboard()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-08-07T17:27:10.9194183+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-07T17:27:11.1039497+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-07T17:27:11.1298306+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-07T17:27:11.1369096+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-07T17:40:36.0947337+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-07T17:40:36.2186935+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-07T17:40:36.2288966+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-07T17:40:36.2334531+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-07T17:43:31.0117924+05:30 0HMSN7T7CG8N1:00000004 [INF] Executed DbCommand ("901"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"Email\", u.\"IsDeleted\", u.\"Name\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-07T17:43:34.1433944+05:30 0HMSN7T7CG8N1:00000004 [INF] Executed DbCommand ("373"ms) [Parameters=["@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE \"user\" SET \"ResetToken\" = @p0, \"ResetTokenExpiration\" = @p1
+WHERE \"Id\" = @p2;" (0723d8ff)
+2023-08-07T18:36:00.9549769+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-07T18:36:01.1170329+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-07T18:36:01.1332420+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-07T18:36:01.1451611+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-07T18:37:16.0099671+05:30 0HMSN8S687LRN:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unable to resolve service for type 'Medical_Athena_Calendly.CommonServices.EmailSender' while attempting to activate 'Medical_Athena_Calendly.Controllers.PasswordResetController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method35(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2023-08-07T18:38:33.0930655+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-07T18:38:33.2873854+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-07T18:38:33.3121621+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-07T18:38:33.3228901+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-07T18:38:53.1138216+05:30 0HMSN8TJG7COP:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unable to resolve service for type 'Medical_Athena_Calendly.CommonServices.EmailSender' while attempting to activate 'Medical_Athena_Calendly.Controllers.PasswordResetController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method35(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-07T18:40:08.3468592+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-07T18:40:08.4547731+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-07T18:40:08.4650855+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-07T18:40:08.4697884+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-07T18:40:39.4517572+05:30 0HMSN8UG0RR5C:00000005 [INF] Executed DbCommand ("541"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"Email\", u.\"IsDeleted\", u.\"Name\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-07T18:40:41.3820468+05:30 0HMSN8UG0RR5C:00000005 [INF] Executed DbCommand ("187"ms) [Parameters=["@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE \"user\" SET \"ResetToken\" = @p0, \"ResetTokenExpiration\" = @p1
+WHERE \"Id\" = @p2;" (0723d8ff)
+2023-08-07T18:45:23.5221257+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-07T18:45:23.9033116+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-07T18:45:23.9524547+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-07T18:45:23.9890257+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-07T18:46:14.5073436+05:30 0HMSN91DRGKTD:00000005 [INF] Executed DbCommand ("762"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"Email\", u.\"IsDeleted\", u.\"Name\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-07T18:46:17.3939700+05:30 0HMSN91DRGKTD:00000005 [INF] Executed DbCommand ("240"ms) [Parameters=["@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE \"user\" SET \"ResetToken\" = @p0, \"ResetTokenExpiration\" = @p1
+WHERE \"Id\" = @p2;" (0723d8ff)
+2023-08-07T19:03:09.1251989+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-07T19:03:09.3850296+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-07T19:03:09.4088553+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-07T19:03:09.4495441+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-07T19:04:00.7660342+05:30 0HMSN9BBG1K98:00000004 [INF] Executed DbCommand ("1,030"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"Email\", u.\"IsDeleted\", u.\"Name\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-07T19:04:03.5919025+05:30 0HMSN9BBG1K98:00000004 [INF] Executed DbCommand ("211"ms) [Parameters=["@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE \"user\" SET \"ResetToken\" = @p0, \"ResetTokenExpiration\" = @p1
+WHERE \"Id\" = @p2;" (0723d8ff)
+2023-08-07T19:09:08.1048351+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-07T19:09:08.2902830+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-07T19:09:08.3199439+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-07T19:09:08.3307800+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-07T19:10:24.5749271+05:30 0HMSN9EMFNKRT:00000007 [INF] Executed DbCommand ("574"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"Email\", u.\"IsDeleted\", u.\"Name\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-07T19:10:26.7164688+05:30 0HMSN9EMFNKRT:00000007 [INF] Executed DbCommand ("110"ms) [Parameters=["@p2='?' (DbType = Int32), @p0='?', @p1='?' (DbType = DateTime)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE \"user\" SET \"ResetToken\" = @p0, \"ResetTokenExpiration\" = @p1
+WHERE \"Id\" = @p2;" (0723d8ff)
+2023-08-07T19:13:01.3623218+05:30 0HMSN9EMFNKRT:0000000B [INF] Executed DbCommand ("2"ms) [Parameters=["@__token_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"Email\", u.\"IsDeleted\", u.\"Name\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"ResetToken\" = @__token_0 AND u.\"ResetTokenExpiration\" >= now()
+LIMIT 1" (0723d8ff)
+2023-08-07T19:13:20.0636314+05:30 0HMSN9EMFNKRU:00000007 [INF] Executed DbCommand ("2"ms) [Parameters=["@__token_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"Email\", u.\"IsDeleted\", u.\"Name\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"ResetToken\" = @__token_0 AND u.\"ResetTokenExpiration\" >= now()
+LIMIT 1" (0723d8ff)
+2023-08-07T19:13:20.2993697+05:30 0HMSN9EMFNKRU:00000007 [ERR] Failed executing DbCommand ("154"ms) [Parameters=["@p3='?' (DbType = Int32), @p0='?', @p1='?', @p2='?' (DbType = DateTime)"], CommandType='Text', CommandTimeout='30']"
+""UPDATE \"user\" SET \"Password\" = @p0, \"ResetToken\" = @p1, \"ResetTokenExpiration\" = @p2
+WHERE \"Id\" = @p3;" (627a98df)
+2023-08-07T19:13:21.0753341+05:30 0HMSN9EMFNKRU:00000007 [ERR] An exception occurred in the database while saving changes for context type '"Medical_Athena_Calendly.Models.ApplicationDBContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column \"ResetToken\" of relation \"user\" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|233_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column \"ResetToken\" of relation \"user\" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: user
+    ColumnName: ResetToken
+    File: execMain.c
+    Line: 1953
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "ResetToken" of relation "user" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|233_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "ResetToken" of relation "user" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: user
+    ColumnName: ResetToken
+    File: execMain.c
+    Line: 1953
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Medical_Athena_Calendly.Controllers.PasswordResetController.ResetPassword(String token, String newPassword) in F:\Subhash\git\Athena-Calendly\Controllers\PasswordResetController.cs:line 99
+2023-08-07T19:13:21.7907009+05:30 0HMSN9EMFNKRU:00000007 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "ResetToken" of relation "user" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|233_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "ResetToken" of relation "user" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: user
+    ColumnName: ResetToken
+    File: execMain.c
+    Line: 1953
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Medical_Athena_Calendly.Controllers.PasswordResetController.ResetPassword(String token, String newPassword) in F:\Subhash\git\Athena-Calendly\Controllers\PasswordResetController.cs:line 99
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-07T19:14:33.5605769+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-07T19:14:33.6933339+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-07T19:14:33.7032400+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-07T19:14:33.7069141+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)

@@ -1,17 +1,17 @@
 ﻿using Medical_Athena_Calendly.CommonServices;
 using Medical_Athena_Calendly.Interface;
-using Medical_Athena_Calendly.ViewModel.Calendly;
 using Microsoft.AspNetCore.Mvc;
+using System.Text;
 
 namespace Medical_Athena_Calendly.Controllers
 {
+    [Route("appointment/{app}")]
     public class AppointmentController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly ICalendlyAuth _calendlyAuth;
         private readonly ApiService _apiService;
         private readonly ICalendly _calendly;
-
         public AppointmentController(IUnitOfWork unitOfWork, ICalendlyAuth calendlyAuth, ApiService apiService, ICalendly calendly)
         {
             _unitOfWork = unitOfWork;
@@ -20,20 +20,18 @@ namespace Medical_Athena_Calendly.Controllers
             _calendly = calendly;
         }
 
-        public async Task<IActionResult> GetAppointments()
+        [Route("*")]
+
+        [Route("scheduling")]
+        public async Task<IActionResult> Scheduling(string app)
         {
-            var response = await _calendly.GetAppointments();
-            ViewData["userEmail"] = HttpContext.Session.GetString("userEmail");
-            ViewData["userName"] = HttpContext.Session.GetString("userName");
-
-
-            if(response.EventCollection == null)
-            {
-                // use no meeting and 
-                return View ("Dashboard", "Home");
-            }
-            // show meeting
-            return RedirectToAction("Dashboard", "Home");
+            ViewData["CalendlyUser"] = app;
+            ViewData["ActionName"] = "Appointment Scheduling";
+            //ViewData["ControllerName"] = "Home";
+            ViewData["UserEmail"] = HttpContext.Session.GetString("UserEmail");
+            ViewData["UserName"] = HttpContext.Session.GetString("UserName");
+            ViewData["CalendlySchedulingUrl"] = HttpContext.Session.GetString("CalendlySchedulingUrl");
+            return View("Scheduling");
         }
     }
 }

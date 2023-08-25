@@ -1,0 +1,42 @@
+﻿@*@model Medical_Athena_Calendly.ViewModel.Calendly.CalendlyOrganizationMembership*@
+@{
+    var userName = ViewData["UserName"];
+    var userEmail = ViewData["UserEmail"];
+    var calendlySchedulingUrl = ViewData["CalendlySchedulingUrl"];
+    var user = ViewData["CalendlyUser"];
+    var calendlyUser = user.ToString();
+
+    if (calendlyUser == "nihar")
+    {
+        Layout = "~/Views/Shared/_LayoutNihar.cshtml";
+    }
+    else if (calendlyUser == "hirsch")
+    {
+        Layout = "~/Views/Shared/_LayoutHirsch.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}
+<link rel="stylesheet" href="~/css/utility.css" />
+<div></div>
+
+<!-- Calendly inline widget begin -->
+<div id="calendlyDiv" class="calendly-inline-widget" style="min-width:320px;height:80vh;" data-auto-load="false"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+<script>
+    function myFunction() {
+        Calendly.initInlineWidget({
+            //url: @calendlySchedulingUrl,
+            url: '@calendlySchedulingUrl',
+            parentElement: document.getElementById('calendlyDiv'),
+            prefill: {
+                name: '@userName',
+                email: '@userEmail',
+            }
+        });
+    }
+    window.onload = myFunction;
+</script>
+

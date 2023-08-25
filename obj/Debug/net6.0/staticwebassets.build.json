@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VnRkWMkI4EDvmbJbCD2cqnGPfOV4L/sByeqksjH6BRk=",
+  "Hash": "rLbup+J6jhIlLOQSxWJN3+HYdzph5K7r0/m5TlUXRvs=",
   "Source": "Medical-Athena-Calendly",
   "BasePath": "_content/Medical-Athena-Calendly",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Medical-Athena-Calendly\\wwwroot",
       "Source": "Medical-Athena-Calendly",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\css\\calender.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\css\\calender.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "css/calender.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\css\\calender.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\css\\form.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\css\\form.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "css/form.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\css\\form.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\css\\login.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\css\\login.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "css/login.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\css\\site.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\css\\site.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\css\\utility.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\css\\utility.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "css/utility.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\utility.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\favicon.ico",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\favicon.ico",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\img\\athenahealth.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\img\\athenahealth.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "img/athenahealth.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\img\\athenahealth.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\img\\Athena-healthsm-logo.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\img\\Athena-healthsm-logo.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "img/Athena-healthsm-logo.png",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\img\\Athena-healthsm-logo.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\img\\doctor_001.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\img\\doctor_001.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "img/doctor_001.png",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\img\\doctor_001.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\img\\doctor_01.svg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\img\\doctor_01.svg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "img/doctor_01.svg",
       "AssetKind": "All",
@@ -187,10 +187,44 @@
       "OriginalItemSpec": "wwwroot\\img\\doctor_01.svg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\img\\google-plus-g.svg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\img\\Ganju-Logo.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
+      "BasePath": "_content/Medical-Athena-Calendly",
+      "RelativePath": "img/Ganju-Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Ganju-Logo.png"
+    },
+    {
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\img\\Ganju-Logo.svg",
+      "SourceId": "Medical-Athena-Calendly",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
+      "BasePath": "_content/Medical-Athena-Calendly",
+      "RelativePath": "img/Ganju-Logo.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Ganju-Logo.svg"
+    },
+    {
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\img\\google-plus-g.svg",
+      "SourceId": "Medical-Athena-Calendly",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "img/google-plus-g.svg",
       "AssetKind": "All",
@@ -204,10 +238,44 @@
       "OriginalItemSpec": "wwwroot\\img\\google-plus-g.svg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\img\\login-bg.jpg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\img\\HH Logo.jpg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
+      "BasePath": "_content/Medical-Athena-Calendly",
+      "RelativePath": "img/HH Logo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\HH Logo.jpg"
+    },
+    {
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\img\\HH Logo.png",
+      "SourceId": "Medical-Athena-Calendly",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
+      "BasePath": "_content/Medical-Athena-Calendly",
+      "RelativePath": "img/HH Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\HH Logo.png"
+    },
+    {
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\img\\login-bg.jpg",
+      "SourceId": "Medical-Athena-Calendly",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "img/login-bg.jpg",
       "AssetKind": "All",
@@ -221,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\img\\login-bg.jpg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\img\\meeting_02.svg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\img\\meeting_02.svg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "img/meeting_02.svg",
       "AssetKind": "All",
@@ -238,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\img\\meeting_02.svg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\img\\user.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\img\\user.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "img/user.png",
       "AssetKind": "All",
@@ -255,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\img\\user.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\img\\xmark-light.svg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\img\\xmark-light.svg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "img/xmark-light.svg",
       "AssetKind": "All",
@@ -272,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\img\\xmark-light.svg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\img\\zoom_01.svg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\img\\zoom_01.svg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "img/zoom_01.svg",
       "AssetKind": "All",
@@ -289,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\img\\zoom_01.svg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\js\\calendar.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\js\\calendar.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "js/calendar.js",
       "AssetKind": "All",
@@ -306,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\js\\calendar.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\js\\site.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\js\\site.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -323,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\adminlte.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\adminlte.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/adminlte.css",
       "AssetKind": "All",
@@ -340,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\adminlte.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\adminlte.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\adminlte.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/adminlte.css.map",
       "AssetKind": "All",
@@ -357,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\adminlte.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\adminlte.min.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\adminlte.min.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/adminlte.min.css",
       "AssetKind": "All",
@@ -374,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\adminlte.min.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\adminlte.min.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\adminlte.min.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/adminlte.min.css.map",
       "AssetKind": "All",
@@ -391,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\adminlte.min.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.components.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.components.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.components.css",
       "AssetKind": "All",
@@ -408,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.components.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.components.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.components.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.components.css.map",
       "AssetKind": "All",
@@ -425,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.components.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.components.min.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.components.min.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.components.min.css",
       "AssetKind": "All",
@@ -442,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.components.min.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.components.min.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.components.min.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.components.min.css.map",
       "AssetKind": "All",
@@ -459,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.components.min.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.core.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.core.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.core.css",
       "AssetKind": "All",
@@ -476,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.core.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.core.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.core.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.core.css.map",
       "AssetKind": "All",
@@ -493,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.core.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.core.min.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.core.min.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.core.min.css",
       "AssetKind": "All",
@@ -510,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.core.min.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.core.min.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.core.min.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.core.min.css.map",
       "AssetKind": "All",
@@ -527,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.core.min.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.extra-components.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.extra-components.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.extra-components.css",
       "AssetKind": "All",
@@ -544,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.extra-components.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.extra-components.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.extra-components.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.extra-components.css.map",
       "AssetKind": "All",
@@ -561,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.extra-components.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.extra-components.min.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.extra-components.min.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.extra-components.min.css",
       "AssetKind": "All",
@@ -578,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.extra-components.min.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.extra-components.min.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.extra-components.min.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.extra-components.min.css.map",
       "AssetKind": "All",
@@ -595,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.extra-components.min.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.pages.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.pages.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.pages.css",
       "AssetKind": "All",
@@ -612,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.pages.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.pages.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.pages.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.pages.css.map",
       "AssetKind": "All",
@@ -629,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.pages.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.pages.min.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.pages.min.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.pages.min.css",
       "AssetKind": "All",
@@ -646,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.pages.min.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.pages.min.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.pages.min.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.pages.min.css.map",
       "AssetKind": "All",
@@ -663,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.pages.min.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.plugins.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.plugins.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.plugins.css",
       "AssetKind": "All",
@@ -680,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.plugins.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.plugins.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.plugins.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.plugins.css.map",
       "AssetKind": "All",
@@ -697,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.plugins.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.plugins.min.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.plugins.min.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.plugins.min.css",
       "AssetKind": "All",
@@ -714,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.plugins.min.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.plugins.min.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.plugins.min.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/css/alt/adminlte.plugins.min.css.map",
       "AssetKind": "All",
@@ -731,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\css\\alt\\adminlte.plugins.min.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\AdminLTELogo.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\AdminLTELogo.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/AdminLTELogo.png",
       "AssetKind": "All",
@@ -748,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\AdminLTELogo.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\avatar.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\avatar.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/avatar.png",
       "AssetKind": "All",
@@ -765,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\avatar.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\avatar2.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\avatar2.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/avatar2.png",
       "AssetKind": "All",
@@ -782,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\avatar2.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\avatar3.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\avatar3.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/avatar3.png",
       "AssetKind": "All",
@@ -799,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\avatar3.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\avatar4.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\avatar4.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/avatar4.png",
       "AssetKind": "All",
@@ -816,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\avatar4.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\avatar5.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\avatar5.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/avatar5.png",
       "AssetKind": "All",
@@ -833,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\avatar5.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\boxed-bg.jpg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\boxed-bg.jpg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/boxed-bg.jpg",
       "AssetKind": "All",
@@ -850,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\boxed-bg.jpg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\boxed-bg.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\boxed-bg.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/boxed-bg.png",
       "AssetKind": "All",
@@ -867,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\boxed-bg.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\credit\\american-express.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\credit\\american-express.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/credit/american-express.png",
       "AssetKind": "All",
@@ -884,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\credit\\american-express.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\credit\\cirrus.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\credit\\cirrus.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/credit/cirrus.png",
       "AssetKind": "All",
@@ -901,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\credit\\cirrus.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\credit\\mastercard.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\credit\\mastercard.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/credit/mastercard.png",
       "AssetKind": "All",
@@ -918,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\credit\\mastercard.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\credit\\paypal.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\credit\\paypal.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/credit/paypal.png",
       "AssetKind": "All",
@@ -935,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\credit\\paypal.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\credit\\paypal2.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\credit\\paypal2.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/credit/paypal2.png",
       "AssetKind": "All",
@@ -952,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\credit\\paypal2.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\credit\\visa.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\credit\\visa.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/credit/visa.png",
       "AssetKind": "All",
@@ -969,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\credit\\visa.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\default-150x150.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\default-150x150.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/default-150x150.png",
       "AssetKind": "All",
@@ -986,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\default-150x150.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\icons.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\icons.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/icons.png",
       "AssetKind": "All",
@@ -1003,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\icons.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\photo1.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\photo1.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/photo1.png",
       "AssetKind": "All",
@@ -1020,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\photo1.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\photo2.png",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\photo2.png",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/photo2.png",
       "AssetKind": "All",
@@ -1037,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\photo2.png"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\photo3.jpg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\photo3.jpg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/photo3.jpg",
       "AssetKind": "All",
@@ -1054,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\photo3.jpg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\photo4.jpg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\photo4.jpg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/photo4.jpg",
       "AssetKind": "All",
@@ -1071,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\photo4.jpg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\prod-1.jpg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\prod-1.jpg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/prod-1.jpg",
       "AssetKind": "All",
@@ -1088,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\prod-1.jpg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\prod-2.jpg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\prod-2.jpg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/prod-2.jpg",
       "AssetKind": "All",
@@ -1105,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\prod-2.jpg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\prod-3.jpg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\prod-3.jpg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/prod-3.jpg",
       "AssetKind": "All",
@@ -1122,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\prod-3.jpg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\prod-4.jpg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\prod-4.jpg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/prod-4.jpg",
       "AssetKind": "All",
@@ -1139,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\prod-4.jpg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\prod-5.jpg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\prod-5.jpg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/prod-5.jpg",
       "AssetKind": "All",
@@ -1156,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\prod-5.jpg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\user1-128x128.jpg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\user1-128x128.jpg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/user1-128x128.jpg",
       "AssetKind": "All",
@@ -1173,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\user1-128x128.jpg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\user2-160x160.jpg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\user2-160x160.jpg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/user2-160x160.jpg",
       "AssetKind": "All",
@@ -1190,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\user2-160x160.jpg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\user3-128x128.jpg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\user3-128x128.jpg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/user3-128x128.jpg",
       "AssetKind": "All",
@@ -1207,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\user3-128x128.jpg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\user4-128x128.jpg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\user4-128x128.jpg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/user4-128x128.jpg",
       "AssetKind": "All",
@@ -1224,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\user4-128x128.jpg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\user5-128x128.jpg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\user5-128x128.jpg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/user5-128x128.jpg",
       "AssetKind": "All",
@@ -1241,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\user5-128x128.jpg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\user6-128x128.jpg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\user6-128x128.jpg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/user6-128x128.jpg",
       "AssetKind": "All",
@@ -1258,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\user6-128x128.jpg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\user7-128x128.jpg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\user7-128x128.jpg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/user7-128x128.jpg",
       "AssetKind": "All",
@@ -1275,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\user7-128x128.jpg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\user8-128x128.jpg",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\img\\user8-128x128.jpg",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/img/user8-128x128.jpg",
       "AssetKind": "All",
@@ -1292,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\img\\user8-128x128.jpg"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\js\\.eslintrc.json",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\js\\.eslintrc.json",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/js/.eslintrc.json",
       "AssetKind": "All",
@@ -1309,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\js\\.eslintrc.json"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\js\\adminlte.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\js\\adminlte.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/js/adminlte.js",
       "AssetKind": "All",
@@ -1326,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\js\\adminlte.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\js\\adminlte.js.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\js\\adminlte.js.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/js/adminlte.js.map",
       "AssetKind": "All",
@@ -1343,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\js\\adminlte.js.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\js\\adminlte.min.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\js\\adminlte.min.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/js/adminlte.min.js",
       "AssetKind": "All",
@@ -1360,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\js\\adminlte.min.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\js\\adminlte.min.js.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\js\\adminlte.min.js.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/js/adminlte.min.js.map",
       "AssetKind": "All",
@@ -1377,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\js\\adminlte.min.js.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\js\\demo.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\js\\demo.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/js/demo.js",
       "AssetKind": "All",
@@ -1394,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\js\\demo.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\js\\pages\\dashboard.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\js\\pages\\dashboard.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/js/pages/dashboard.js",
       "AssetKind": "All",
@@ -1411,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\js\\pages\\dashboard.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\js\\pages\\dashboard2.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\js\\pages\\dashboard2.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/js/pages/dashboard2.js",
       "AssetKind": "All",
@@ -1428,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\js\\pages\\dashboard2.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\admin-lte\\js\\pages\\dashboard3.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\admin-lte\\js\\pages\\dashboard3.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/admin-lte/js/pages/dashboard3.js",
       "AssetKind": "All",
@@ -1445,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\admin-lte\\js\\pages\\dashboard3.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1462,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1479,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1496,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1513,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1530,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1547,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1564,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1581,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1598,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1615,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1632,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1649,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1666,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1683,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1700,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1717,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1734,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1751,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1768,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1785,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1802,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1819,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1836,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1853,10 +1921,78 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
+      "BasePath": "_content/Medical-Athena-Calendly",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-theme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "SourceId": "Medical-Athena-Calendly",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
+      "BasePath": "_content/Medical-Athena-Calendly",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-theme.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "SourceId": "Medical-Athena-Calendly",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
+      "BasePath": "_content/Medical-Athena-Calendly",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-theme.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "SourceId": "Medical-Athena-Calendly",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
+      "BasePath": "_content/Medical-Athena-Calendly",
+      "RelativePath": "lib/bootstrap/dist/css/bootstrap-theme.min.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
+    },
+    {
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "SourceId": "Medical-Athena-Calendly",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1870,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1887,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1904,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1921,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1938,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1955,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1972,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1989,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2006,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2023,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2040,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2057,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2074,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2091,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2108,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2125,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2142,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2159,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2176,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2193,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2210,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2227,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2244,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2261,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2278,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2295,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2312,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2329,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2346,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2363,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2380,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2397,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2414,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\scss\\_login_and_register.scss",
+      "Identity": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\scss\\_login_and_register.scss",
       "SourceId": "Medical-Athena-Calendly",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Git\\Medical-Athena-Calendly\\wwwroot\\",
+      "ContentRoot": "F:\\Subhash\\git\\Athena-Calendly\\wwwroot\\",
       "BasePath": "_content/Medical-Athena-Calendly",
       "RelativePath": "scss/_login_and_register.scss",
       "AssetKind": "All",

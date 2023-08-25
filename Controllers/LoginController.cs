@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
+﻿using Medical_Athena_Calendly.Interface;
 using Medical_Athena_Calendly.Models;
-using Medical_Athena_Calendly.Interface;
-using System.Net;
-using Microsoft.AspNetCore.Authentication.Google;
+using Medical_Athena_Calendly.ViewModel;
 using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Medical_Athena_Calendly.Controllers
 {
@@ -20,57 +13,122 @@ namespace Medical_Athena_Calendly.Controllers
         private readonly IUser _user;
         private readonly ICalendly _calendly;
         private readonly ICalendlyAuth _calendlyAuth;
-        public LoginController(IPasswordEncryption passwordEncryption, IUser user, ICalendly calendly, ICalendlyAuth calendlyAuth)
+        private readonly ILogger<LoginController> logger;
+        private readonly IUnitOfWork _unitOfWork;
+        public LoginController(IPasswordEncryption passwordEncryption, IUser user, ICalendly calendly, ICalendlyAuth calendlyAuth, ILogger<LoginController> logger, IUnitOfWork unitOfWork)
         {
             _passwordEncryption = passwordEncryption;
             _user = user;
             _calendly = calendly;
             _calendlyAuth = calendlyAuth;
+            this.logger = logger;
+            _unitOfWork = unitOfWork;
         }
 
-        public IActionResult Index()
+        [HttpGet]
+        [Route("login/{app}")]
+        public IActionResult Index(string app)
         {
+            if (app == "nihar")
+            {
+                HttpContext.Session.SetString("CalendlyUser", "nihar");
+            }
+            else if (app == "hirsch")
+            {
+                HttpContext.Session.SetString("CalendlyUser", "hirsch");
+            }
+            else
+            {
+                HttpContext.Session.SetString("CalendlyUser", "webcontentor");
+                app = "webcontentor";
+            }
+            ViewData["CalendlyUser"] = app.Trim();
+            TempData["CalendlyUser"] = app.Trim();
             return View();
         }
-        public async Task< IActionResult> Login(User user)
+        [HttpPost]
+        [Route("login/{app}")]
+        public async Task<IActionResult> Login(string app, User user)
         {
             HttpContext.Session.Clear();
+            var calendlyUser = TempData["CalendlyUser"] as string;
+            HttpContext.Session.SetString("CalendlyUser", calendlyUser);
 
-            // Create hash Value to password text
+            //Create hash Value to password text
             var hashPassword = _passwordEncryption.EncryptPassword(user.Password);
             var userDetails = _user.FindByCondition(m => m.Email == user.Email && m.Password == hashPassword).ToList();
-
             if (userDetails == null)
             {
-
                 ViewBag.ErrorMessage = "Invalid email or password.";
-               
-                return View("Index" , user);
+                return View("Index", user);
             }
 
             // Set Session
-            HttpContext.Session.SetString("userName", userDetails[0].Name);
-            HttpContext.Session.SetString("userEmail", userDetails[0].Email);
-            // Get Personal token
-            string clientToken = _calendlyAuth.ClientPersonalToken();
+            HttpContext.Session.SetString("UserName", userDetails[0].Name);
+            HttpContext.Session.SetString("UserEmail", userDetails[0].Email);
+
+
+            //Get Personal token
+            string clientToken = _calendlyAuth.ClientPersonalToken(calendlyUser);
             HttpContext.Session.SetString("CalendlyAccessToken", clientToken);
             await _calendly.SetCalendlySession();
-            
-            return RedirectToAction("Dashboard", "Home");
+
+            logger.LogInformation("API started at:" + DateTime.Now);
+            return RedirectToAction("Dashboard", "Home", app);
+            //return RedirectToRoute("/dashboard/" + app);
         }
+
 
         public IActionResult Logout()
         {
-            HttpContext.Session.Clear();
+            var app = HttpContext.Session.GetString("CalendlyUser");
+            //HttpContext.Session.Clear();
             // for google
             //return SignOut(CookieAuthenticationDefaults.AuthenticationScheme);
-            return RedirectToAction("Index");
+            //return RedirectToAction("Index", app);
+            return RedirectToRoute(app + "/login");
         }
 
         public IActionResult GoogleLogin()
         {
-            var properties = new AuthenticationProperties { RedirectUri = "/Home/Index" };
+            string redirectUrl = Url.Action("GoogleResponse");
+            var properties = new AuthenticationProperties { RedirectUri = redirectUrl };
             return Challenge(properties, GoogleDefaults.AuthenticationScheme);
+        }
+
+        public async Task<IActionResult> GoogleResponse()
+        {
+            return RedirectToAction("Dashboard", "Home");
+        }
+
+        [HttpGet]
+        public IActionResult ChangePassword()
+        {
+            ViewData["CalendlyUser"] = HttpContext.Session.GetString("CalendlyUser");
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult ChangePassword(ChangePasswordViewModel model)
+        {
+            ViewData["CalendlyUser"] = HttpContext.Session.GetString("CalendlyUser");
+            if (ModelState.IsValid)
+            {
+                var userEmail = HttpContext.Session.GetString("UserEmail");
+                var hashPassword = _passwordEncryption.EncryptPassword(model.OldPassword);
+                var user = _user.FindByCondition(m => m.Email == userEmail && m.Password == hashPassword).FirstOrDefault();
+
+                if (user != null)
+                {
+                    var newHashPassword = _passwordEncryption.EncryptPassword(model.NewPassword);
+                    user.Password = newHashPassword;
+                    _user.Update(user);
+                    _unitOfWork.Save();
+                }
+
+                return View(model);
+            }
+            return View(model);
         }
     }
 }

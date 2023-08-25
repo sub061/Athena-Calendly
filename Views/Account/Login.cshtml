@@ -1,0 +1,64 @@
+﻿@model Medical_Athena_Calendly.Models.User
+
+@{
+    ViewBag.Title = "Log in";
+    Layout = "_LayoutRegistration";
+    var user = ViewData["CalendlyUser"];
+    var calendlyUser = user.ToString();
+}
+
+
+<div class="login-box-msg">
+
+    @if (calendlyUser == "nihar")
+    {
+
+        <img src="/img/Ganju-Logo.png" class="brand-image" style="opacity:.8;margin-right:10px; height: 50px;
+    width: 45px;">
+    }
+    else if (calendlyUser == "hirsch")
+    {
+
+        <img src="/img/HH Logo.jpg" class="brand-image" style="opacity:.8;margin-right:10px;height: 50px;
+    width: 45px;">
+    }
+
+
+</div>
+<p class="login-box-msg">Log in to start your session</p>
+@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <p class="text-danger">@ViewBag.ErrorMessage</p>
+}
+<form asp-action="Index">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="input-group mb-3">
+        @* <label asp-for="Email" class="control-label"></label>*@
+        <input asp-for="Email" type="email" class="form-control" placeholder="Email" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="input-group mb-3">
+        @*  <label asp-for="Password" class="control-label"></label>*@
+        <input asp-for="Password" type="password" class="form-control" placeholder="Password" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <div class="social-auth-links text-center mt-2 mb-3">
+        <button type="submit" formmethod="post" asp-action="Login" asp-route-app="@calendlyUser" class="btn btn-primary wc-button btn-block">Log In</button>
+    </div>
+
+</form>
+<div class="social-auth-links text-center mt-2 mt-3">
+    @* <a href="#" class="btn btn-block btn-primary">
+    <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
+    </a> *@
+    <a asp-controller="Account" asp-action="GoogleLogin" class="btn btn-block google-pluse btn-danger mt-4 mb-4">
+        <img src="/img/google-plus-g.svg"> Sign in using Google
+    </a>
+</div>
+<!-- /.social-auth-links -->
+@*<p class="mb-2">
+    <a asp-action="ForgotPassword" asp-controller="PasswordResetController" asp-route-app="@calendlyUser">I forgot my password</a>
+</p>*@
+<p class="mb-3">
+    <a asp-action="Register" asp-controller="Account" asp-route-app="@calendlyUser" class="text-center">Sign up</a>
+</p>

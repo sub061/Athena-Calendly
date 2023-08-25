@@ -1,0 +1,1128 @@
+2023-08-22T11:30:56.6016288+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T11:30:56.7421389+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T11:30:56.7623196+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T11:30:56.7781718+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T11:32:00.8547424+05:30 0HMT2QKJED81N:00000003 [INF] Executed DbCommand ("433"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T11:32:02.7483977+05:30 0HMT2QKJED81N:00000003 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T11:32:02.7622313+05:30 0HMT2QKJED81N:00000003 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T11:32:04.0918085+05:30 0HMT2QKJED81N:00000003 [INF] Received HTTP response headers after 1175.5607ms - 200 (f0742c1f)
+2023-08-22T11:32:04.1538954+05:30 0HMT2QKJED81N:00000003 [INF] End processing HTTP request after 1449.7781ms - 200 (7656b38e)
+2023-08-22T11:32:05.2012572+05:30 0HMT2QKJED81N:00000003 [INF] API started at:8/22/2023 11:32:05 AM (a76e6717)
+2023-08-22T11:32:09.4408600+05:30 0HMT2QKJED81N:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T11:32:09.6191152+05:30 0HMT2QKJED81N:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T11:32:10.0317592+05:30 0HMT2QKJED81N:00000004 [INF] Received HTTP response headers after 400.9452ms - 200 (f0742c1f)
+2023-08-22T11:32:10.0392863+05:30 0HMT2QKJED81N:00000004 [INF] End processing HTTP request after 714.0917ms - 200 (7656b38e)
+2023-08-22T11:32:34.0705467+05:30 0HMT2QKJED81K:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T12:17:31.9850979+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T12:17:32.1578479+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T12:17:32.1793008+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T12:17:32.1855853+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T12:18:59.4212177+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T12:18:59.5269128+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T12:18:59.5353450+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T12:18:59.5409800+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T12:23:14.9608355+05:30 0HMT2RFEJEEUI:00000003 [INF] Executed DbCommand ("535"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T12:23:16.7774780+05:30 0HMT2RFEJEEUI:00000003 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T12:23:16.7985063+05:30 0HMT2RFEJEEUI:00000003 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T12:23:18.0714775+05:30 0HMT2RFEJEEUI:00000003 [INF] Received HTTP response headers after 1202.1504ms - 200 (f0742c1f)
+2023-08-22T12:23:18.0869794+05:30 0HMT2RFEJEEUI:00000003 [INF] End processing HTTP request after 1427.4117ms - 200 (7656b38e)
+2023-08-22T12:23:18.8392790+05:30 0HMT2RFEJEEUI:00000003 [INF] API started at:8/22/2023 12:23:18 PM (e6be04a4)
+2023-08-22T12:23:25.2570716+05:30 0HMT2RFEJEEUI:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T12:23:25.8537291+05:30 0HMT2RFEJEEUI:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T12:23:26.3364953+05:30 0HMT2RFEJEEUI:00000004 [INF] Received HTTP response headers after 474.6104ms - 200 (f0742c1f)
+2023-08-22T12:23:26.3466648+05:30 0HMT2RFEJEEUI:00000004 [INF] End processing HTTP request after 1711.5059ms - 200 (7656b38e)
+2023-08-22T12:24:14.6032586+05:30 0HMT2RFEJEEUH:00000007 [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T12:30:13.1567975+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T12:30:13.6794801+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T12:30:14.4169469+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T12:30:15.1929002+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T12:31:44.2230687+05:30 0HMT2RLN7K63H:00000003 [INF] Executed DbCommand ("430"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T12:31:46.0552885+05:30 0HMT2RLN7K63H:00000003 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T12:31:46.0668280+05:30 0HMT2RLN7K63H:00000003 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T12:31:47.3913936+05:30 0HMT2RLN7K63H:00000003 [INF] Received HTTP response headers after 1251.5239ms - 200 (f0742c1f)
+2023-08-22T12:31:47.4055205+05:30 0HMT2RLN7K63H:00000003 [INF] End processing HTTP request after 1440.8389ms - 200 (7656b38e)
+2023-08-22T12:31:47.5579435+05:30 0HMT2RLN7K63H:00000003 [INF] API started at:8/22/2023 12:31:47 PM (a0490037)
+2023-08-22T12:31:52.1739625+05:30 0HMT2RLN7K63H:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T12:31:52.1813618+05:30 0HMT2RLN7K63H:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T12:31:52.6218399+05:30 0HMT2RLN7K63H:00000004 [INF] Received HTTP response headers after 434.2099ms - 200 (f0742c1f)
+2023-08-22T12:31:52.6281565+05:30 0HMT2RLN7K63H:00000004 [INF] End processing HTTP request after 453.1001ms - 200 (7656b38e)
+2023-08-22T12:32:11.0860906+05:30 0HMT2RLN7K63H:00000008 [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T12:34:56.5878948+05:30 0HMT2RLN7K63H:0000000B [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T12:35:07.7731610+05:30 0HMT2RLN7K63F:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T12:35:50.7869108+05:30 0HMT2RLN7K63F:00000009 [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T12:39:37.2990606+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T12:39:37.4446969+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T12:39:37.4675615+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T12:39:37.5425605+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T12:42:17.7389592+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T12:42:17.8244423+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T12:42:17.8388218+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T12:42:17.8474796+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T12:43:14.8149137+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T12:43:14.9574232+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T12:43:14.9666615+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T12:43:14.9727593+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T12:44:15.6628494+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T12:44:15.8520322+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T12:44:15.8986009+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T12:44:15.9179120+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T12:44:54.7309337+05:30 0HMT2RTIFTSPL:00000003 [INF] Executed DbCommand ("459"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T12:44:56.9990596+05:30 0HMT2RTIFTSPL:00000003 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T12:44:57.0140328+05:30 0HMT2RTIFTSPL:00000003 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T12:44:58.3320981+05:30 0HMT2RTIFTSPL:00000003 [INF] Received HTTP response headers after 1056.2671ms - 200 (f0742c1f)
+2023-08-22T12:44:58.3504789+05:30 0HMT2RTIFTSPL:00000003 [INF] End processing HTTP request after 1478.931ms - 200 (7656b38e)
+2023-08-22T12:44:59.0530221+05:30 0HMT2RTIFTSPL:00000003 [INF] API started at:8/22/2023 12:44:59 PM (77e0cf1c)
+2023-08-22T12:44:59.2027884+05:30 0HMT2RTIFTSPL:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T12:44:59.2091676+05:30 0HMT2RTIFTSPL:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T12:44:59.6259154+05:30 0HMT2RTIFTSPL:00000004 [INF] Received HTTP response headers after 412.2642ms - 200 (f0742c1f)
+2023-08-22T12:44:59.6313574+05:30 0HMT2RTIFTSPL:00000004 [INF] End processing HTTP request after 429.2247ms - 200 (7656b38e)
+2023-08-22T12:45:09.4646190+05:30 0HMT2RTIFTSPJ:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T12:57:39.5702036+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T12:57:39.7107826+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T12:57:39.7262337+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T12:57:39.7399359+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T13:02:48.5300363+05:30 0HMT2S522E71P:00000004 [INF] Executed DbCommand ("419"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T13:02:50.3138027+05:30 0HMT2S522E71P:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T13:02:50.4313955+05:30 0HMT2S522E71P:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T13:02:51.5517320+05:30 0HMT2S522E71P:00000004 [INF] Received HTTP response headers after 1028.8593ms - 200 (f0742c1f)
+2023-08-22T13:02:51.5764876+05:30 0HMT2S522E71P:00000004 [INF] End processing HTTP request after 1413.0358ms - 200 (7656b38e)
+2023-08-22T13:02:51.7475827+05:30 0HMT2S522E71P:00000004 [INF] API started at:8/22/2023 1:02:51 PM (9de37543)
+2023-08-22T13:02:51.8771254+05:30 0HMT2S522E71P:00000005 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T13:02:51.8837741+05:30 0HMT2S522E71P:00000005 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T13:02:52.2357753+05:30 0HMT2S522E71P:00000005 [INF] Received HTTP response headers after 345.9269ms - 200 (f0742c1f)
+2023-08-22T13:02:52.2417792+05:30 0HMT2S522E71P:00000005 [INF] End processing HTTP request after 366.3726ms - 200 (7656b38e)
+2023-08-22T13:03:03.7173157+05:30 0HMT2S522E71P:00000009 [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T13:04:25.9989069+05:30 0HMT2S522E71P:0000000D [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T13:05:57.5310400+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T13:05:57.6850075+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T13:05:57.6949083+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T13:05:57.7039969+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T13:07:48.4245535+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T13:07:48.6753450+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T13:07:48.8391456+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T13:07:49.0955241+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T13:09:42.6136434+05:30 0HMT2SANQ32IH:00000003 [INF] Executed DbCommand ("438"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T13:09:44.5643201+05:30 0HMT2SANQ32IH:00000003 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T13:09:44.6578828+05:30 0HMT2SANQ32IH:00000003 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T13:09:46.2687445+05:30 0HMT2SANQ32IH:00000003 [INF] Received HTTP response headers after 1529.4655ms - 200 (f0742c1f)
+2023-08-22T13:09:46.2846716+05:30 0HMT2SANQ32IH:00000003 [INF] End processing HTTP request after 1913.2831ms - 200 (7656b38e)
+2023-08-22T13:09:47.0256413+05:30 0HMT2SANQ32IH:00000003 [INF] API started at:8/22/2023 1:09:46 PM (66883a7d)
+2023-08-22T13:09:47.1740450+05:30 0HMT2SANQ32IH:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T13:09:47.1814061+05:30 0HMT2SANQ32IH:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T13:09:47.5370185+05:30 0HMT2SANQ32IH:00000004 [INF] Received HTTP response headers after 349.9569ms - 200 (f0742c1f)
+2023-08-22T13:09:47.5479523+05:30 0HMT2SANQ32IH:00000004 [INF] End processing HTTP request after 377.4288ms - 200 (7656b38e)
+2023-08-22T13:09:58.0067579+05:30 0HMT2SANQ32IF:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T13:13:00.4041620+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T13:13:00.5493479+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T13:13:00.5597902+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T13:13:00.5652825+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T13:14:14.9911283+05:30 0HMT2SDKHKO3P:00000004 [INF] Executed DbCommand ("420"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T13:14:55.7610282+05:30 0HMT2SDKHKO3P:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T13:14:55.7820527+05:30 0HMT2SDKHKO3P:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T13:14:57.1348085+05:30 0HMT2SDKHKO3P:00000004 [INF] Received HTTP response headers after 1219.0006ms - 200 (f0742c1f)
+2023-08-22T13:14:57.1497000+05:30 0HMT2SDKHKO3P:00000004 [INF] End processing HTTP request after 1487.4665ms - 200 (7656b38e)
+2023-08-22T13:14:57.3163135+05:30 0HMT2SDKHKO3P:00000004 [INF] API started at:8/22/2023 1:14:57 PM (37db8aa9)
+2023-08-22T13:14:57.4928333+05:30 0HMT2SDKHKO3P:00000005 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T13:14:57.5016697+05:30 0HMT2SDKHKO3P:00000005 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T13:14:57.8394250+05:30 0HMT2SDKHKO3P:00000005 [INF] Received HTTP response headers after 330.4956ms - 200 (f0742c1f)
+2023-08-22T13:14:57.8445970+05:30 0HMT2SDKHKO3P:00000005 [INF] End processing HTTP request after 355.1881ms - 200 (7656b38e)
+2023-08-22T13:15:07.0293067+05:30 0HMT2SDKHKO3O:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T13:16:06.9140416+05:30 0HMT2SDKHKO3P:00000009 [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/20625/patients (338f1c77)
+2023-08-22T13:16:06.9247926+05:30 0HMT2SDKHKO3P:00000009 [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/20625/patients (2e7ac211)
+2023-08-22T13:16:08.5646829+05:30 0HMT2SDKHKO3P:00000009 [INF] Received HTTP response headers after 1633.2133ms - 401 (f0742c1f)
+2023-08-22T13:16:08.5704036+05:30 0HMT2SDKHKO3P:00000009 [INF] End processing HTTP request after 1658.0934ms - 401 (7656b38e)
+2023-08-22T13:16:12.9868186+05:30 0HMT2SDKHKO3P:00000009 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Medical_Athena_Calendly.CommonServices.ApiService.PostAsync[TResponse](String url, Dictionary`2 formData, String authHeader) in F:\Subhash\git\Athena-Calendly\CommonServices\ApiService.cs:line 55
+   at Medical_Athena_Calendly.Controllers.PatientController.CreateAsync(String app, PatientModel patient) in F:\Subhash\git\Athena-Calendly\Controllers\PatientController.cs:line 66
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-22T13:37:43.2972783+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T13:37:43.5470257+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T13:37:43.5893785+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T13:37:43.5997162+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T13:39:45.5264820+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T13:39:45.9534752+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T13:39:45.9916214+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T13:39:46.0212444+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T13:41:04.9531626+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T13:41:05.2827577+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T13:41:05.5208198+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T13:41:05.5308773+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T13:42:35.8118065+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T13:42:36.0432874+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T13:42:36.0574995+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T13:42:36.0643989+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T13:54:47.1753740+05:30 0HMT2SU5H92T7:00000004 [INF] Executed DbCommand ("389"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T13:54:47.5069287+05:30 0HMT2SU5H92T7:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T13:54:47.5147720+05:30 0HMT2SU5H92T7:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T13:54:48.3395234+05:30 0HMT2SU5H92T7:00000004 [INF] Received HTTP response headers after 782.7402ms - 200 (f0742c1f)
+2023-08-22T13:54:48.3499919+05:30 0HMT2SU5H92T7:00000004 [INF] End processing HTTP request after 910.3202ms - 200 (7656b38e)
+2023-08-22T13:54:48.8699784+05:30 0HMT2SU5H92T7:00000004 [INF] API started at:8/22/2023 1:54:48 PM (caa2d396)
+2023-08-22T13:54:49.0043900+05:30 0HMT2SU5H92T7:00000005 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T13:54:49.0144903+05:30 0HMT2SU5H92T7:00000005 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T13:54:49.3640072+05:30 0HMT2SU5H92T7:00000005 [INF] Received HTTP response headers after 344.7475ms - 200 (f0742c1f)
+2023-08-22T13:54:49.3701343+05:30 0HMT2SU5H92T7:00000005 [INF] End processing HTTP request after 363.7308ms - 200 (7656b38e)
+2023-08-22T13:59:01.7524553+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T13:59:01.8654771+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T13:59:01.8747991+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T13:59:01.8795284+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T13:59:32.5724176+05:30 0HMT2T7BE6MCQ:00000003 [INF] Executed DbCommand ("650"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T13:59:33.0776407+05:30 0HMT2T7BE6MCQ:00000003 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T13:59:33.1043653+05:30 0HMT2T7BE6MCQ:00000003 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T13:59:34.0840148+05:30 0HMT2T7BE6MCQ:00000003 [INF] Received HTTP response headers after 933.5373ms - 200 (f0742c1f)
+2023-08-22T13:59:34.0924926+05:30 0HMT2T7BE6MCQ:00000003 [INF] End processing HTTP request after 1107.512ms - 200 (7656b38e)
+2023-08-22T13:59:34.2264769+05:30 0HMT2T7BE6MCQ:00000003 [INF] API started at:8/22/2023 1:59:34 PM (ab946c22)
+2023-08-22T13:59:34.3211657+05:30 0HMT2T7BE6MCQ:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T13:59:34.3264063+05:30 0HMT2T7BE6MCQ:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T13:59:34.7195486+05:30 0HMT2T7BE6MCQ:00000004 [INF] Received HTTP response headers after 381.6488ms - 200 (f0742c1f)
+2023-08-22T13:59:34.7261264+05:30 0HMT2T7BE6MCQ:00000004 [INF] End processing HTTP request after 405.7265ms - 200 (7656b38e)
+2023-08-22T14:00:54.8822700+05:30 0HMT2T7BE6MCO:0000000F [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T14:00:54.8885392+05:30 0HMT2T7BE6MCO:0000000F [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T14:00:54.8981250+05:30 0HMT2T7BE6MCO:0000000F [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T14:00:55.3078950+05:30 0HMT2T7BE6MCO:0000000F [INF] Received HTTP response headers after 404.554ms - 200 (f0742c1f)
+2023-08-22T14:00:55.3141387+05:30 0HMT2T7BE6MCO:0000000F [INF] End processing HTTP request after 425.0628ms - 200 (7656b38e)
+2023-08-22T14:00:55.3195384+05:30 0HMT2T7BE6MCO:0000000F [INF] API started at:8/22/2023 2:00:55 PM (3096ace9)
+2023-08-22T14:00:55.3444679+05:30 0HMT2T7BE6MCO:00000010 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T14:00:55.3504074+05:30 0HMT2T7BE6MCO:00000010 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T14:00:55.7457641+05:30 0HMT2T7BE6MCO:00000010 [INF] Received HTTP response headers after 390.2493ms - 200 (f0742c1f)
+2023-08-22T14:00:55.7526644+05:30 0HMT2T7BE6MCO:00000010 [INF] End processing HTTP request after 406.9495ms - 200 (7656b38e)
+2023-08-22T14:01:03.1500022+05:30 0HMT2T7BE6MCO:00000014 [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T14:48:03.3029271+05:30 0HMT2T7BE6MCS:00000002 [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (338f1c77)
+2023-08-22T14:48:03.3089176+05:30 0HMT2T7BE6MCS:00000002 [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (2e7ac211)
+2023-08-22T14:48:04.4306235+05:30 0HMT2T7BE6MCS:00000002 [INF] Received HTTP response headers after 1117.1704ms - 401 (f0742c1f)
+2023-08-22T14:48:04.4355906+05:30 0HMT2T7BE6MCS:00000002 [INF] End processing HTTP request after 1131.696ms - 401 (7656b38e)
+2023-08-22T14:48:05.3758460+05:30 0HMT2T7BE6MCS:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Medical_Athena_Calendly.CommonServices.ApiService.PostAsync[TResponse](String url, Dictionary`2 formData, String authHeader) in F:\Subhash\git\Athena-Calendly\CommonServices\ApiService.cs:line 55
+   at Medical_Athena_Calendly.Controllers.PatientController.CreateAsync(String app, PatientModel patient) in F:\Subhash\git\Athena-Calendly\Controllers\PatientController.cs:line 75
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-22T14:48:32.0903830+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T14:48:32.3138468+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T14:48:32.3274762+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T14:48:32.3362917+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T14:49:14.8345488+05:30 0HMT2U30JQCUN:00000004 [INF] Executed DbCommand ("460"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T14:49:15.2364629+05:30 0HMT2U30JQCUN:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T14:49:15.2465721+05:30 0HMT2U30JQCUN:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T14:49:16.3123076+05:30 0HMT2U30JQCUN:00000004 [INF] Received HTTP response headers after 1023.8312ms - 200 (f0742c1f)
+2023-08-22T14:49:16.3203862+05:30 0HMT2U30JQCUN:00000004 [INF] End processing HTTP request after 1161.1747ms - 200 (7656b38e)
+2023-08-22T14:49:16.4499043+05:30 0HMT2U30JQCUN:00000004 [INF] API started at:8/22/2023 2:49:16 PM (247018b9)
+2023-08-22T14:49:16.5361720+05:30 0HMT2U30JQCUN:00000005 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T14:49:16.5416281+05:30 0HMT2U30JQCUN:00000005 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T14:49:16.9021255+05:30 0HMT2U30JQCUN:00000005 [INF] Received HTTP response headers after 355.5593ms - 200 (f0742c1f)
+2023-08-22T14:49:16.9086805+05:30 0HMT2U30JQCUN:00000005 [INF] End processing HTTP request after 371.3962ms - 200 (7656b38e)
+2023-08-22T14:49:21.9842790+05:30 0HMT2U30JQCUM:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T14:49:36.9804459+05:30 0HMT2U30JQCUM:00000008 [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (338f1c77)
+2023-08-22T14:49:36.9881467+05:30 0HMT2U30JQCUM:00000008 [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (2e7ac211)
+2023-08-22T14:49:38.1663285+05:30 0HMT2U30JQCUM:00000008 [INF] Received HTTP response headers after 1167.6129ms - 401 (f0742c1f)
+2023-08-22T14:49:38.1841139+05:30 0HMT2U30JQCUM:00000008 [INF] End processing HTTP request after 1191.6796ms - 401 (7656b38e)
+2023-08-22T14:49:39.5567276+05:30 0HMT2U30JQCUM:00000008 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 401 (Unauthorized).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Medical_Athena_Calendly.CommonServices.ApiService.PostAsync[TResponse](String url, Dictionary`2 formData, String authHeader) in F:\Subhash\git\Athena-Calendly\CommonServices\ApiService.cs:line 55
+   at Medical_Athena_Calendly.Controllers.PatientController.CreateAsync(String app, PatientModel patient) in F:\Subhash\git\Athena-Calendly\Controllers\PatientController.cs:line 75
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-22T14:57:20.9906254+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T14:57:21.5200558+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T14:57:21.5379604+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T14:57:21.5459881+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T14:58:18.0338347+05:30 0HMT2U7U7K183:00000004 [INF] Executed DbCommand ("850"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T14:58:18.7606904+05:30 0HMT2U7U7K183:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T14:58:18.7774471+05:30 0HMT2U7U7K183:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T14:58:20.5272967+05:30 0HMT2U7U7K183:00000004 [INF] Received HTTP response headers after 1660.5493ms - 200 (f0742c1f)
+2023-08-22T14:58:20.5430732+05:30 0HMT2U7U7K183:00000004 [INF] End processing HTTP request after 2001.3412ms - 200 (7656b38e)
+2023-08-22T14:58:20.7556686+05:30 0HMT2U7U7K183:00000004 [INF] API started at:8/22/2023 2:58:20 PM (4929b039)
+2023-08-22T14:58:20.9465215+05:30 0HMT2U7U7K183:00000005 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T14:58:20.9561945+05:30 0HMT2U7U7K183:00000005 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T14:58:21.3500715+05:30 0HMT2U7U7K183:00000005 [INF] Received HTTP response headers after 384.0895ms - 200 (f0742c1f)
+2023-08-22T14:58:21.3608581+05:30 0HMT2U7U7K183:00000005 [INF] End processing HTTP request after 416.9832ms - 200 (7656b38e)
+2023-08-22T14:58:32.0014406+05:30 0HMT2U7U7K183:00000009 [INF] Executed DbCommand ("3"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T15:20:34.7223612+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T15:20:34.9808929+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T15:20:35.0099696+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T15:20:35.0250424+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T15:21:56.1522733+05:30 0HMT2UKTG364G:00000004 [INF] Executed DbCommand ("748"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T15:21:56.8096402+05:30 0HMT2UKTG364G:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T15:21:56.8409497+05:30 0HMT2UKTG364G:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T15:21:58.3406549+05:30 0HMT2UKTG364G:00000004 [INF] Received HTTP response headers after 1424.7086ms - 200 (f0742c1f)
+2023-08-22T15:21:58.3565432+05:30 0HMT2UKTG364G:00000004 [INF] End processing HTTP request after 1706.3005ms - 200 (7656b38e)
+2023-08-22T15:21:59.2392224+05:30 0HMT2UKTG364G:00000004 [INF] API started at:8/22/2023 3:21:59 PM (4c88e7d1)
+2023-08-22T15:21:59.4220026+05:30 0HMT2UKTG364G:00000005 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T15:21:59.4328418+05:30 0HMT2UKTG364G:00000005 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T15:21:59.7763424+05:30 0HMT2UKTG364G:00000005 [INF] Received HTTP response headers after 336.7224ms - 200 (f0742c1f)
+2023-08-22T15:21:59.7835830+05:30 0HMT2UKTG364G:00000005 [INF] End processing HTTP request after 382.2799ms - 200 (7656b38e)
+2023-08-22T15:22:14.8854064+05:30 0HMT2UKTG364G:00000009 [INF] Executed DbCommand ("3"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T15:23:21.8729199+05:30 0HMT2UKTG364G:0000000B [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidCastException: Unable to cast object of type 'System.Func`2[System.String,System.Int32]' to type 'System.IConvertible'.
+   at System.Convert.ToInt32(Object value)
+   at Medical_Athena_Calendly.Controllers.PatientController.CreateAsync(String app, PatientModel patient) in F:\Subhash\git\Athena-Calendly\Controllers\PatientController.cs:line 56
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-22T15:27:10.5363743+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T15:27:11.0103520+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T15:27:11.1322461+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T15:27:11.2482070+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T15:27:50.1793444+05:30 0HMT2UOJJLSGF:00000005 [INF] Executed DbCommand ("611"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T15:27:50.8562054+05:30 0HMT2UOJJLSGF:00000005 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T15:27:50.8893331+05:30 0HMT2UOJJLSGF:00000005 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T15:27:52.1476873+05:30 0HMT2UOJJLSGF:00000005 [INF] Received HTTP response headers after 1158.4203ms - 200 (f0742c1f)
+2023-08-22T15:27:52.1611691+05:30 0HMT2UOJJLSGF:00000005 [INF] End processing HTTP request after 1452.1239ms - 200 (7656b38e)
+2023-08-22T15:27:52.3773960+05:30 0HMT2UOJJLSGF:00000005 [INF] API started at:8/22/2023 3:27:52 PM (2bf8be08)
+2023-08-22T15:27:52.5432590+05:30 0HMT2UOJJLSGF:00000006 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T15:27:52.5725765+05:30 0HMT2UOJJLSGF:00000006 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T15:27:52.9376478+05:30 0HMT2UOJJLSGF:00000006 [INF] Received HTTP response headers after 358.0055ms - 200 (f0742c1f)
+2023-08-22T15:27:52.9645766+05:30 0HMT2UOJJLSGF:00000006 [INF] End processing HTTP request after 418.3564ms - 200 (7656b38e)
+2023-08-22T15:28:00.9942214+05:30 0HMT2UOJJLSGF:0000000A [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T15:29:25.6971898+05:30 0HMT2UOJJLSGG:00000005 [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (338f1c77)
+2023-08-22T15:29:25.7037765+05:30 0HMT2UOJJLSGG:00000005 [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (2e7ac211)
+2023-08-22T15:29:27.1129044+05:30 0HMT2UOJJLSGG:00000005 [INF] Received HTTP response headers after 1376.4285ms - 401 (f0742c1f)
+2023-08-22T15:29:27.1193524+05:30 0HMT2UOJJLSGG:00000005 [INF] End processing HTTP request after 1423.0639ms - 401 (7656b38e)
+2023-08-22T15:44:32.0771308+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T15:44:32.5667321+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T15:44:32.6811460+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T15:44:32.7189719+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T15:45:13.2730891+05:30 0HMT2V29TQ7HP:00000005 [INF] Executed DbCommand ("672"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T15:45:13.8085970+05:30 0HMT2V29TQ7HP:00000005 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T15:45:13.8192481+05:30 0HMT2V29TQ7HP:00000005 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T15:45:15.0032217+05:30 0HMT2V29TQ7HP:00000005 [INF] Received HTTP response headers after 1120.0597ms - 200 (f0742c1f)
+2023-08-22T15:45:15.0165340+05:30 0HMT2V29TQ7HP:00000005 [INF] End processing HTTP request after 1320.7248ms - 200 (7656b38e)
+2023-08-22T15:45:15.2780658+05:30 0HMT2V29TQ7HP:00000005 [INF] API started at:8/22/2023 3:45:15 PM (7cd859e5)
+2023-08-22T15:45:15.4997654+05:30 0HMT2V29TQ7HP:00000006 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T15:45:15.5089206+05:30 0HMT2V29TQ7HP:00000006 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T15:45:16.3177213+05:30 0HMT2V29TQ7HP:00000006 [INF] Received HTTP response headers after 802.5118ms - 200 (f0742c1f)
+2023-08-22T15:45:16.3227570+05:30 0HMT2V29TQ7HP:00000006 [INF] End processing HTTP request after 827.1185ms - 200 (7656b38e)
+2023-08-22T15:45:20.6457729+05:30 0HMT2V29TQ7HQ:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T15:45:48.1525672+05:30 0HMT2V29TQ7HP:0000000A [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (338f1c77)
+2023-08-22T15:45:48.1629167+05:30 0HMT2V29TQ7HP:0000000A [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (2e7ac211)
+2023-08-22T15:45:54.5044599+05:30 0HMT2V29TQ7HP:0000000A [INF] Received HTTP response headers after 6332.312ms - 200 (f0742c1f)
+2023-08-22T15:45:54.5205185+05:30 0HMT2V29TQ7HP:0000000A [INF] End processing HTTP request after 6357.7568ms - 200 (7656b38e)
+2023-08-22T15:46:53.5253419+05:30 0HMT2V29TQ7HP:0000000A [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (338f1c77)
+2023-08-22T15:46:53.5360559+05:30 0HMT2V29TQ7HP:0000000A [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (2e7ac211)
+2023-08-22T15:46:53.8813423+05:30 0HMT2V29TQ7HP:0000000A [INF] Received HTTP response headers after 253.7466ms - 401 (f0742c1f)
+2023-08-22T15:46:53.9154416+05:30 0HMT2V29TQ7HP:0000000A [INF] End processing HTTP request after 371.3033ms - 401 (7656b38e)
+2023-08-22T15:51:27.1216575+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T15:51:27.2081188+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T15:51:27.2205900+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T15:51:27.2264620+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T15:52:49.1710300+05:30 0HMT2V65NJ8V3:00000004 [INF] Executed DbCommand ("606"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T15:52:49.6665670+05:30 0HMT2V65NJ8V3:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T15:52:49.6763136+05:30 0HMT2V65NJ8V3:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T15:53:12.0118286+05:30 0HMT2V65NJ8V3:00000004 [INF] Received HTTP response headers after 22284.0021ms - 200 (f0742c1f)
+2023-08-22T15:53:12.0233250+05:30 0HMT2V65NJ8V3:00000004 [INF] End processing HTTP request after 22486.296ms - 200 (7656b38e)
+2023-08-22T15:53:12.2013452+05:30 0HMT2V65NJ8V3:00000004 [INF] API started at:8/22/2023 3:53:12 PM (d24625b9)
+2023-08-22T15:53:12.3243530+05:30 0HMT2V65NJ8V3:00000005 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T15:53:12.3995620+05:30 0HMT2V65NJ8V3:00000005 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T15:53:12.7317610+05:30 0HMT2V65NJ8V3:00000005 [INF] Received HTTP response headers after 324.3399ms - 200 (f0742c1f)
+2023-08-22T15:53:12.7400271+05:30 0HMT2V65NJ8V3:00000005 [INF] End processing HTTP request after 421.8264ms - 200 (7656b38e)
+2023-08-22T15:53:17.7318808+05:30 0HMT2V65NJ8V4:00000003 [INF] Executed DbCommand ("6"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T15:53:37.6000188+05:30 0HMT2V65NJ8V3:00000008 [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (338f1c77)
+2023-08-22T15:53:37.6097863+05:30 0HMT2V65NJ8V3:00000008 [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (2e7ac211)
+2023-08-22T15:53:38.9598525+05:30 0HMT2V65NJ8V3:00000008 [INF] Received HTTP response headers after 1338.1776ms - 400 (f0742c1f)
+2023-08-22T15:53:38.9761124+05:30 0HMT2V65NJ8V3:00000008 [INF] End processing HTTP request after 1376.27ms - 400 (7656b38e)
+2023-08-22T15:53:41.4498046+05:30 0HMT2V65NJ8V3:00000008 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Medical_Athena_Calendly.CommonServices.ApiService.PostAsync[TResponse](String url, Dictionary`2 formData, String authHeader) in F:\Subhash\git\Athena-Calendly\CommonServices\ApiService.cs:line 52
+   at Medical_Athena_Calendly.Repository.AthenaAuth.Token() in F:\Subhash\git\Athena-Calendly\Repository\AthenaAuth.cs:line 66
+   at Medical_Athena_Calendly.Controllers.PatientController.CreateAsync(String app, PatientModel patient) in F:\Subhash\git\Athena-Calendly\Controllers\PatientController.cs:line 61
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-22T15:53:54.6709348+05:30 0HMT2V65NJ8V4:00000007 [INF] Executed DbCommand ("11"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T15:54:11.0624440+05:30 0HMT2V65NJ8V4:00000009 [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (338f1c77)
+2023-08-22T15:54:11.0728535+05:30 0HMT2V65NJ8V4:00000009 [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (2e7ac211)
+2023-08-22T15:54:11.4247092+05:30 0HMT2V65NJ8V4:00000009 [INF] Received HTTP response headers after 285.595ms - 400 (f0742c1f)
+2023-08-22T15:54:11.4402742+05:30 0HMT2V65NJ8V4:00000009 [INF] End processing HTTP request after 376.4409ms - 400 (7656b38e)
+2023-08-22T15:54:12.6332693+05:30 0HMT2V65NJ8V4:00000009 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Medical_Athena_Calendly.CommonServices.ApiService.PostAsync[TResponse](String url, Dictionary`2 formData, String authHeader) in F:\Subhash\git\Athena-Calendly\CommonServices\ApiService.cs:line 52
+   at Medical_Athena_Calendly.Repository.AthenaAuth.Token() in F:\Subhash\git\Athena-Calendly\Repository\AthenaAuth.cs:line 66
+   at Medical_Athena_Calendly.Controllers.PatientController.CreateAsync(String app, PatientModel patient) in F:\Subhash\git\Athena-Calendly\Controllers\PatientController.cs:line 61
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-22T15:54:48.5544595+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T15:54:48.7467015+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T15:54:48.8005643+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T15:54:48.8248426+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T15:55:22.3802154+05:30 0HMT2V81LQ0DR:00000003 [INF] Executed DbCommand ("557"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T15:55:22.8976734+05:30 0HMT2V81LQ0DR:00000003 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T15:55:22.9080023+05:30 0HMT2V81LQ0DR:00000003 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T15:55:24.0536344+05:30 0HMT2V81LQ0DR:00000003 [INF] Received HTTP response headers after 1093.5043ms - 200 (f0742c1f)
+2023-08-22T15:55:24.0636739+05:30 0HMT2V81LQ0DR:00000003 [INF] End processing HTTP request after 1275.2178ms - 200 (7656b38e)
+2023-08-22T15:55:24.2207603+05:30 0HMT2V81LQ0DR:00000003 [INF] API started at:8/22/2023 3:55:24 PM (c6f4a666)
+2023-08-22T15:55:24.3697248+05:30 0HMT2V81LQ0DR:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T15:55:24.3759868+05:30 0HMT2V81LQ0DR:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T15:55:24.7110725+05:30 0HMT2V81LQ0DR:00000004 [INF] Received HTTP response headers after 328.6066ms - 200 (f0742c1f)
+2023-08-22T15:55:24.7219191+05:30 0HMT2V81LQ0DR:00000004 [INF] End processing HTTP request after 348.1655ms - 200 (7656b38e)
+2023-08-22T15:55:31.8745708+05:30 0HMT2V81LQ0DR:00000008 [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T15:55:48.1786641+05:30 0HMT2V81LQ0DP:00000006 [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (338f1c77)
+2023-08-22T15:55:48.1861589+05:30 0HMT2V81LQ0DP:00000006 [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (2e7ac211)
+2023-08-22T15:55:49.6318790+05:30 0HMT2V81LQ0DP:00000006 [INF] Received HTTP response headers after 1392.063ms - 400 (f0742c1f)
+2023-08-22T15:55:49.6564788+05:30 0HMT2V81LQ0DP:00000006 [INF] End processing HTTP request after 1462.9617ms - 400 (7656b38e)
+2023-08-22T15:55:51.5700272+05:30 0HMT2V81LQ0DP:00000006 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Medical_Athena_Calendly.CommonServices.ApiService.PostAsync[TResponse](String url, Dictionary`2 formData, String authHeader) in F:\Subhash\git\Athena-Calendly\CommonServices\ApiService.cs:line 52
+   at Medical_Athena_Calendly.Repository.AthenaAuth.Token() in F:\Subhash\git\Athena-Calendly\Repository\AthenaAuth.cs:line 66
+   at Medical_Athena_Calendly.Controllers.PatientController.CreateAsync(String app, PatientModel patient) in F:\Subhash\git\Athena-Calendly\Controllers\PatientController.cs:line 61
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-22T15:56:29.5862814+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T15:56:29.7654395+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T15:56:29.7992288+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T15:56:29.8180514+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T15:57:05.4425662+05:30 0HMT2V8VS7I7M:00000004 [INF] Executed DbCommand ("627"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T15:57:06.0745918+05:30 0HMT2V8VS7I7M:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T15:57:06.0945203+05:30 0HMT2V8VS7I7M:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T15:57:07.0983405+05:30 0HMT2V8VS7I7M:00000004 [INF] Received HTTP response headers after 935.977ms - 200 (f0742c1f)
+2023-08-22T15:57:07.1110436+05:30 0HMT2V8VS7I7M:00000004 [INF] End processing HTTP request after 1160.2122ms - 200 (7656b38e)
+2023-08-22T15:57:07.2753240+05:30 0HMT2V8VS7I7M:00000004 [INF] API started at:8/22/2023 3:57:07 PM (9ef60622)
+2023-08-22T15:57:07.4081102+05:30 0HMT2V8VS7I7M:00000005 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T15:57:07.4140712+05:30 0HMT2V8VS7I7M:00000005 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T15:57:07.7512070+05:30 0HMT2V8VS7I7M:00000005 [INF] Received HTTP response headers after 331.1322ms - 200 (f0742c1f)
+2023-08-22T15:57:07.7600952+05:30 0HMT2V8VS7I7M:00000005 [INF] End processing HTTP request after 350.0401ms - 200 (7656b38e)
+2023-08-22T15:57:16.0244848+05:30 0HMT2V8VS7I7L:00000005 [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T15:57:36.5275752+05:30 0HMT2V8VS7I7M:00000009 [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (338f1c77)
+2023-08-22T15:57:36.5379262+05:30 0HMT2V8VS7I7M:00000009 [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (2e7ac211)
+2023-08-22T15:57:37.7941990+05:30 0HMT2V8VS7I7M:00000009 [INF] Received HTTP response headers after 1246.2007ms - 400 (f0742c1f)
+2023-08-22T15:57:37.8270032+05:30 0HMT2V8VS7I7M:00000009 [INF] End processing HTTP request after 1283.3929ms - 400 (7656b38e)
+2023-08-22T15:57:39.6420446+05:30 0HMT2V8VS7I7M:00000009 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Medical_Athena_Calendly.CommonServices.ApiService.PostAsync[TResponse](String url, Dictionary`2 formData, String authHeader) in F:\Subhash\git\Athena-Calendly\CommonServices\ApiService.cs:line 52
+   at Medical_Athena_Calendly.Repository.AthenaAuth.Token() in F:\Subhash\git\Athena-Calendly\Repository\AthenaAuth.cs:line 66
+   at Medical_Athena_Calendly.Controllers.PatientController.CreateAsync(String app, PatientModel patient) in F:\Subhash\git\Athena-Calendly\Controllers\PatientController.cs:line 61
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-22T16:05:55.1711949+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T16:05:55.2793145+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T16:05:55.2948384+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T16:05:55.3165551+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T16:06:30.8732090+05:30 0HMT2VE8ERB75:00000003 [INF] Executed DbCommand ("648"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T16:06:31.3544404+05:30 0HMT2VE8ERB75:00000003 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T16:06:31.3676892+05:30 0HMT2VE8ERB75:00000003 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T16:06:32.7392029+05:30 0HMT2VE8ERB75:00000003 [INF] Received HTTP response headers after 1258.4552ms - 200 (f0742c1f)
+2023-08-22T16:06:32.7527599+05:30 0HMT2VE8ERB75:00000003 [INF] End processing HTTP request after 1480.6204ms - 200 (7656b38e)
+2023-08-22T16:06:32.9537705+05:30 0HMT2VE8ERB75:00000003 [INF] API started at:8/22/2023 4:06:32 PM (82515873)
+2023-08-22T16:06:33.0607651+05:30 0HMT2VE8ERB75:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T16:06:33.0684951+05:30 0HMT2VE8ERB75:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T16:06:33.4108152+05:30 0HMT2VE8ERB75:00000004 [INF] Received HTTP response headers after 335.9731ms - 200 (f0742c1f)
+2023-08-22T16:06:33.4175024+05:30 0HMT2VE8ERB75:00000004 [INF] End processing HTTP request after 359.2492ms - 200 (7656b38e)
+2023-08-22T16:06:37.4128204+05:30 0HMT2VE8ERB76:00000004 [INF] Executed DbCommand ("7"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T16:06:57.8315631+05:30 0HMT2VE8ERB76:00000006 [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (338f1c77)
+2023-08-22T16:06:57.8396600+05:30 0HMT2VE8ERB76:00000006 [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (2e7ac211)
+2023-08-22T16:06:59.3739382+05:30 0HMT2VE8ERB76:00000006 [INF] Received HTTP response headers after 1527.3747ms - 200 (f0742c1f)
+2023-08-22T16:06:59.3878218+05:30 0HMT2VE8ERB76:00000006 [INF] End processing HTTP request after 1561.0312ms - 200 (7656b38e)
+2023-08-22T16:07:34.5489201+05:30 0HMT2VE8ERB76:00000006 [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (338f1c77)
+2023-08-22T16:07:34.5618668+05:30 0HMT2VE8ERB76:00000006 [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (2e7ac211)
+2023-08-22T16:07:35.2502974+05:30 0HMT2VE8ERB76:00000006 [INF] Received HTTP response headers after 659.8757ms - 400 (f0742c1f)
+2023-08-22T16:07:35.2604683+05:30 0HMT2VE8ERB76:00000006 [INF] End processing HTTP request after 713.1754ms - 400 (7656b38e)
+2023-08-22T16:11:04.5835067+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T16:11:04.8297511+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T16:11:04.9035709+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T16:11:04.9200823+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T16:11:46.4002988+05:30 0HMT2VH4ET5OC:00000003 [INF] Executed DbCommand ("666"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T16:11:47.0220235+05:30 0HMT2VH4ET5OC:00000003 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T16:11:47.0665897+05:30 0HMT2VH4ET5OC:00000003 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T16:11:48.2925794+05:30 0HMT2VH4ET5OC:00000003 [INF] Received HTTP response headers after 1168.92ms - 200 (f0742c1f)
+2023-08-22T16:11:48.3031612+05:30 0HMT2VH4ET5OC:00000003 [INF] End processing HTTP request after 1391.5838ms - 200 (7656b38e)
+2023-08-22T16:11:48.4823442+05:30 0HMT2VH4ET5OC:00000003 [INF] API started at:8/22/2023 4:11:48 PM (06f10204)
+2023-08-22T16:11:48.6900933+05:30 0HMT2VH4ET5OC:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T16:11:48.7016263+05:30 0HMT2VH4ET5OC:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T16:11:49.1690972+05:30 0HMT2VH4ET5OC:00000004 [INF] Received HTTP response headers after 450.593ms - 200 (f0742c1f)
+2023-08-22T16:11:49.2050119+05:30 0HMT2VH4ET5OC:00000004 [INF] End processing HTTP request after 547.6154ms - 200 (7656b38e)
+2023-08-22T16:11:56.1667623+05:30 0HMT2VH4ET5OB:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T16:12:17.9717323+05:30 0HMT2VH4ET5OC:00000008 [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (338f1c77)
+2023-08-22T16:12:18.0035537+05:30 0HMT2VH4ET5OC:00000008 [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (2e7ac211)
+2023-08-22T16:12:20.0044782+05:30 0HMT2VH4ET5OC:00000008 [INF] Received HTTP response headers after 1904.137ms - 200 (f0742c1f)
+2023-08-22T16:12:20.0407023+05:30 0HMT2VH4ET5OC:00000008 [INF] End processing HTTP request after 2117.9699ms - 200 (7656b38e)
+2023-08-22T16:12:58.7522177+05:30 0HMT2VH4ET5OC:00000008 [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (338f1c77)
+2023-08-22T16:12:58.7855982+05:30 0HMT2VH4ET5OC:00000008 [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (2e7ac211)
+2023-08-22T16:13:00.2327671+05:30 0HMT2VH4ET5OC:00000008 [INF] Received HTTP response headers after 1178.0401ms - 400 (f0742c1f)
+2023-08-22T16:13:00.7776510+05:30 0HMT2VH4ET5OC:00000008 [INF] End processing HTTP request after 1496.991ms - 400 (7656b38e)
+2023-08-22T16:21:48.4357742+05:30 0HMT2VH4ET5OC:00000008 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at Medical_Athena_Calendly.CommonServices.ApiService.AthenaPostAsync[TResponse](String url, Dictionary`2 formData, String authHeader) in F:\Subhash\git\Athena-Calendly\CommonServices\ApiService.cs:line 107
+   at Medical_Athena_Calendly.Controllers.PatientController.CreateAsync(String app, PatientModel patient) in F:\Subhash\git\Athena-Calendly\Controllers\PatientController.cs:line 73
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-22T16:28:22.0853261+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T16:28:22.2363195+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T16:28:22.2608721+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T16:28:22.2682257+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T16:46:15.9842032+05:30 0HMT2VQQ4Q1OJ:00000004 [INF] Executed DbCommand ("793"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T16:46:16.6149697+05:30 0HMT2VQQ4Q1OJ:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T16:46:16.6294320+05:30 0HMT2VQQ4Q1OJ:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T16:46:17.8636511+05:30 0HMT2VQQ4Q1OJ:00000004 [INF] Received HTTP response headers after 1170.469ms - 200 (f0742c1f)
+2023-08-22T16:46:17.8773286+05:30 0HMT2VQQ4Q1OJ:00000004 [INF] End processing HTTP request after 1399.4027ms - 200 (7656b38e)
+2023-08-22T16:46:18.0882856+05:30 0HMT2VQQ4Q1OJ:00000004 [INF] API started at:8/22/2023 4:46:18 PM (8ee14f1f)
+2023-08-22T16:46:18.2592802+05:30 0HMT2VQQ4Q1OJ:00000005 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T16:46:18.2674353+05:30 0HMT2VQQ4Q1OJ:00000005 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T16:46:18.6706144+05:30 0HMT2VQQ4Q1OJ:00000005 [INF] Received HTTP response headers after 355.9018ms - 200 (f0742c1f)
+2023-08-22T16:46:18.6838993+05:30 0HMT2VQQ4Q1OJ:00000005 [INF] End processing HTTP request after 420.57ms - 200 (7656b38e)
+2023-08-22T16:46:23.4406960+05:30 0HMT2VQQ4Q1OJ:00000009 [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T17:08:33.6802650+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T17:08:34.0328213+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T17:08:34.0573858+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T17:08:34.1330430+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T17:09:52.5191289+05:30 0HMT30H8FM9TL:00000003 [INF] Executed DbCommand ("713"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T17:09:52.9939014+05:30 0HMT30H8FM9TL:00000003 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T17:09:53.0065311+05:30 0HMT30H8FM9TL:00000003 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T17:09:54.2546965+05:30 0HMT30H8FM9TL:00000003 [INF] Received HTTP response headers after 1197.8923ms - 200 (f0742c1f)
+2023-08-22T17:09:54.2666891+05:30 0HMT30H8FM9TL:00000003 [INF] End processing HTTP request after 1347.0131ms - 200 (7656b38e)
+2023-08-22T17:09:54.4129933+05:30 0HMT30H8FM9TL:00000003 [INF] API started at:8/22/2023 5:09:54 PM (bd71e140)
+2023-08-22T17:09:54.5272950+05:30 0HMT30H8FM9TL:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T17:09:54.5353376+05:30 0HMT30H8FM9TL:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T17:09:54.9218644+05:30 0HMT30H8FM9TL:00000004 [INF] Received HTTP response headers after 374.3659ms - 200 (f0742c1f)
+2023-08-22T17:09:54.9326715+05:30 0HMT30H8FM9TL:00000004 [INF] End processing HTTP request after 400.094ms - 200 (7656b38e)
+2023-08-22T17:10:03.6403086+05:30 0HMT30H8FM9TJ:00000005 [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T17:10:57.3496392+05:30 0HMT30H8FM9TL:00000008 [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (338f1c77)
+2023-08-22T17:10:57.3636030+05:30 0HMT30H8FM9TL:00000008 [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (2e7ac211)
+2023-08-22T17:11:02.8794791+05:30 0HMT30H8FM9TL:00000008 [INF] Received HTTP response headers after 5423.8052ms - 200 (f0742c1f)
+2023-08-22T17:11:02.8941360+05:30 0HMT30H8FM9TL:00000008 [INF] End processing HTTP request after 5536.1549ms - 200 (7656b38e)
+2023-08-22T17:11:59.7135406+05:30 0HMT30H8FM9TL:00000008 [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (338f1c77)
+2023-08-22T17:11:59.7599986+05:30 0HMT30H8FM9TL:00000008 [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (2e7ac211)
+2023-08-22T17:12:01.2618232+05:30 0HMT30H8FM9TL:00000008 [INF] Received HTTP response headers after 1252.9991ms - 400 (f0742c1f)
+2023-08-22T17:12:01.3222565+05:30 0HMT30H8FM9TL:00000008 [INF] End processing HTTP request after 1567.7528ms - 400 (7656b38e)
+2023-08-22T17:31:50.3813124+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T17:31:51.1874699+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T17:31:51.3340905+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T17:31:51.3600162+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T17:34:29.7508013+05:30 0HMT30U8ODEG3:00000003 [INF] Executed DbCommand ("649"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T17:34:30.2640961+05:30 0HMT30U8ODEG3:00000003 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T17:34:30.2775900+05:30 0HMT30U8ODEG3:00000003 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T17:34:31.4117613+05:30 0HMT30U8ODEG3:00000003 [INF] Received HTTP response headers after 1064.3962ms - 200 (f0742c1f)
+2023-08-22T17:34:31.4247201+05:30 0HMT30U8ODEG3:00000003 [INF] End processing HTTP request after 1266.7089ms - 200 (7656b38e)
+2023-08-22T17:34:31.6374298+05:30 0HMT30U8ODEG3:00000003 [INF] API started at:8/22/2023 5:34:31 PM (cfbdc1ff)
+2023-08-22T17:34:31.8275354+05:30 0HMT30U8ODEG3:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T17:34:31.8373922+05:30 0HMT30U8ODEG3:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T17:34:32.1740581+05:30 0HMT30U8ODEG3:00000004 [INF] Received HTTP response headers after 330.9038ms - 200 (f0742c1f)
+2023-08-22T17:34:32.1810538+05:30 0HMT30U8ODEG3:00000004 [INF] End processing HTTP request after 352.3383ms - 200 (7656b38e)
+2023-08-22T17:34:39.4590173+05:30 0HMT30U8ODEG2:00000005 [INF] Executed DbCommand ("3"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T17:34:42.8723486+05:30 0HMT30U8ODEG2:00000005 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.FormatException: Input string was not in a correct format.
+   at System.Text.ValueStringBuilder.ThrowFormatError()
+   at System.Text.ValueStringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.FormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.String.Format(IFormatProvider provider, String format, Object arg0)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.FormatValue(Object value, String format)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateInput(ViewContext viewContext, InputType inputType, ModelExplorer modelExplorer, String expression, Object value, Boolean useViewData, Boolean isChecked, Boolean setId, Boolean isExplicitValue, String format, IDictionary`2 htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateTextBox(ViewContext viewContext, ModelExplorer modelExplorer, String expression, Object value, String format, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.GenerateTextBox(ModelExplorer modelExplorer, String inputTypeHint, String inputType, IDictionary`2 htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCoreGeneratedDocument.Views_Patient_PatientRegistration.<>c__DisplayClass30_0.<<ExecuteAsync>b__0>d.MoveNext() in F:\Subhash\git\Athena-Calendly\Views\Patient\PatientRegistration.cshtml:line 52
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Patient_PatientRegistration.ExecuteAsync() in F:\Subhash\git\Athena-Calendly\Views\Patient\PatientRegistration.cshtml:line 23
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-22T17:50:43.1718378+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T17:50:43.3290646+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T17:50:43.3528474+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T17:50:43.3619291+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T17:51:29.6257321+05:30 0HMT318QAA7QN:00000003 [INF] Executed DbCommand ("550"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T17:51:30.0645012+05:30 0HMT318QAA7QN:00000003 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T17:51:30.0755770+05:30 0HMT318QAA7QN:00000003 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T17:51:31.2010044+05:30 0HMT318QAA7QN:00000003 [INF] Received HTTP response headers after 1071.5723ms - 200 (f0742c1f)
+2023-08-22T17:51:31.2143552+05:30 0HMT318QAA7QN:00000003 [INF] End processing HTTP request after 1246.7815ms - 200 (7656b38e)
+2023-08-22T17:51:31.3740792+05:30 0HMT318QAA7QN:00000003 [INF] API started at:8/22/2023 5:51:31 PM (da52345c)
+2023-08-22T17:51:31.5270145+05:30 0HMT318QAA7QN:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T17:51:31.5354417+05:30 0HMT318QAA7QN:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T17:51:31.8731019+05:30 0HMT318QAA7QN:00000004 [INF] Received HTTP response headers after 326.0659ms - 200 (f0742c1f)
+2023-08-22T17:51:31.8891885+05:30 0HMT318QAA7QN:00000004 [INF] End processing HTTP request after 352.3623ms - 200 (7656b38e)
+2023-08-22T17:51:38.3766640+05:30 0HMT318QAA7QN:00000008 [INF] Executed DbCommand ("7"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T17:52:10.0334677+05:30 0HMT318QAA7QO:00000004 [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (338f1c77)
+2023-08-22T17:52:10.0434836+05:30 0HMT318QAA7QO:00000004 [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (2e7ac211)
+2023-08-22T17:52:12.7309327+05:30 0HMT318QAA7QO:00000004 [INF] Received HTTP response headers after 2202.3468ms - 200 (f0742c1f)
+2023-08-22T17:52:12.9697558+05:30 0HMT318QAA7QO:00000004 [INF] End processing HTTP request after 2711.9518ms - 200 (7656b38e)
+2023-08-22T17:53:04.3733790+05:30 0HMT318QAA7QO:00000004 [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (338f1c77)
+2023-08-22T17:53:04.3833178+05:30 0HMT318QAA7QO:00000004 [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (2e7ac211)
+2023-08-22T17:53:05.4513159+05:30 0HMT318QAA7QO:00000004 [INF] Received HTTP response headers after 984.4929ms - 200 (f0742c1f)
+2023-08-22T17:53:05.4807949+05:30 0HMT318QAA7QO:00000004 [INF] End processing HTTP request after 1100.8039ms - 200 (7656b38e)
+2023-08-22T17:53:16.9650103+05:30 0HMT318QAA7QO:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'Medical_Athena_Calendly.ViewModel.Athena.PatientPostResponceModel' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Medical_Athena_Calendly.CommonServices.ApiService.AthenaPostAsync[TResponse](String url, Dictionary`2 formData, String authHeader) in F:\Subhash\git\Athena-Calendly\CommonServices\ApiService.cs:line 110
+   at Medical_Athena_Calendly.Controllers.PatientController.CreateAsync(String app, PatientModel patient) in F:\Subhash\git\Athena-Calendly\Controllers\PatientController.cs:line 83
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-22T17:53:50.8258724+05:30 0HMT318QAA7QN:0000000B [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (338f1c77)
+2023-08-22T17:53:50.8356044+05:30 0HMT318QAA7QN:0000000B [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (2e7ac211)
+2023-08-22T17:53:52.5238410+05:30 0HMT318QAA7QN:0000000B [INF] Received HTTP response headers after 1679.5929ms - 200 (f0742c1f)
+2023-08-22T17:53:52.5308211+05:30 0HMT318QAA7QN:0000000B [INF] End processing HTTP request after 1708.488ms - 200 (7656b38e)
+2023-08-22T17:54:03.1991645+05:30 0HMT318QAA7QN:0000000B [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (338f1c77)
+2023-08-22T17:54:03.2069139+05:30 0HMT318QAA7QN:0000000B [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (2e7ac211)
+2023-08-22T17:54:04.3624785+05:30 0HMT318QAA7QN:0000000B [INF] Received HTTP response headers after 1124.1463ms - 200 (f0742c1f)
+2023-08-22T17:54:04.3992498+05:30 0HMT318QAA7QN:0000000B [INF] End processing HTTP request after 1187.1556ms - 200 (7656b38e)
+2023-08-22T18:02:23.1425649+05:30 0HMT318QAA7QN:0000000B [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON array (e.g. [1,2,3]) into type 'Medical_Athena_Calendly.ViewModel.Athena.PatientPostResponceModel' because the type requires a JSON object (e.g. {"name":"value"}) to deserialize correctly.
+To fix this error either change the JSON to a JSON object (e.g. {"name":"value"}) or change the deserialized type to an array or a type that implements a collection interface (e.g. ICollection, IList) like List<T> that can be deserialized from a JSON array. JsonArrayAttribute can also be added to the type to force it to deserialize from a JSON array.
+Path '', line 1, position 1.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureArrayContract(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Medical_Athena_Calendly.CommonServices.ApiService.AthenaPostAsync[TResponse](String url, Dictionary`2 formData, String authHeader) in F:\Subhash\git\Athena-Calendly\CommonServices\ApiService.cs:line 110
+   at Medical_Athena_Calendly.Controllers.PatientController.CreateAsync(String app, PatientModel patient) in F:\Subhash\git\Athena-Calendly\Controllers\PatientController.cs:line 83
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-22T18:46:54.1801340+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T18:46:54.5369480+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T18:46:54.7206314+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T18:46:54.7796573+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T18:47:42.2376017+05:30 0HMT3286UD9BO:00000003 [INF] Executed DbCommand ("913"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T18:47:42.8349559+05:30 0HMT3286UD9BO:00000003 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T18:47:42.9117396+05:30 0HMT3286UD9BO:00000003 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T18:47:44.4221152+05:30 0HMT3286UD9BO:00000003 [INF] Received HTTP response headers after 1417.3944ms - 200 (f0742c1f)
+2023-08-22T18:47:44.4319994+05:30 0HMT3286UD9BO:00000003 [INF] End processing HTTP request after 1730.58ms - 200 (7656b38e)
+2023-08-22T18:47:44.6366210+05:30 0HMT3286UD9BO:00000003 [INF] API started at:8/22/2023 6:47:44 PM (f324bdad)
+2023-08-22T18:47:44.8161067+05:30 0HMT3286UD9BO:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T18:47:44.8249102+05:30 0HMT3286UD9BO:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T18:47:45.2962420+05:30 0HMT3286UD9BO:00000004 [INF] Received HTTP response headers after 349.6513ms - 200 (f0742c1f)
+2023-08-22T18:47:45.3662776+05:30 0HMT3286UD9BO:00000004 [INF] End processing HTTP request after 500.6932ms - 200 (7656b38e)
+2023-08-22T18:47:50.7099309+05:30 0HMT3286UD9BM:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T18:48:13.8954551+05:30 0HMT3286UD9BO:00000008 [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (338f1c77)
+2023-08-22T18:48:13.9070557+05:30 0HMT3286UD9BO:00000008 [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/oauth2/v1/token (2e7ac211)
+2023-08-22T18:48:15.7227393+05:30 0HMT3286UD9BO:00000008 [INF] Received HTTP response headers after 1722.2504ms - 200 (f0742c1f)
+2023-08-22T18:48:15.7936071+05:30 0HMT3286UD9BO:00000008 [INF] End processing HTTP request after 1840.3838ms - 200 (7656b38e)
+2023-08-22T18:48:51.9432497+05:30 0HMT3286UD9BO:00000008 [INF] Start processing HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (338f1c77)
+2023-08-22T18:48:51.9520640+05:30 0HMT3286UD9BO:00000008 [INF] Sending HTTP request "POST" https://api.preview.platform.athenahealth.com/v1/206251/patients (2e7ac211)
+2023-08-22T18:48:53.1678697+05:30 0HMT3286UD9BO:00000008 [INF] Received HTTP response headers after 834.5424ms - 200 (f0742c1f)
+2023-08-22T18:48:53.4083004+05:30 0HMT3286UD9BO:00000008 [INF] End processing HTTP request after 1249.158ms - 200 (7656b38e)
+2023-08-22T18:49:58.7526305+05:30 0HMT3286UD9BO:00000008 [ERR] The view '"Create"' was not found. Searched locations: ["/Views/Patient/Create.cshtml", "/Views/Shared/Create.cshtml"] (9bb2756c)
+2023-08-22T18:49:59.2223131+05:30 0HMT3286UD9BO:00000008 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The view 'Create' was not found. The following locations were searched:
+/Views/Patient/Create.cshtml
+/Views/Shared/Create.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-22T19:36:08.2655590+05:30 0HMT3286UD9BP:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE FALSE
+LIMIT 1" (0723d8ff)
+2023-08-22T19:38:14.4266442+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T19:38:14.6005901+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T19:38:14.6370204+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T19:38:14.7001481+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T19:41:00.2396621+05:30 0HMT334T1Q8U9:00000003 [INF] Executed DbCommand ("634"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T19:41:00.8846348+05:30 0HMT334T1Q8U9:00000003 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T19:41:00.8969026+05:30 0HMT334T1Q8U9:00000003 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T19:41:02.0478847+05:30 0HMT334T1Q8U9:00000003 [INF] Received HTTP response headers after 1073.0457ms - 200 (f0742c1f)
+2023-08-22T19:41:02.0603554+05:30 0HMT334T1Q8U9:00000003 [INF] End processing HTTP request after 1329.754ms - 200 (7656b38e)
+2023-08-22T19:41:02.1966451+05:30 0HMT334T1Q8U9:00000003 [INF] API started at:8/22/2023 7:41:02 PM (30905cec)
+2023-08-22T19:41:02.3694275+05:30 0HMT334T1Q8U9:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T19:41:02.3754082+05:30 0HMT334T1Q8U9:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T19:41:02.6841823+05:30 0HMT334T1Q8U9:00000004 [INF] Received HTTP response headers after 301.0269ms - 200 (f0742c1f)
+2023-08-22T19:41:02.6963156+05:30 0HMT334T1Q8U9:00000004 [INF] End processing HTTP request after 321.3761ms - 200 (7656b38e)
+2023-08-22T19:41:13.1464083+05:30 0HMT334T1Q8U7:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T20:09:43.4846867+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T20:09:43.6996068+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T20:09:43.7122565+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T20:09:43.7638868+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T20:11:12.7520780+05:30 0HMT33MG6100M:00000003 [INF] Executed DbCommand ("585"ms) [Parameters=["@__user_Email_0='?', @__hashPassword_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__user_Email_0 AND u.\"Password\" = @__hashPassword_1" (0723d8ff)
+2023-08-22T20:11:13.2668062+05:30 0HMT33MG6100M:00000003 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T20:11:13.2841223+05:30 0HMT33MG6100M:00000003 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T20:11:14.6578538+05:30 0HMT33MG6100M:00000003 [INF] Received HTTP response headers after 1321.7661ms - 200 (f0742c1f)
+2023-08-22T20:11:14.6692730+05:30 0HMT33MG6100M:00000003 [INF] End processing HTTP request after 1544.0779ms - 200 (7656b38e)
+2023-08-22T20:11:14.8286253+05:30 0HMT33MG6100M:00000003 [INF] API started at:8/22/2023 8:11:14 PM (f36a5a65)
+2023-08-22T20:11:14.9667432+05:30 0HMT33MG6100M:00000004 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T20:11:14.9757465+05:30 0HMT33MG6100M:00000004 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=ssharma2@webcontentor.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T20:11:15.2995970+05:30 0HMT33MG6100M:00000004 [INF] Received HTTP response headers after 316.0879ms - 200 (f0742c1f)
+2023-08-22T20:11:15.3103372+05:30 0HMT33MG6100M:00000004 [INF] End processing HTTP request after 338.9596ms - 200 (7656b38e)
+2023-08-22T20:11:22.5785328+05:30 0HMT33MG6100M:00000007 [INF] Executed DbCommand ("2"ms) [Parameters=["@__email_0='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT u.\"Id\", u.\"CreatedDate\", u.\"DOB\", u.\"Email\", u.\"FirstName\", u.\"IsDeleted\", u.\"LastName\", u.\"Password\", u.\"ResetToken\", u.\"ResetTokenExpiration\", u.\"UpdatedDate\"
+FROM \"user\" AS u
+WHERE u.\"Email\" = @__email_0
+LIMIT 1" (0723d8ff)
+2023-08-22T20:11:23.0240065+05:30 0HMT33MG6100M:00000007 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'Medical_Athena_Calendly.ViewModel.Athena.PatientModel', but this ViewDataDictionary instance requires a model item of type 'Medical_Athena_Calendly.ViewModel.Athena.NewPatientModel'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method77(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-22T20:16:08.2908215+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T20:16:08.6538652+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T20:16:08.7976686+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T20:16:08.8892246+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
+2023-08-22T20:17:17.7148180+05:30 0HMT33Q2HOT3Q:00000008 [INF] Executed DbCommand ("713"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (DbType = Date), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?', @p7='?', @p8='?' (DbType = DateTime), @p9='?' (DbType = DateTime)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"user\" (\"CreatedDate\", \"DOB\", \"Email\", \"FirstName\", \"IsDeleted\", \"LastName\", \"Password\", \"ResetToken\", \"ResetTokenExpiration\", \"UpdatedDate\")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9)
+RETURNING \"Id\";" (0723d8ff)
+2023-08-22T20:17:18.2484543+05:30 0HMT33Q2HOT3Q:00000008 [INF] Start processing HTTP request "GET" https://api.calendly.com/users/me (338f1c77)
+2023-08-22T20:17:18.2606829+05:30 0HMT33Q2HOT3Q:00000008 [INF] Sending HTTP request "GET" https://api.calendly.com/users/me (2e7ac211)
+2023-08-22T20:17:19.4041292+05:30 0HMT33Q2HOT3Q:00000008 [INF] Received HTTP response headers after 1089.5211ms - 200 (f0742c1f)
+2023-08-22T20:17:19.4146620+05:30 0HMT33Q2HOT3Q:00000008 [INF] End processing HTTP request after 1246.6178ms - 200 (7656b38e)
+2023-08-22T20:17:19.9043885+05:30 0HMT33Q2HOT3Q:00000009 [INF] Start processing HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=niharganju@gmail.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (338f1c77)
+2023-08-22T20:17:19.9179190+05:30 0HMT33Q2HOT3Q:00000009 [INF] Sending HTTP request "GET" https://api.calendly.com/scheduled_events?invitee_email=niharganju@gmail.com&organization=https://api.calendly.com/organizations/71055c0c-ffa8-4fb7-a498-0580340a6ef6&sort=start_time:desc (2e7ac211)
+2023-08-22T20:17:20.2398224+05:30 0HMT33Q2HOT3Q:00000009 [INF] Received HTTP response headers after 310.8831ms - 200 (f0742c1f)
+2023-08-22T20:17:20.2485810+05:30 0HMT33Q2HOT3Q:00000009 [INF] End processing HTTP request after 394.7594ms - 200 (7656b38e)
+2023-08-22T20:18:20.9088014+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-22T20:18:22.1279332+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-22T20:18:22.3454658+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-22T20:18:22.3883458+05:30  [INF] Content root path: "F:\Subhash\git\Athena-Calendly\" (b5d60022)
