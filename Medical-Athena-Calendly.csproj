@@ -9,15 +9,19 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Compile Remove="Data\**" />
 		<Compile Remove="Views\Login\**" />
 		<Compile Remove="Views\Registration\**" />
 		<Compile Remove="wwwroot\lib\AdminLTE\**" />
+		<Content Remove="Data\**" />
 		<Content Remove="Views\Login\**" />
 		<Content Remove="Views\Registration\**" />
 		<Content Remove="wwwroot\lib\AdminLTE\**" />
+		<EmbeddedResource Remove="Data\**" />
 		<EmbeddedResource Remove="Views\Login\**" />
 		<EmbeddedResource Remove="Views\Registration\**" />
 		<EmbeddedResource Remove="wwwroot\lib\AdminLTE\**" />
+		<None Remove="Data\**" />
 		<None Remove="Views\Login\**" />
 		<None Remove="Views\Registration\**" />
 		<None Remove="wwwroot\lib\AdminLTE\**" />
@@ -50,7 +54,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Data\" />
 		<Folder Include="Models\" />
 		<Folder Include="Views\Shared\" />
 		<Folder Include="wwwroot\css\" />

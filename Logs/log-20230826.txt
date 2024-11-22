@@ -1,0 +1,8 @@
+2023-08-26T23:44:02.9286542+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-26T23:44:02.9548162+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-26T23:44:02.9576310+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-26T23:44:02.9591261+05:30  [INF] Content root path: "D:\subhash\Athena-Calendly\" (b5d60022)
+2023-08-26T23:47:06.7076982+05:30  [INF] Now listening on: "http://localhost:5108" (d826f4b8)
+2023-08-26T23:47:06.7269696+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-08-26T23:47:06.7294320+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2023-08-26T23:47:06.7309980+05:30  [INF] Content root path: "D:\subhash\Athena-Calendly\" (b5d60022)

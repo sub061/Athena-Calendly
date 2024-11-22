@@ -9,117 +9,119 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Medical_Athena_Calendly
 build_property.RootNamespace = Medical_Athena_Calendly
-build_property.ProjectDir = F:\Subhash\git\Athena-Calendly\
+build_property.ProjectDir = D:\subhash\Athena-Calendly\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\Subhash\git\Athena-Calendly
+build_property.MSBuildProjectDirectory = D:\subhash\Athena-Calendly
 build_property._RazorSourceGeneratorDebug = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Account/ChangePassword.cshtml]
+[D:/subhash/Athena-Calendly/Views/Account/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Account/Login.cshtml]
+[D:/subhash/Athena-Calendly/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Account/Registration.cshtml]
+[D:/subhash/Athena-Calendly/Views/Account/Registration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RyYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Appointment/ExternalCallback.cshtml]
+[D:/subhash/Athena-Calendly/Views/Appointment/ExternalCallback.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcRXh0ZXJuYWxDYWxsYmFjay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Appointment/Scheduling.cshtml]
+[D:/subhash/Athena-Calendly/Views/Appointment/Scheduling.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcU2NoZWR1bGluZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Athena/Index.cshtml]
+[D:/subhash/Athena-Calendly/Views/Athena/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRoZW5hXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Home/Dashboard.cshtml]
+[D:/subhash/Athena-Calendly/Views/Home/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Home/Form.cshtml]
+[D:/subhash/Athena-Calendly/Views/Home/Form.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Home/Index.cshtml]
+[D:/subhash/Athena-Calendly/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Home/Privacy.cshtml]
+[D:/subhash/Athena-Calendly/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/PasswordReset/ForgotPassword.cshtml]
+[D:/subhash/Athena-Calendly/Views/PasswordReset/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzc3dvcmRSZXNldFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/PasswordReset/ForgotPasswordConfirmation.cshtml]
+[D:/subhash/Athena-Calendly/Views/PasswordReset/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzc3dvcmRSZXNldFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/PasswordReset/ResetPassword.cshtml]
+[D:/subhash/Athena-Calendly/Views/PasswordReset/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzc3dvcmRSZXNldFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/PasswordReset/ResetPasswordConfirmation.cshtml]
+[D:/subhash/Athena-Calendly/Views/PasswordReset/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzc3dvcmRSZXNldFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Patient/Index.cshtml]
+[D:/subhash/Athena-Calendly/Views/Patient/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Patient/PatientRegistration.cshtml]
+[D:/subhash/Athena-Calendly/Views/Patient/PatientRegistration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxQYXRpZW50UmVnaXN0cmF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Shared/Error.cshtml]
+[D:/subhash/Athena-Calendly/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Shared/Logo.cshtml]
+[D:/subhash/Athena-Calendly/Views/Shared/Logo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExvZ28uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Shared/_Breadcrumb.cshtml]
+[D:/subhash/Athena-Calendly/Views/Shared/_Breadcrumb.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9CcmVhZGNydW1iLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Shared/_CalendlyUser.cshtml]
+[D:/subhash/Athena-Calendly/Views/Shared/_CalendlyUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYWxlbmRseVVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Shared/_Layout.cshtml]
+[D:/subhash/Athena-Calendly/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Shared/_LayoutHirsch.cshtml]
+[D:/subhash/Athena-Calendly/Views/Shared/_LayoutHirsch.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRIaXJzY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Shared/_LayoutNihar.cshtml]
+[D:/subhash/Athena-Calendly/Views/Shared/_LayoutNihar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXROaWhhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Shared/_LayoutRegistration.cshtml]
+[D:/subhash/Athena-Calendly/Views/Shared/_LayoutRegistration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRSZWdpc3RyYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/subhash/Athena-Calendly/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/_ViewImports.cshtml]
+[D:/subhash/Athena-Calendly/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Subhash/git/Athena-Calendly/Views/_ViewStart.cshtml]
+[D:/subhash/Athena-Calendly/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

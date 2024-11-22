@@ -14,7 +14,9 @@ namespace Medical_Athena_Calendly.Models
         public string Email { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string DOB { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString ="MM/dd/yyyy")]
+        public DateTime DOB { get; set; }
         public string Password { get; set; } // this field contain hashvalue
         public DateTime CreatedDate { get; set; }
         public DateTime UpdatedDate { get; set; }

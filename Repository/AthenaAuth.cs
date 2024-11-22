@@ -134,7 +134,7 @@ namespace Medical_Athena_Calendly.Repository
             NewPatientModel model = new NewPatientModel();
             model.firstname = user.FirstName;
             model.lastname = user.LastName;
-            model.dob = user.DOB;
+            model.dob = user.DOB.Date.ToString("MM/dd/yyyy");
             model.email = user.Email;
             model.departmentid = departmentId;
             var response = await Registration(model);
